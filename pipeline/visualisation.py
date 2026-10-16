@@ -174,7 +174,7 @@ def fig_anisotropy_tensor(discovery, output_dir):
     anisotropy = discovery.anisotropy
     fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.8), constrained_layout=True)
 
-    def plot_tensor(ax, eigvals, eigvecs, alpha, title, color):
+    def plot_tensor(ax, eigvals, eigvecs, alpha, color):
         if eigvals[0] < 1e-30:
             return
         ratio = eigvals[1] / eigvals[0]
@@ -206,7 +206,6 @@ def fig_anisotropy_tensor(discovery, output_dir):
         ax.set_aspect('equal')
         ax.axhline(0, color='gray', linewidth=0.4, alpha=0.25)
         ax.axvline(0, color='gray', linewidth=0.4, alpha=0.25)
-        ax.set_title(title, fontsize=10.5)
         ax.set_xlabel(r'$f_x$ direction'); ax.set_ylabel(r'$f_y$ direction')
 
         # Annotation with physical values
@@ -223,10 +222,9 @@ def fig_anisotropy_tensor(discovery, output_dir):
         ev, evec = np.linalg.eigh(A)
         idx = np.argsort(ev)[::-1]; ev, evec = ev[idx], evec[:, idx]
         alpha_val = anisotropy.__getattribute__(modality)["anisotropy_degree"]
-        title = 'Stylus Profilometry' if modality == 'stylus' else 'Optical Interferometry'
-        plot_tensor(ax, ev, evec, alpha_val, title, color)
+        plot_tensor(ax, ev, evec, alpha_val, color)
 
-    # Labels outside
+    # Single title per panel: (a)/(b) labels, no second overlapping title
     axes[0].set_title('(a)  Stylus Profilometry', loc='left', fontsize=10.5, fontweight='bold')
     axes[1].set_title('(b)  Optical Interferometry', loc='left', fontsize=10.5, fontweight='bold')
     fig.savefig(os.path.join(output_dir, 'fig5_anisotropy_tensor.pdf'))
