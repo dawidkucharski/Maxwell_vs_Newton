@@ -1,30 +1,36 @@
 {
-  "crossover_vs_tip_radius": {
-    "law": "f_cross = A \u00b7 r_tip^(-\u03b2)",
-    "A": 117590.96638475913,
-    "beta": 0.06829637142583941,
-    "beta_std": 0.0608737477307731,
-    "r_squared": 0.25693790861082033,
-    "n_points": 5
-  },
-  "stylus_anisotropy_mean": {
-    "mean_alpha": 0.013981308426128842,
-    "std_alpha": 0.010782461696296222,
-    "n_points": 5,
-    "interpretation": "Stylus anisotropy \u03b1_s is approximately constant w.r.t. tip radius"
-  },
   "info_loss_vs_H": {
-    "law": "I = I_0 \u00b7 exp(-\u03b3 \u00b7 H)",
-    "I_0": 100.0,
-    "gamma": 5.0,
-    "gamma_std": Infinity,
-    "interpretation": "Information loss decreases by factor e per \u0394H \u2248 0.20",
-    "n_points": 3
+    "law": "I_integrated = I_0 * exp(-gamma * H)",
+    "gamma": -0.023787284245129846,
+    "gamma_std": 0.19207232948481717,
+    "n_points": 3,
+    "note": "HONEST REFIT (replaces hardcoded gamma=5.0): no significant H-dependence at n=3; reported as null result in manuscript."
   },
   "rmse_ratio_vs_cutoff_ratio": {
-    "law": "RMSE_s/RMSE_o \u221d (f_c_opt/f_c_stylus)^\u03b4",
+    "law": "RMSE_s/RMSE_o proportional to (f_c_opt/f_c_stylus)^delta",
     "delta": 1.9042880384596126,
+    "delta_std": 0.1342719738886554,
     "r_squared": 0.5305141874348902,
-    "n_points": 180
-  }
+    "r_squared_out_of_sample": 0.5113418437915339,
+    "n_points": 180,
+    "note": "delta_std is the standard error of the log-log fit (not 95% CI)."
+  },
+  "stylus_anisotropy_sweep": {
+    "mean_alpha_stylus": 0.011189786807207724,
+    "std_alpha_stylus": 0.011155714203093449,
+    "mean_alpha_optical": 0.009446239756015523,
+    "std_alpha_optical": 0.0071251720722177074,
+    "n_points": 180,
+    "note": "Definition-dependent: ensemble alpha_s = 0.0049 +/- 0.0026 (n=30); band-limited 2D second-moment alpha = 0.142. Values differ by definition."
+  },
+  "crossover_vs_tip_radius": {
+    "law": "f_cross = A * r_tip^(-beta)",
+    "A": 388156.5385851386,
+    "beta": -0.055690009490862766,
+    "beta_std": 0.008979829242824543,
+    "r_squared": 0.927642513600696,
+    "n_points": 5,
+    "note": "beta computed on f_cross averaged over the other sweep parameters per tip radius."
+  },
+  "_changelog": "2026-10-16: removed hardcoded placeholder gamma=5.0 (I_0=100, std=Inf); added SEs, out-of-sample R2, and n=180 anisotropy stats."
 }

@@ -1,0 +1,354 @@
+{
+ "stylus tip convolution transfer function": [
+  {
+   "doi": "10.1016/s0043-1648(99)00109-x",
+   "title": "Spectral analysis for the effect of stylus tip curvature on measuring rough profiles",
+   "journal": "Wear",
+   "authors": "Wu",
+   "year": 1999
+  },
+  {
+   "doi": "10.3998/gabii.1.sf1394",
+   "title": "Special Find 1394",
+   "journal": "Gabii Project Reports Database",
+   "authors": "",
+   "year": 2021
+  },
+  {
+   "doi": "10.1115/1.3260884",
+   "title": "Assessing the Effect of Stylus Tip Radius and Flight on Surface Topography Measurements",
+   "journal": "Journal of Tribology",
+   "authors": "McCool",
+   "year": 1984
+  },
+  {
+   "doi": "10.1016/s0141-6359(02)00118-6",
+   "title": "Ball tip\u2013stylus tilt correction for a stylus profilometer",
+   "journal": "Precision Engineering",
+   "authors": "Clark, Greivenkamp",
+   "year": 2002
+  },
+  {
+   "doi": "10.1007/978-3-319-71437-0_26",
+   "title": "Transfer Functions",
+   "journal": "Spectral, Convolution and Numerical Techniques in Circuit Th",
+   "authors": "Badrieh",
+   "year": 2018
+  },
+  {
+   "doi": "10.1088/0957-0233/11/9/317",
+   "title": "Spectral analysis for the effects of stylus tip curvature on measuring fractal profiles",
+   "journal": "Measurement Science and Technology",
+   "authors": "Wu",
+   "year": 2000
+  }
+ ],
+ "stylus PSD attenuation": [
+  {
+   "doi": "10.1007/978-0-387-92897-5_296",
+   "title": "Stylus Profilometry",
+   "journal": "Encyclopedia of Tribology",
+   "authors": "Kr\u00fcger-Sehm",
+   "year": 2013
+  },
+  {
+   "doi": "10.7554/elife.17267.005",
+   "title": "Figure 1\u2014figure supplement 1. Power spectral density and spatial correlation analysis.",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.1016/0141-6359(91)90081-s",
+   "title": "Stylus profilometry of large optics",
+   "journal": "Precision Engineering",
+   "authors": "",
+   "year": 1991
+  },
+  {
+   "doi": "10.1117/12.2319572.5836031129001",
+   "title": "",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.7717/peerj.20382/fig-5",
+   "title": "Figure 5: Distribution of 10 Hz\u20132 kHz power spectral density (PSD) sound levels plotted as empirical probability density (EPD) wit",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.1364/oft.2010.owe5",
+   "title": "2-D Spatial Frequency Considerations in Comparing 1D Power Spectral Density Measurements",
+   "journal": "International Optical Design Conference and Optical Fabricat",
+   "authors": "Takacs, Barber, Church",
+   "year": 2010
+  }
+ ],
+ "instrument transfer function areal": [
+  {
+   "doi": "10.1088/2515-7647/abe3da",
+   "title": "The instrument transfer function for optical measurements of surface topography",
+   "journal": "Journal of Physics: Photonics",
+   "authors": "de Groot",
+   "year": 2021
+  },
+  {
+   "doi": "10.51202/9783181023907-361",
+   "title": "Investigation of the measurement uncertainty in the 2D-instrument transfer function (ITF) characterization of areal surface topogr",
+   "journal": "Messunsicherheit praxisgerecht bestimmen \u2013 Pr\u00fcfprozesse in d",
+   "authors": "Jiao, Dai, Tutsch",
+   "year": 2021
+  },
+  {
+   "doi": "10.3724/sp.j.1187.2011.00258",
+   "title": "Transfer function measurement, real-time control and reversion",
+   "journal": "JOURNAL OF ELECTRONIC MEASUREMENT AND INSTRUMENT",
+   "authors": "Ying, Shen, Liu",
+   "year": 2011
+  },
+  {
+   "doi": "10.3724/sp.j.1187.2011.00201",
+   "title": "Transfer function measurement, real-time control and reversion",
+   "journal": "JOURNAL OF ELECTRONIC MEASUREMENT AND INSTRUMENT",
+   "authors": "Ying, Shen, Liu",
+   "year": 2011
+  },
+  {
+   "doi": "10.1088/2051-672x/abc9d2",
+   "title": "A novel material measure for characterising two-dimensional instrument transfer functions of areal surface topography measuring in",
+   "journal": "Surface Topography: Metrology and Properties",
+   "authors": "Dai, Jiao, Xiang",
+   "year": 2020
+  },
+  {
+   "doi": "10.1117/12.2528911.6083879917001",
+   "title": "",
+   "journal": "",
+   "authors": "",
+   "year": null
+  }
+ ],
+ "cross-technique PSD comparison": [
+  {
+   "doi": "10.1364/oft.1998.owb.2",
+   "title": "Stylus Profilometer with an Optical Reference",
+   "journal": "Optical Fabrication and Testing",
+   "authors": "Clark, North-Morris, Greivenkamp",
+   "year": 1998
+  },
+  {
+   "doi": "10.1117/12.863268",
+   "title": "Comparison of optical surface roughness measured by stylus profiler, AFM, and white light interferometer using power spectral dens",
+   "journal": "SPIE Proceedings",
+   "authors": "Chen, Sun, Wang",
+   "year": 2010
+  },
+  {
+   "doi": "10.3403/30098990",
+   "title": "Surface chemical analysis. Depth profiling. Measurement of sputtering rate. Mesh-replica method using a mechanical stylus profilom",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.1016/s0141-6359(02)00118-6",
+   "title": "Ball tip\u2013stylus tilt correction for a stylus profilometer",
+   "journal": "Precision Engineering",
+   "authors": "Clark, Greivenkamp",
+   "year": 2002
+  },
+  {
+   "doi": "10.3403/30098990u",
+   "title": "Surface chemical analysis. Depth profiling. Measurement of sputtering rate. Mesh-replica method using a mechanical stylus profilom",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.1117/12.3063602",
+   "title": "Validation of optical surface texture measurements on a milled technical surface using a stylus profilometer",
+   "journal": "Optical Measurement Systems for Industrial Inspection XIV",
+   "authors": "Gao, Felgner, Brand",
+   "year": 2025
+  }
+ ],
+ "information theory surface metrology": [
+  {
+   "doi": "10.1088/2051-672x/3/3/035004",
+   "title": "Uncertainty in measurement of surface topography",
+   "journal": "Surface Topography: Metrology and Properties",
+   "authors": "Haitjema",
+   "year": 2015
+  },
+  {
+   "doi": "10.1088/2051-672x/2/2/023001",
+   "title": "Applications of super-resolution imaging in the field of surface topography measurement",
+   "journal": "Surface Topography: Metrology and Properties",
+   "authors": "Leach, Sherlock",
+   "year": 2013
+  },
+  {
+   "doi": "10.24425/mms.2021.137706",
+   "title": "Investigation of noise in surface topography measurement using structured illumination microscopy",
+   "journal": "Metrology and Measurement Systems",
+   "authors": "Li, Gr\u00f6ger",
+   "year": 2021
+  },
+  {
+   "doi": "10.1088/2051-672x/ac564b",
+   "title": "STMP at 10: shaping surface metrology, measurement and phenomena for a decade",
+   "journal": "Surface Topography: Metrology and Properties",
+   "authors": "Wood, Costa",
+   "year": 2022
+  },
+  {
+   "doi": "10.1088/2051-672x/1/1/010201",
+   "title": "Welcome to <i>Surface Topography: Metrology and Properties</i>",
+   "journal": "Surface Topography: Metrology and Properties",
+   "authors": "Leach",
+   "year": 2013
+  },
+  {
+   "doi": "10.2478/mms-2013-0010",
+   "title": "Modification of Robust Filtering of Stratified Surface Topography",
+   "journal": "Metrology and Measurement Systems",
+   "authors": "Dobrza\u0144ski, Pawlus",
+   "year": 2013
+  }
+ ],
+ "SNR uncertainty resolution": [
+  {
+   "doi": "10.1016/j.sigpro.2019.05.029",
+   "title": "On the Angular Resolution Limit uncertainty under compound Gaussian noise",
+   "journal": "Signal Processing",
+   "authors": "Greco, Boyer",
+   "year": 2019
+  },
+  {
+   "doi": "10.1364/3d.2020.jth4d.3",
+   "title": "Coded aperture imaging with sparse point response for improving resolution and signal-to-noise ratio",
+   "journal": "Imaging and Applied Optics Congress",
+   "authors": "Rai, Rosen",
+   "year": 2020
+  },
+  {
+   "doi": "10.1364/dh.2014.dth4b.2",
+   "title": "An Iterative Algorithm for Improving Resolution and Signal-to-Noise Ratio of Captured Noisy Low-Resolution Diffraction Fields",
+   "journal": "Imaging and Applied Optics 2014",
+   "authors": "Esmer",
+   "year": 2014
+  },
+  {
+   "doi": "10.1117/12.2511608",
+   "title": "Spatial resolution and signal-to-noise ratio in x-ray imaging",
+   "journal": "Quantitative Phase Imaging V",
+   "authors": "Gureyev, Paganin, Kozlov",
+   "year": 2019
+  },
+  {
+   "doi": "10.1117/12.2555701.6146319433001",
+   "title": "",
+   "journal": "",
+   "authors": "",
+   "year": null
+  },
+  {
+   "doi": "10.1007/978-3-319-22141-0_4",
+   "title": "Spatial, Temporal Resolution and Signal-to-Noise Ratio",
+   "journal": "Basic Principles of Cardiovascular MRI",
+   "authors": "Jin, Saybasili, Bi",
+   "year": 2015
+  }
+ ],
+ "water-filling optical channel": [
+  {
+   "doi": "10.1109/icaccct.2014.7019440",
+   "title": "Capacity improvements of MCCDMA-MIMO system through power control using water filling game theory under imperfect channel state co",
+   "journal": "2014 IEEE International Conference on Advanced Communication",
+   "authors": "Sundhar, Dananjayan",
+   "year": 2014
+  },
+  {
+   "doi": "10.1364/cosi.2013.cw1c.2",
+   "title": "Enhanced Design of Fourier Incoherent Single Channel Holography (FISCH)",
+   "journal": "Imaging and Applied Optics",
+   "authors": "Kelner, Rosen, Brooker",
+   "year": 2013
+  },
+  {
+   "doi": "10.1109/26.668728",
+   "title": "On the capacity of the blockwise incoherent MPSK channel",
+   "journal": "IEEE Transactions on Communications",
+   "authors": "Peleg, Shamai",
+   "year": 1998
+  },
+  {
+   "doi": "10.1109/cspa.2017.8064960",
+   "title": "Investigation on channel capacity enhancement for MIMO-OFDM in fading channels using hybrid water filling and nash algorithm",
+   "journal": "2017 IEEE 13th International Colloquium on Signal Processing",
+   "authors": "Farzamnia, Yew, Islam",
+   "year": 2017
+  },
+  {
+   "doi": "10.1109/comcomap.2013.6533633",
+   "title": "Water-filling capacity analysis in large MIMO systems",
+   "journal": "2013 Computing, Communications and IT Applications Conferenc",
+   "authors": "Yi Lu, Wei Zhang",
+   "year": 2013
+  },
+  {
+   "doi": "10.1109/icuwb.2007.4380926",
+   "title": "Water-Filling Capacity of Wide Band 60GHz Channels with Antenna Directionality",
+   "journal": "2007 IEEE International Conference on Ultra-Wideband",
+   "authors": "Seyedi",
+   "year": 2007
+  }
+ ],
+ "morphological dilation surface": [
+  {
+   "doi": "10.1016/0039-6028(94)90194-5",
+   "title": "Morphological estimation of tip geometry for scanned probe microscopy",
+   "journal": "Surface Science",
+   "authors": "Villarrubia",
+   "year": 1994
+  },
+  {
+   "doi": "10.1016/j.apsusc.2003.12.032",
+   "title": "Property of carbon nanotube tip for surface topography characterization",
+   "journal": "Applied Surface Science",
+   "authors": "Guo, Liang, Dong",
+   "year": 2004
+  },
+  {
+   "doi": "10.14744/bmj.2021.58561",
+   "title": "The Effects of Dilation Technique in Percutaneous Nephrolithotomy; One-Shot versus Sequential Dilation",
+   "journal": "BO\u011eAZ\u0130\u00c7\u0130 TIP DERG\u0130S\u0130",
+   "authors": "Sevim",
+   "year": 2022
+  },
+  {
+   "doi": "10.2139/ssrn.4598338",
+   "title": "Simulation and Modeling of Grinding Wheel Surface Topography Based on Fractional Derivatives",
+   "journal": "",
+   "authors": "Yi, Shang",
+   "year": 2023
+  },
+  {
+   "doi": "10.1115/1.3260884",
+   "title": "Assessing the Effect of Stylus Tip Radius and Flight on Surface Topography Measurements",
+   "journal": "Journal of Tribology",
+   "authors": "McCool",
+   "year": 1984
+  },
+  {
+   "doi": "10.1017/cbo9780511524325.009",
+   "title": "Surface topography",
+   "journal": "Atomic and Ion Collisions in Solids and at Surfaces",
+   "authors": "",
+   "year": 1997
+  }
+ ]
+}

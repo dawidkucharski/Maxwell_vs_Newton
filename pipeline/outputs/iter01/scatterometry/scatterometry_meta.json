@@ -5,7 +5,7 @@
   "n_material": "(2.5+3.3j)",
   "f_max_usable_mm": 3759.398496240601,
   "f_min_usable_mm": 10.0,
-  "relative_psd_error": 2.1282773245595425e-07,
+  "relative_psd_error": 2.1272445575985063e-07,
   "bsdf_noise_floor": 1e-08,
   "optical_factor_median": 0.4317015631403343,
   "note": "Scatterometry at \u03bb=532 nm, \u03b8_i=0.0\u00b0, usable f-range: 10.00\u20133759 mm\u207b\u00b9. Relative PSD error: 0.0%. Optical factor Q_median = 0.432."
