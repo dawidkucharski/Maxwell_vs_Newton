@@ -41,7 +41,7 @@ A diamond stylus with tip radius $r_\mathrm{tip} = \SI{2}{\micro m}$ under a nor
     a = \left(\frac{3 R_\mathrm{eff} F_n}{4 E_\mathrm{eff}}\right)^{1/3}
     \label{eq:hertz}
 \end{equation}
-where $1/E_\mathrm{eff} = (1-\nu_\mathrm{tip}^2)/E_\mathrm{tip} + (1-\nu_\mathrm{surf}^2)/E_\mathrm{surf}$. For the baseline parameters, I compute $a = \SI{201}{nm}$ with a mean contact pressure $p_\mathrm{mean} = \SI{7.9}{GPa}$ and peak pressure $p_\mathrm{max} = \SI{11.8}{GPa}$.
+where $1/E_\mathrm{eff} = (1-\nu_\mathrm{tip}^2)/E_\mathrm{tip} + (1-\nu_\mathrm{surf}^2)/E_\mathrm{surf}$. For the baseline parameters, the contact radius is $a = \SI{201}{nm}$, with a mean contact pressure $p_\mathrm{mean} = \SI{7.9}{GPa}$ and peak pressure $p_\mathrm{max} = \SI{11.8}{GPa}$.
 
 The peak pressure exceeds the steel hardness ($H = \SI{5}{GPa}$), placing the contact in the \textbf{plastic regime}. The Greenwood--Williamson plasticity index~\cite{greenwood1966contact} is $\psi = (E_\mathrm{eff}/H)\sqrt{\sigma/r_\mathrm{tip}} = 5.83$, confirming significant plastic deformation. This has three critical implications for stylus measurements:
 \begin{enumerate}
@@ -216,7 +216,7 @@ The fused estimate matches the true PSD across the combined bandwidth from $\SI{
 \subsection{Universality of Framework Metrics Across Surface Classes}
 \label{sec:universality}
 
-A crucial test of any measurement-theoretic framework is whether its metrics generalise beyond the surface class on which they were calibrated. To stress-test the framework, I generated six fundamentally different surface classes---Gaussian self-affine (baseline, $H=0.7$), anisotropic ground ($H_x=0.85$, $H_y=0.70$), turned (periodic grooves + roughness), laser-textured (Gaussian dimple array + background), periodic grating (pure $\SI{5}{\micro m}$ sinusoid), and biological-like (log-normal height distribution, anisotropic multi-scale)---and computed all seven metrics for each class ($n=5$ realisations per class). Results are summarised in Fig.~\ref{fig:S1_stress_test}.
+A crucial test of any measurement-theoretic framework is whether its metrics generalise beyond the surface class on which they were calibrated. To stress-test the framework, six fundamentally different surface classes were generated---Gaussian self-affine (baseline, $H=0.7$), anisotropic ground ($H_x=0.85$, $H_y=0.70$), turned (periodic grooves + roughness), laser-textured (Gaussian dimple array + background), periodic grating (pure $\SI{5}{\micro m}$ sinusoid), and biological-like (log-normal height distribution, anisotropic multi-scale)---and all seven metrics were computed for each class ($n=5$ realisations per class). Results are summarised in Fig.~\ref{fig:S1_stress_test}.
 
 The coefficient of variation (CV = $\sigma/\mu$) across classes reveals three categories of metric behaviour:
 
