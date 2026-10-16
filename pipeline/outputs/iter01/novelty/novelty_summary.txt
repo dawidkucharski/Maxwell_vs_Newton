@@ -17,11 +17,11 @@ Found 10 novel results across 4 categories: equivalence_regime, scaling_law, inv
 
 [invariant_metric] Anisotropy-Loss Product Π = α · L
   Confidence: 0.85
-  The product Π = α · L = 7912649714.1913 combines measurement anisotropy (α = 0.0038) and total information loss (L = 2059397769173.5398) into a single dimensionless figure of merit. For an ideal instrument, Π → 0. For the worst instrument, Π → ∞. This invariant allows direct comparison of fundamentally different measurement modalities on a common scale.
+  The product Π = α · L = 7446819500.8499 combines measurement anisotropy (α = 0.0036) and total information loss (L = 2059299063601.8696) into a single dimensionless figure of merit. For an ideal instrument, Π → 0. For the worst instrument, Π → ∞. This invariant allows direct comparison of fundamentally different measurement modalities on a common scale.
 
 [scaling_law] Stylus Transfer Function Roll-Off Exponent
   Confidence: 0.80
-  The stylus transfer function follows H(f) ∝ f^-1.52 in the roll-off region. This exponent characterises the effective filter order of the morphological tip convolution.
+  The stylus transfer function follows H(f) ∝ f^-1.51 in the roll-off region. This exponent characterises the effective filter order of the morphological tip convolution.
 
 [equivalence_regime] k-Space Equivalence Regime Between Stylus and Optical Profilometry
   Confidence: 0.80
