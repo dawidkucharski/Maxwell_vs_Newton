@@ -61,3 +61,40 @@ All work on branch `stmp-revision`; baseline preserved on `main` (`ed79ded`).
 - `reports/final_submission_readiness.md` (this changelog accompanies it).
 - Verdict: submission-ready; remaining limitations are stated in the manuscript,
   none are fatal blockers.
+
+## Panel-audit execution (2026-10-16, after reviewer-panel audit)
+
+Applied the Top-20 acceptance-gain roadmap. Key changes and consequences:
+
+- **H convention fixed (T1):** block8 Fisher/capacity/observability now use the
+  amplitude convention (tf.H is the power transfer; sqrt recovered first).
+  CONSEQUENCE: the pipeline MI ratio flips to I_o/I_s = 0.68 — the
+  "optical transmits 1.6-1.7x more MI" headline was an artefact of double
+  squaring + estimator choice and is WITHDRAWN; manuscript now reports the
+  ratio as estimator-dependent (0.7-1.6) with the robust per-band ranking.
+- **Ensemble regenerated from code (T4):** pipeline/run_ensemble.py (seeds
+  100-129) rewrote ensemble_stats.json. New values: alpha_s=0.0095+/-0.0037,
+  alpha_o=0.0013+/-0.0006 (stylus ~7x optical, intervals no longer overlap),
+  f_cross=454+/-166 mm-1 (lambda_cross=2.2 um), eq_frac=9.6%+/-0.3%
+  (was 18.3%+/-0.2%). Manuscript abstract/results/captions/table/conclusions
+  and the roadmap baseline updated accordingly.
+- **Gramian equation aligned with code (T3):** observability condition number
+  redefined as max|H|^2/min|H|^2 over the passband; Xi_o/Xi_s = 5.9 (was 1.31,
+  recomputed under the amplitude convention).
+- **SNR bound status clarified (T2):** operational second-moment definitions of
+  the effective widths + SI S4.3 status paragraph (definitionally anchored
+  ansatz consistent with the classical limit and Greco & Boyer 2019; explicit
+  falsification protocol). Cover-letter "new measurement limit" reworded.
+- **Variants added (T8/T9):** stylus raster sweep Delta-x = 100/200/400 nm
+  (RMSE 13.6/16.3/16.7 nm; 3 dB at 1255/1049/671 mm-1) and polychromatic OTF
+  average 500-700 nm (96.5% of passband within 3 dB of monochromatic).
+  Stored in robustness/variant_simulations.json; summarised in the
+  "Sampling and illumination variants" paragraph.
+- **Housekeeping:** monochromatic mean-lambda statement; scaling-law and
+  SNR-bound falsification sentences; sweep parameter table; public-benchmark,
+  Fisher/CRB (fig8) and ensemble (fig10) figures now referenced; search-basis
+  footnote for "no prior work"; tip-radius uncertainty cross-reference; h5py
+  pinned in verification/requirements-benchmark.txt; ensemble seeds stated in
+  Data Availability; roadmap figure baseline marker updated (regenerate_roadmap.py).
+- Builds: main 60 pp, SI 19 pp, cover 3 pp — all 0 errors, 0 undefined.
+  14/14 verification tests pass.

@@ -15,10 +15,10 @@
     "camera_noise_std": 0.001,
     "unwrapping_error_prob": 0.01
   },
-  "rmse_stylus": 1.6286327435166733e-08,
-  "rmse_optical": 2.9291401235779075e-08,
-  "correlation_stylus": 0.9636878417516979,
-  "correlation_optical": 0.8341637548017086,
+  "rmse_stylus": 1.6286472216861093e-08,
+  "rmse_optical": 2.929136519663175e-08,
+  "correlation_stylus": 0.9636864328283798,
+  "correlation_optical": 0.834164158006189,
   "optical_cutoff_m": 1000000.0,
   "stylus_cutoff_m": 159154.94309189534
 }

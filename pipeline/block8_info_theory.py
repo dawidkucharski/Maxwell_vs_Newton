@@ -81,6 +81,11 @@ def compute_fisher_information_spectrum(
     H_s = tf.H_stylus
     H_o = tf.H_optical
 
+    # tf.H is the POWER transfer function (PSD ratio = |H_amp|^2).
+    # Recover amplitude convention before forming |H|^2-dependent quantities.
+    H_s = np.sqrt(np.clip(tf.H_stylus, 0.0, None))
+    H_o = np.sqrt(np.clip(tf.H_optical, 0.0, None))
+
     # Noise PSD is approximately constant (white noise approximation)
     # Use the noise floor as the noise PSD
     F_stylus = H_s**2 / noise_floor_s
@@ -255,6 +260,7 @@ def compute_channel_capacity(
     psd_stylus = compute_psd_2d(result.h_stylus, dx)
     psd_optical = compute_psd_2d(result.h_optical, dx)
 
+    # H_s = tf.H_stylus  # (power transfer, see compute_transfer_functions)
     # Noise PSD estimate from high frequencies
     h_diff_s = result.h_stylus - result.h_true
     h_diff_o = result.h_optical - result.h_true
@@ -266,9 +272,11 @@ def compute_channel_capacity(
     noise_s = max(noise_s, 1e-35)
     noise_o = max(noise_o, 1e-35)
 
-    # SNR per frequency bin
-    SNR_stylus = tf.H_stylus**2 * psd_true / noise_s
-    SNR_optical = tf.H_optical**2 * psd_true / noise_o
+    # SNR per frequency bin (amplitude convention: tf.H is the power transfer)
+    H_s_amp = np.sqrt(np.clip(tf.H_stylus, 0.0, None))
+    H_o_amp = np.sqrt(np.clip(tf.H_optical, 0.0, None))
+    SNR_stylus = H_s_amp**2 * psd_true / noise_s
+    SNR_optical = H_o_amp**2 * psd_true / noise_o
 
     # Channel capacity [bits per bin]
     C_stylus = np.log2(1.0 + SNR_stylus)
@@ -447,8 +455,9 @@ def compute_observability_gramian(
     """
     # Build the observability operator as a diagonal matrix in k-space
     # O = diag(|H(f)|²) for all frequencies
-    H_s_flat = tf.H_stylus.ravel()
-    H_o_flat = tf.H_optical.ravel()
+    # tf.H is the power transfer (PSD ratio); recover amplitude first.
+    H_s_flat = np.sqrt(np.clip(tf.H_stylus.ravel(), 0.0, None))
+    H_o_flat = np.sqrt(np.clip(tf.H_optical.ravel(), 0.0, None))
 
     # Sort by magnitude to get the observability spectrum
     O_s_sorted = np.sort(H_s_flat**2)[::-1]

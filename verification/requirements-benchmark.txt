@@ -1,0 +1,3 @@
+# Extra dependencies for the public-data benchmark (verification/public_data_benchmark.py).
+# h5py is required to read the Zygo .datx (HDF5) files of the Hirose et al. 2025 dataset.
+h5py==3.14.0

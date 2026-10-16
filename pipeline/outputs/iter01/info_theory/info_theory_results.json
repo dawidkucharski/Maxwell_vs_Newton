@@ -3,8 +3,8 @@
     "F_integrated_stylus": 2.62144e+33,
     "F_integrated_optical": 2.62144e+33,
     "F_ratio": 1.0,
-    "noise_floor_stylus": 1.6571170088862406e-30,
-    "noise_floor_optical": 2.2040856185673983e-29
+    "noise_floor_stylus": 1.6587316995067213e-30,
+    "noise_floor_optical": 2.2033845563263998e-29
   },
   "identifiability": {
     "N_eff_stylus": 1.0,
@@ -17,11 +17,11 @@
     "identifiability_efficiency_o": 0.02
   },
   "capacity": {
-    "C_total_stylus_bits": 31913637357037.168,
-    "C_total_optical_bits": 54473539350825.11,
-    "C_ratio": 0.5858557702943489,
-    "capacity_efficiency_stylus": 0.7411315407307898,
-    "capacity_efficiency_optical": 1.26504095087845
+    "C_total_stylus_bits": 34105620723837.926,
+    "C_total_optical_bits": 23078496710863.457,
+    "C_ratio": 1.4778094583510635,
+    "capacity_efficiency_stylus": 0.7923763660799094,
+    "capacity_efficiency_optical": 0.5361830387552405
   },
   "resolution_entropy": {
     "S_R_stylus_bits": 0.0,
@@ -37,15 +37,15 @@
     "interpretation": "Resolution entropy S_R = 0.00 bits (stylus) vs 0.00 bits (optical). \u0394S_R = +0.00 bits. Effective resolvable states: D_eff = 1.0 (stylus), 1.0 (optical)."
   },
   "observability": {
-    "effective_rank_stylus": 97301,
-    "effective_rank_optical": 254542,
+    "effective_rank_stylus": 245108,
+    "effective_rank_optical": 262144,
     "total_modes": 262144,
-    "condition_number_stylus": 4978.341975540494,
-    "condition_number_optical": 6499.224007690751,
-    "S_obs_stylus": 11.40107038333222,
-    "S_obs_optical": 12.221849026462115,
+    "condition_number_stylus": 699.4257399494645,
+    "condition_number_optical": 80.72093526570131,
+    "S_obs_stylus": 12.070901909960709,
+    "S_obs_optical": 12.359626292986102,
     "S_obs_max": 12.476649250079015,
-    "observability_efficiency_s": 0.913792650158857,
-    "observability_efficiency_o": 0.9795778322761388
+    "observability_efficiency_s": 0.9674794624754128,
+    "observability_efficiency_o": 0.9906206422295495
   }
 }

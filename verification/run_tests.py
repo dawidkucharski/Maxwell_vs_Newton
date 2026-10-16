@@ -93,7 +93,7 @@ def test_mutual_information():
     I_s = mi(h_s); I_o = mi(h_o)
     ratio = I_o / I_s
     record("T3 Shannon MI recomputed: optical > stylus", I_o > I_s,
-           f"I_o/I_s={ratio:.3f} (manuscript 1.71)")
+           f"I_o/I_s={ratio:.3f} (estimator-dependent; pipeline amplitude convention gives 0.68)")
     record("T3b MI positive, finite", np.isfinite(I_s) and I_s > 0, f"I_s={I_s:.3e} bits")
 
 # ─────────────────────────────────────────────────────────────────────────────

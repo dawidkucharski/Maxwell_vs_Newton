@@ -74,9 +74,9 @@ for nm in noise_mults:
     ax_a.plot(nas, eqs, 'o-', color=noise_colors[nm], lw=lw, ms=4,
               alpha=alpha, label=label)
 
-# Baseline horizontal line at 18.3%
-ax_a.axhline(18.3, color=red_baseline, ls='--', lw=1.5, alpha=0.7,
-             label='Baseline (18.3%)')
+# Baseline horizontal line at 9.6% (n=30 ensemble, N=512)
+ax_a.axhline(9.6, color=red_baseline, ls='--', lw=1.5, alpha=0.7,
+             label='Baseline (9.6%, n=30)')
 ax_a.axhline(50.0, color='grey', ls=':', lw=1.2, alpha=0.7,
              label='50% equivalence')
 
