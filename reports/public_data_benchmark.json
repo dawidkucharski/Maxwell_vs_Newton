@@ -1,0 +1,47 @@
+[
+  {
+    "sample": "080nm_50x",
+    "feature_height_nm": 80,
+    "NA": 0.55,
+    "lambda_um": 0.6516859078713051,
+    "sampling_wli_um": 0.17305188287690834,
+    "nominal_cutoff_mm": 1687.929701584445,
+    "fit_c_cutoff_pixel": 1.1552171357786964,
+    "fit_beta_pixel": 0.0992987530587019,
+    "fit_rms_log_pixel": 0.06757900906967282,
+    "fit_c_cutoff_lens": 1.1404365626228676,
+    "fit_rms_log_lens": 0.0657543001129745,
+    "itf_ratio_corr": 0.9719221376917548,
+    "n_band_points": 208
+  },
+  {
+    "sample": "160nm_50x",
+    "feature_height_nm": 160,
+    "NA": 0.55,
+    "lambda_um": 0.6516859078713051,
+    "sampling_wli_um": 0.17305188287690834,
+    "nominal_cutoff_mm": 1687.929701584445,
+    "fit_c_cutoff_pixel": 1.1483340410942329,
+    "fit_beta_pixel": -0.015100895105567834,
+    "fit_rms_log_pixel": 0.06183670202210187,
+    "fit_c_cutoff_lens": 1.1343510654941524,
+    "fit_rms_log_lens": 0.06142145901713887,
+    "itf_ratio_corr": 0.9675044181016811,
+    "n_band_points": 208
+  },
+  {
+    "sample": "240nm_50x",
+    "feature_height_nm": 240,
+    "NA": 0.55,
+    "lambda_um": 0.6516859078713051,
+    "sampling_wli_um": 0.17305188287690834,
+    "nominal_cutoff_mm": 1687.929701584445,
+    "fit_c_cutoff_pixel": 1.152574801339845,
+    "fit_beta_pixel": -0.23031956333037923,
+    "fit_rms_log_pixel": 0.062315259602335374,
+    "fit_c_cutoff_lens": 1.1382794427782628,
+    "fit_rms_log_lens": 0.06272826617513415,
+    "itf_ratio_corr": 0.9678758740296675,
+    "n_band_points": 208
+  }
+]
