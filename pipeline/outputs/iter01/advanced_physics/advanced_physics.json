@@ -1,0 +1,68 @@
+{
+  "contact_mechanics": {
+    "contact_radius_m": 2.0111330876270694e-07,
+    "contact_area_m2": 1.2706662506275483e-13,
+    "mean_pressure_Pa": 7869887151.768819,
+    "max_pressure_Pa": 11804830727.653229,
+    "plasticity_index": 5.831346197233873,
+    "regime": "plastic",
+    "note": "Peak pressure p_max=11.80 GPa exceeds hardness H=5.00 GPa \u2192 plastic deformation expected. Tip leaves permanent groove in surface.",
+    "effective_modulus_Pa": 184403358082.20508,
+    "adhesion_ratio": 1.014576098894261,
+    "effective_tip_radius_loaded_m": 2.0280562948469865e-06,
+    "hertz_contact_radius_nm": 201.11330876270694,
+    "max_pressure_GPa": 11.80483072765323
+  },
+  "coherence": {
+    "centre_wavelength_m": 5.5e-07,
+    "spectral_width_m": 1e-07,
+    "coherence_length_m": 3.0250000000000003e-06,
+    "coherence_length_um": 3.0250000000000004,
+    "effective_coherence_length_m": 2.5263730796341227e-06,
+    "axial_resolution_m": 1.2845992229356289e-06,
+    "axial_resolution_nm": 1284.5992229356289,
+    "n_fringes": 9.186811198669536,
+    "obliquity_factor": 0.8351646544245033,
+    "envelope_frequency_width": 123894.62818464632,
+    "note": "Coherence length l_c = 3.0 \u00b5m, axial resolution \u03c3_z = 1284.6 nm, 9 measurable fringes."
+  },
+  "vector_diffraction": {
+    "theta_max_deg": 33.36701296923175,
+    "apodisation_at_edge": 0.9138734345764206,
+    "transmission_at_edge": 0.90244397793795,
+    "pupil_at_edge": 0.868152816600869,
+    "na_effective": 0.5036240341947047,
+    "na_efficiency": 0.9156800621721903,
+    "vector_correction_alpha": 0.05027700831024931,
+    "strehl_ratio": 0.906018055788923,
+    "diffraction_limit_mm": 1000.0,
+    "effective_cutoff_mm": 915.6800621721903,
+    "note": "NA_eff = 0.504 (91.6% of nominal NA=0.55). Vector correction \u03b1 = 0.050. Strehl = 0.906."
+  },
+  "material_effects": {
+    "reflectivity_steel": 0.5678478824546239,
+    "reflectivity_glass": 0.04,
+    "reflectivity_silicon": 0.3600639936006399,
+    "snr_scale_vs_steel": {
+      "steel": 1.0,
+      "glass": 0.07044140030441402,
+      "silicon": 0.6340852977107161
+    },
+    "thermal_drift_per_100um_nm": 0.12,
+    "rayleigh_limit_nm": 68.75,
+    "roughness_regime": "specular",
+    "optical_skin_depth_nm": 13.262911924324612,
+    "note": "Steel reflectivity R=0.57 at 550 nm. Surface is in specular regime (Rayleigh limit = 68.8 nm). Thermal drift \u2248 0.12 nm over 100 \u00b5m for \u0394T=0.1 K."
+  },
+  "uncertainty": {
+    "u_stylus_rmse_nm": 0.9013878188659975,
+    "u_optical_rmse_nm": 1.3514607952107731,
+    "u_contact_area_ratio": 83417.67204786754,
+    "u_coherence_length_nm": 11.000000000000002,
+    "u_thermal_drift_nm": 0.12,
+    "relative_u_stylus": 0.01802775637731995,
+    "relative_u_optical": 0.027029215904215465,
+    "dominant_uncertainty_source": "tip radius",
+    "note": "Stylus RMSE uncertainty: \u00b10.9 nm (1.8% of \u03c3). Optical RMSE uncertainty: \u00b11.4 nm (2.7% of \u03c3)."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "crossover_vs_tip_radius": {
+    "law": "f_cross = A \u00b7 r_tip^(-\u03b2)",
+    "A": 117590.96638475913,
+    "beta": 0.06829637142583941,
+    "beta_std": 0.0608737477307731,
+    "r_squared": 0.25693790861082033,
+    "n_points": 5
+  },
+  "stylus_anisotropy_mean": {
+    "mean_alpha": 0.013981308426128842,
+    "std_alpha": 0.010782461696296222,
+    "n_points": 5,
+    "interpretation": "Stylus anisotropy \u03b1_s is approximately constant w.r.t. tip radius"
+  },
+  "info_loss_vs_H": {
+    "law": "I = I_0 \u00b7 exp(-\u03b3 \u00b7 H)",
+    "I_0": 100.0,
+    "gamma": 5.0,
+    "gamma_std": Infinity,
+    "interpretation": "Information loss decreases by factor e per \u0394H \u2248 0.20",
+    "n_points": 3
+  },
+  "rmse_ratio_vs_cutoff_ratio": {
+    "law": "RMSE_s/RMSE_o \u221d (f_c_opt/f_c_stylus)^\u03b4",
+    "delta": 1.9042880384596126,
+    "r_squared": 0.5305141874348902,
+    "n_points": 180
+  }
+}

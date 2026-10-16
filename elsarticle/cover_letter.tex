@@ -1,0 +1,47 @@
+\documentclass{letter}
+\usepackage{hyperref}
+\date{\today}
+\begin{document}
+
+\begin{letter}{Editor-in-Chief \\
+Surface Topography: Metrology and Properties}
+
+\opening{Dear Editor,}
+
+I am pleased to submit the manuscript ``Optical Profilometry Versus the Stylus: A Spectral Theory for Closing the Accuracy Gap'' for consideration as a research paper in Surface Topography: Metrology and Properties.
+
+\textbf{Why STMP?} STMP is the natural home for this work because the manuscript addresses the journal's core remit---surface topography measurement and characterisation---at the most fundamental level: it provides the first quantitative, first-principles theory of \emph{how} and \emph{why} different measurement modalities (tactile, optical, scatterometry) produce different topographies from the same surface. This is not an incremental comparison study; it is a theoretical framework that connects instrument physics to measured surface properties through a unified $k$-space operator formalism, validated across 180 parameter combinations and six surface classes. The work speaks directly to STMP's readership of metrologists, instrument developers, and surface engineers who need to know when stylus and optical measurements can be trusted, when they disagree, and how to close the gap.
+
+\textbf{Novelty and contributions.}
+
+\begin{enumerate}
+    \item \textbf{SNR-dependent resolution--bandwidth trade-off.} A new measurement limit: $\Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq (1/4\pi)(1 + 1/\overline{\mathrm{SNR}})$, quantifying how finite signal-to-noise ratio inflates the classical Fourier uncertainty bound. This is instrument-independent and experimentally testable.
+
+    \item \textbf{First-principles instrument transfer functions} $H(f_x,f_y)$ for stylus profilometry, white-light interferometry, and angle-resolved scatterometry, derived from tip geometry, numerical aperture, wavelength, and noise---without requiring calibration artefacts. Validated through a 180-point parameter sweep and ensemble statistics ($n=110$ across six surface classes).
+
+    \item \textbf{Reconstructability index $\rho$}---a single-number figure of merit (0--1) for instrument capability, shown to be instrument-dominated (CV $=0.22$ across four manufactured classes). Answers the practical question: ``Can my instrument measure this surface?''
+
+    \item \textbf{Prescriptive gap-closure roadmap} identifying four specific optical parameter improvements (noise floor $\times100$, NA 0.7--0.9, $\lambda$ 400--450~nm, 2D phase unwrapping) that expand the stylus--optical equivalence regime from 18\% to 87\% of $k$-space, with quantified technology readiness levels for each.
+
+    \item \textbf{Information-theoretic formulation of surface metrology} including mutual information $I(h;y)$, channel capacity $C$, and the fundamental MMSE bound on surface reconstruction---the first application of Shannon theory to the comparison of different profilometry modalities.
+
+    \item \textbf{GUM-compliant uncertainty propagation} for the transfer function estimate, with dominant sources identified (tip radius: $\sim$60\% of variance in $H_\mathrm{stylus}$; numerical aperture: $\sim$55\% in $H_\mathrm{optical}$).
+\end{enumerate}
+
+\textbf{Context and positioning.} The work builds on the PSD-based surface characterisation methodology established by Jacobs et al.\ (2017) and the ITF framework of Foreman et al.\ (2013), Leach (2010), and Giusca et al.\ (2011). It extends these approaches from single-instrument characterisation to the systematic cross-modality comparison that the surface metrology community has needed since Poon and Bhushan's early comparative work (1995). The information-theoretic formulation provides new fundamental limits on surface reconstruction that complement existing ISO~25178 areal texture standards by quantifying \emph{how much} information each modality extracts, not just \emph{how accurately}.
+
+\textbf{Nature of the study.} All results are computational; I do not have access to the multi-instrument laboratory facilities required for experimental validation. A set of falsifiable predictions and open challenges for experimental groups is therefore provided (Section~4.6), all feasible with standard laboratory equipment and commercially available calibration artefacts. The complete physical framework (Hertzian contact mechanics, vector diffraction), scatterometry extension, six-class stress-test, GUM uncertainty analysis, and non-Gaussian ensemble validation are provided as Supplementary Material (18~pages). The manuscript is longer than a typical STMP research paper because it develops three interconnected frameworks---operator formalism, information theory, scatterometry extension---whose integration is essential to the central argument that $k$-space fusion weighted by local information uncertainty is the optimal strategy for broadband surface metrology. The Supplementary Material separates extended derivations and stress-test details from the main narrative.
+
+\textbf{Additional information.} This is a single-author study; the submission follows the journal's author-choice peer-review model in single-anonymous form, with author names and affiliations included. All simulation code and data will be deposited in a public repository (Zenodo) and cited by DOI upon acceptance, in accordance with IOP's research data policy. The manuscript has not been published previously and is not under consideration elsewhere. The author declares no competing interests.
+
+I would welcome the opportunity to have this work reviewed by experts in surface topography measurement, optical instrumentation, and information theory.
+
+
+\closing{Sincerely,}
+Dawid Kucharski \\
+Poznan University of Technology \\
+Pozna\'n, Poland \\
+\href{mailto:dawid.kucharski@put.poznan.pl}{dawid.kucharski@put.poznan.pl}
+
+\end{letter}
+\end{document}

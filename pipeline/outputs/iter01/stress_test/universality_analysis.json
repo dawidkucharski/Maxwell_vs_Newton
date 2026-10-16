@@ -1,0 +1,60 @@
+{
+  "universality": {
+    "I_stylus_bits": {
+      "mean": 24787941692.213993,
+      "std": 7280969225.940103,
+      "cv": 0.29373028694137554,
+      "verdict": "UNIVERSAL"
+    },
+    "Beq_stylus": {
+      "mean": 3602951898.983736,
+      "std": 1585938080.5542147,
+      "cv": 0.44017742257440384,
+      "verdict": "WEAKLY DEPENDENT"
+    },
+    "eta_stylus": {
+      "mean": 0.2711260466633538,
+      "std": 0.04483876405019995,
+      "cv": 0.16537977299493625,
+      "verdict": "UNIVERSAL"
+    },
+    "eps_stylus": {
+      "mean": 6.878712080936164e+24,
+      "std": 4.91563469208336e+24,
+      "cv": 0.7146155609138918,
+      "verdict": "WEAKLY DEPENDENT"
+    },
+    "rho_stylus": {
+      "mean": 0.7933333333333333,
+      "std": 0.053524656831117456,
+      "cv": 0.06746805482913965,
+      "verdict": "UNIVERSAL"
+    },
+    "Xi_stylus": {
+      "mean": 4511246233.148596,
+      "std": 3085406423.448171,
+      "cv": 0.6839366028785202,
+      "verdict": "WEAKLY DEPENDENT"
+    },
+    "Hc_stylus": {
+      "mean": 0.049999999999999996,
+      "std": 6.938893903907228e-18,
+      "cv": 1.3877787807814457e-16,
+      "verdict": "UNIVERSAL"
+    }
+  },
+  "universal_metrics": [
+    "I_stylus_bits",
+    "eta_stylus",
+    "rho_stylus",
+    "Hc_stylus"
+  ],
+  "surface_dependent_metrics": [
+    "Beq_stylus",
+    "eps_stylus",
+    "Xi_stylus"
+  ],
+  "n_classes": 6,
+  "n_realisations_per_class": 5,
+  "strongest_gap": "Metrological Invariance Principle: identify which information-theoretic instrument properties are invariant under surface class changes."
+}

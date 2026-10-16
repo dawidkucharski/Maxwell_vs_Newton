@@ -1,0 +1,105 @@
+[
+  {
+    "gap_id": "GAP-AN-001",
+    "category": "missing_anisotropy_analysis",
+    "statement": "No anisotropy tensor formulation exists for surface metrology instruments. Stylus profilometry is inherently anisotropic (raster scanning along x), while optical systems have different NA-limited resolution in x and y. The literature characterises surface anisotropy but NOT measurement-system anisotropy. An anisotropy tensor A_ij = ∫ f_i f_j H(f) df could quantify directional information loss.",
+    "evidence": [
+      "Surface anisotropy studied: True",
+      "Instrument anisotropy characterised: 0 papers",
+      "Zero papers found proposing an anisotropy tensor for measurement systems"
+    ],
+    "confidence": 0.8999999999999999,
+    "severity": "major",
+    "affected_domains": [
+      "stylus_profilometry",
+      "optical_interferometry",
+      "surface_roughness_psd"
+    ],
+    "suggested_approach": "Define A_ij = ∫ f_i f_j H_sensor(f_x, f_y) df_x df_y, compute eigenvalues λ_1, λ_2 quantifying principal directions of information loss."
+  },
+  {
+    "gap_id": "GAP-IT-001",
+    "category": "missing_information_theoretic_formulation",
+    "statement": "No information-theoretic formulation exists for surface metrology. Measurement can be viewed as an information channel: the surface h(x,y) is the source, the instrument is the channel, and the measured topography is the received signal. Information loss I(f_x, f_y) = log(PSD_true/PSD_measured) provides a spectral map of where each instrument loses information. This framework is entirely absent from the surface metrology literature.",
+    "evidence": [
+      "Information-theoretic concepts in metrology literature: False",
+      "Zero papers frame stylus/optical comparison as information channel problem"
+    ],
+    "confidence": 0.85,
+    "severity": "critical",
+    "affected_domains": [
+      "all"
+    ],
+    "suggested_approach": "Define I(f_x, f_y) = log(PSD_true / PSD_measured), compute mutual information between true and measured surfaces, derive channel capacity bounds."
+  },
+  {
+    "gap_id": "GAP-CD-001",
+    "category": "missing_cross_domain_connection",
+    "statement": "Inverse-problem methods (regularisation, uncertainty propagation) are under-utilised in surface metrology instrument comparison. Only 1 papers connect inverse problems to stylus and 15 to optical profilometry.",
+    "evidence": [
+      "Inverse problems × stylus: 1 papers",
+      "Inverse problems × optical: 15 papers"
+    ],
+    "confidence": 0.6,
+    "severity": "major",
+    "affected_domains": [
+      "inverse_problems_metrology",
+      "stylus_profilometry",
+      "optical_interferometry"
+    ],
+    "suggested_approach": "Apply Tikhonov regularisation to deconvolve instrument response from measured topography."
+  },
+  {
+    "gap_id": "GAP-FD-001",
+    "category": "missing_frequency_domain_interpretation",
+    "statement": "The frequency-domain interpretation of measurement distortion is incomplete. While PSD analysis is widely used for surface characterisation, the PSD of the measurement operator itself — H_sensor(f_x, f_y) — is rarely computed or used to correct raw topography data. Mack (2013, 2015) identified systematic PSD errors in lithography contexts, but this has not been generalised to surface metrology instrument comparison.",
+    "evidence": [
+      "PSD used in 2 papers",
+      "PSD applied to instrument characterisation: 5 papers",
+      "No instrument transfer function PSD comparison between modalities found"
+    ],
+    "confidence": 0.55,
+    "severity": "major",
+    "affected_domains": [
+      "surface_roughness_psd",
+      "optical_interferometry",
+      "stylus_profilometry"
+    ],
+    "suggested_approach": "Compute H_sensor(f) = PSD_measured(f) / PSD_true(f) for both modalities, analyse where each system loses information in k-space."
+  },
+  {
+    "gap_id": "GAP-EQ-001",
+    "category": "missing_equivalence_regimes_between_sensors",
+    "statement": "No equivalence regime analysis in k-space exists between stylus and optical profilometry. The question 'Under what spatial-frequency conditions do these modalities produce equivalent measurements?' is unanswered. An equivalence regime could be defined where |H_stylus - H_optical| < ε in some k-space region, providing practitioners with rigorous criteria for instrument interchangeability.",
+    "evidence": [
+      "Cross-modality comparison papers: 8",
+      "Equivalence conditions discussed: False",
+      "No k-space equivalence criterion defined in any paper"
+    ],
+    "confidence": 0.5,
+    "severity": "critical",
+    "affected_domains": [
+      "stylus_profilometry",
+      "optical_interferometry"
+    ],
+    "suggested_approach": "Define k-space equivalence region: Ω_eq = {(f_x, f_y) : |H_s - H_o| < 0.1}. Find scaling of Ω_eq area with tip radius, NA, and roughness parameters."
+  },
+  {
+    "gap_id": "GAP-OP-001",
+    "category": "missing_unified_operator_framework",
+    "statement": "No unified k-space operator model exists for stylus vs optical profilometry that accounts for anisotropic information loss. The literature treats these modalities independently, without a common mathematical framework relating measurement operators M_stylus[h(x,y)] and M_optical[h(x,y)] in the frequency domain.",
+    "evidence": [
+      "Only 26 papers address both stylus and optical modalities",
+      "Operator formalism found: False",
+      "Transfer function approach found: True",
+      "Systematic modality comparison beyond RMSE: True"
+    ],
+    "confidence": 0.4,
+    "severity": "major",
+    "affected_domains": [
+      "stylus_profilometry",
+      "optical_interferometry"
+    ],
+    "suggested_approach": "Define M_s[h] = T_s * h + n_s and M_o[h] = F^{-1}[H_o · F[h]] + n_o, analyse their ratio in k-space: H_ratio(f_x, f_y) = H_o/H_s"
+  }
+]

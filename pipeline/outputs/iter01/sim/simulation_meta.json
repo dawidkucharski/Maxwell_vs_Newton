@@ -1,0 +1,24 @@
+{
+  "params": {
+    "grid_size": 512,
+    "physical_size": 0.0001,
+    "hurst_exponent": 0.7,
+    "rms_roughness": 5e-08,
+    "correlation_length": 5e-06,
+    "roll_off_wavelength": 1e-05,
+    "tip_radius": 2e-06,
+    "sampling_interval": 2e-07,
+    "cone_angle": 45.0,
+    "wavelength": 5.5e-07,
+    "na": 0.55,
+    "magnification": 50.0,
+    "camera_noise_std": 0.001,
+    "unwrapping_error_prob": 0.01
+  },
+  "rmse_stylus": 1.6286317579430218e-08,
+  "rmse_optical": 2.929135381848715e-08,
+  "correlation_stylus": 0.9636873884700337,
+  "correlation_optical": 0.8341640814695366,
+  "optical_cutoff_m": 1000000.0,
+  "stylus_cutoff_m": 159154.94309189534
+}

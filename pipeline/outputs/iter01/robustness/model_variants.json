@@ -1,0 +1,28 @@
+{
+  "otf_variants": {
+    "Ideal incoherent": {
+      "f_c": 1810.1933598375617,
+      "rho": 0.66,
+      "f_cross": 25.79525537768525,
+      "eq_frac": 0.48
+    },
+    "Partially coherent (\u03c3=0.3)": {
+      "f_c": 0.0,
+      "rho": 0.01,
+      "f_cross": 8.598418459228416,
+      "eq_frac": 0.0
+    },
+    "Aberrated (\u03bb/4 defocus + \u03bb/10 spherical)": {
+      "f_c": 1789.1059219621404,
+      "rho": 0.64,
+      "f_cross": 25.79525537768525,
+      "eq_frac": 0.46
+    },
+    "Gaussian approximation": {
+      "f_c": 1810.1933598375617,
+      "rho": 0.62,
+      "f_cross": 25.79525537768525,
+      "eq_frac": 0.46
+    }
+  }
+}

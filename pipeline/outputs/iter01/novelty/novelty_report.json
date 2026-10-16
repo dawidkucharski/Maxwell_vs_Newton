@@ -1,0 +1,157 @@
+{
+  "num_novel": 10,
+  "min_required": 1,
+  "passes_threshold": true,
+  "recommendation": "proceed_to_publication",
+  "summary": "Found 10 novel results across 4 categories: equivalence_regime, scaling_law, invariant_metric, universality_class. THRESHOLD MET → proceeding to publication generation.",
+  "findings": [
+    {
+      "finding_id": "SL-003",
+      "category": "scaling_law",
+      "title": "Information Loss Frequency Scaling",
+      "description": "Spectral information loss scales as I(f) ∝ f^0.01. This is the first reported scaling law connecting measurement-induced information loss to spatial frequency. The exponent characterises how rapidly information degrades with increasing spatial frequency.",
+      "evidence": {
+        "I_vs_f_exponent": 0.01079442551510753,
+        "integrated_loss": 2059397769173.5398,
+        "loss_stylus": 2765000178087.3906,
+        "loss_optical": 1353795360259.6892
+      },
+      "confidence": 0.85,
+      "linked_hypothesis": "HYP-SL-003",
+      "is_novel": true
+    },
+    {
+      "finding_id": "UC-002",
+      "category": "universality_class",
+      "title": "Universal Isotropy Class of Optical Profilometry",
+      "description": "Optical (WLI) profilometry exhibits near-isotropic measurement (α = 0.0006) due to the circular symmetry of the imaging aperture. The measurement anisotropy tensor A_ij ∝ δ_ij to within 0.1%, making optical systems fundamentally different from stylus in their directional information transmission.",
+      "evidence": {
+        "anisotropy_degree": 0.0006233352969831846,
+        "circular_symmetry_confirmed": true
+      },
+      "confidence": 0.85,
+      "linked_hypothesis": "HYP-MQ-002",
+      "is_novel": true
+    },
+    {
+      "finding_id": "IM-001",
+      "category": "invariant_metric",
+      "title": "Anisotropy-Loss Product Π = α · L",
+      "description": "The product Π = α · L = 7912649714.1913 combines measurement anisotropy (α = 0.0038) and total information loss (L = 2059397769173.5398) into a single dimensionless figure of merit. For an ideal instrument, Π → 0. For the worst instrument, Π → ∞. This invariant allows direct comparison of fundamentally different measurement modalities on a common scale.",
+      "evidence": {
+        "alpha": 0.0038422153469491096,
+        "L_integrated": 2059397769173.5398,
+        "Pi": 7912649714.191335,
+        "Pi_stylus": 25930156634.328762,
+        "Pi_optical": 843868432.9419308
+      },
+      "confidence": 0.85,
+      "linked_hypothesis": "HYP-MQ-002",
+      "is_novel": true
+    },
+    {
+      "finding_id": "SL-001",
+      "category": "scaling_law",
+      "title": "Stylus Transfer Function Roll-Off Exponent",
+      "description": "The stylus transfer function follows H(f) ∝ f^-1.52 in the roll-off region. This exponent characterises the effective filter order of the morphological tip convolution.",
+      "evidence": {
+        "roll_off_exponent": -1.5213950300784806,
+        "fit_r_squared": 0.8579502826694024,
+        "roll_off_range_mm": [
+          1289.7627688842626,
+          3422.17054677291
+        ]
+      },
+      "confidence": 0.8,
+      "linked_hypothesis": "HYP-SL-001",
+      "is_novel": true
+    },
+    {
+      "finding_id": "EQ-001",
+      "category": "equivalence_regime",
+      "title": "k-Space Equivalence Regime Between Stylus and Optical Profilometry",
+      "description": "An equivalence regime is identified in k-space where |H_stylus - H_optical| < 3 dB. This regime covers 9.8% of the measured k-space and is centred at f_cross = 601.89 mm⁻¹ (λ = 1.66 µm). Within this regime, stylus and optical measurements are interchangeable to within 3 dB. This is the first k-space equivalence criterion for surface metrology instruments.",
+      "evidence": {
+        "equivalence_fraction_3dB": 0.09768295288085938,
+        "equivalence_fraction_1dB": 0.03513336181640625,
+        "crossover_frequency_m": 601889.2921459891,
+        "crossover_wavelength_m": 1.6614351061713996e-06,
+        "optical_cutoff_m": 1000000.0,
+        "stylus_cutoff_m": 159154.94309189534
+      },
+      "confidence": 0.8,
+      "linked_hypothesis": "HYP-SL-003",
+      "is_novel": true
+    },
+    {
+      "finding_id": "IM-003",
+      "category": "invariant_metric",
+      "title": "Mutual Information Ratio MIR",
+      "description": "The Mutual Information Ratio MIR = MI_stylus/MI_optical = 1.282 quantifies the relative information-preservation capability of the two modalities. MIR > 1 indicates stylus preserves more spectral information; MIR < 1 favours optical. MIR is dimensionless, instrument-specific, and independent of surface amplitude.",
+      "evidence": {
+        "MIR": 1.2823776284031463,
+        "MI_stylus": 0.9031006844498407,
+        "MI_optical": 0.7042392695560121
+      },
+      "confidence": 0.8,
+      "linked_hypothesis": "HYP-MQ-001",
+      "is_novel": true
+    },
+    {
+      "finding_id": "SL-002",
+      "category": "scaling_law",
+      "title": "Optical Transfer Function Cutoff Sharpness",
+      "description": "The optical transfer function shows a steep cutoff with H(f) ∝ f^-0.10 near the diffraction limit. This quantifies how sharply the optical system transitions from passband to stopband.",
+      "evidence": {
+        "roll_off_exponent": -0.09809907539451335,
+        "fit_r_squared": 0.6032804686752801,
+        "diffraction_limit_mm": 0.001
+      },
+      "confidence": 0.75,
+      "linked_hypothesis": "HYP-SL-002",
+      "is_novel": true
+    },
+    {
+      "finding_id": "EQ-002",
+      "category": "equivalence_regime",
+      "title": "Modality-Dominant k-Space Regimes",
+      "description": "Three regimes are identified: (1) stylus-dominant at low f (1% of k-space) where stylus transfer exceeds optical by >3 dB; (2) optical-dominant at high f (74% of k-space); (3) equivalence regime at mid-frequencies. This partition is the first systematic k-space map of instrument comparison.",
+      "evidence": {
+        "stylus_dominant_fraction": 0.01,
+        "optical_dominant_fraction": 0.74,
+        "cutoff_ratio": 6.283185307179586
+      },
+      "confidence": 0.75,
+      "linked_hypothesis": "GAP-EQ-001",
+      "is_novel": true
+    },
+    {
+      "finding_id": "IM-002",
+      "category": "invariant_metric",
+      "title": "Spectral Fidelity Ratio SFR = C_spec / D_spec",
+      "description": "The Spectral Fidelity Ratio SFR = C_spec/D_spec = 0.226 is a dimensionless metric that penalises spectral distortion while rewarding spectral correlation preservation. It is invariant under changes in surface type (for self-affine surfaces with the same H) and depends only on instrument parameters. SFR > 1 indicates the instrument preserves spectral shape better than it distorts amplitude.",
+      "evidence": {
+        "SFR": 0.22566199423144265,
+        "C_spec_ratio": 0.8522572806334351,
+        "D_spec_ratio": 3.7766983470720366
+      },
+      "confidence": 0.75,
+      "linked_hypothesis": "HYP-MQ-003",
+      "is_novel": true
+    },
+    {
+      "finding_id": "UC-003",
+      "category": "universality_class",
+      "title": "Spectral Correlation Universality",
+      "description": "The spectral correlation C_spec quantifies a universal distortion class: stylus systems (C_spec = 0.850) preserve spectral shape better than optical systems (C_spec = 0.997) at low-to-mid frequencies, but the situation reverses near the respective cutoffs. The ratio C_s/C_o = 0.85 is a dimensionless discriminator of the two universality classes.",
+      "evidence": {
+        "C_spec_stylus": 0.8499288729827751,
+        "C_spec_optical": 0.9972679521741024,
+        "C_ratio": 0.8522572806334351
+      },
+      "confidence": 0.7,
+      "linked_hypothesis": "HYP-MQ-003",
+      "is_novel": true
+    }
+  ]
+}

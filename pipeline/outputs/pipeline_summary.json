@@ -1,0 +1,33 @@
+{
+  "pipeline": "Maxwell_vs_Newton",
+  "version": "1.0.0",
+  "completed_at": "2026-06-25T13:41:30.306050",
+  "total_iterations": 1,
+  "novelty_found": true,
+  "num_novel_findings": 14,
+  "publication_generated": true,
+  "primary_journal": "Precision Engineering",
+  "history": [
+    {
+      "iteration": 1,
+      "num_novel": 14,
+      "passes": true,
+      "params": {
+        "tip_radius": 2e-06,
+        "na": 0.55,
+        "hurst_exponent": 0.7,
+        "rms_roughness": 5e-08,
+        "grid_size": 512
+      }
+    }
+  ],
+  "final_params": {
+    "tip_radius_m": 2e-06,
+    "na": 0.55,
+    "hurst_exponent": 0.7,
+    "rms_roughness_m": 5e-08,
+    "grid_size": 512,
+    "optical_cutoff_per_m": 1000000.0,
+    "stylus_cutoff_per_m": 159154.94309189534
+  }
+}

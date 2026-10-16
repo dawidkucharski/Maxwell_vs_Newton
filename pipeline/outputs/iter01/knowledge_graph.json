@@ -1,0 +1,3573 @@
+{
+  "domains": {
+    "stylus_profilometry": [
+      14,
+      23,
+      1010,
+      113,
+      20155,
+      272,
+      334,
+      379,
+      394,
+      423,
+      4912,
+      5116,
+      5215,
+      530,
+      54432,
+      5510,
+      612,
+      698,
+      716,
+      727,
+      7625,
+      827,
+      859,
+      876,
+      885,
+      1330
+    ],
+    "optical_interferometry": [
+      14,
+      23,
+      32,
+      40,
+      564,
+      615,
+      71,
+      80,
+      99,
+      1010,
+      113,
+      129,
+      134,
+      142,
+      1515,
+      1640,
+      1724,
+      18494,
+      1935,
+      20155,
+      21142,
+      220,
+      230,
+      240,
+      251,
+      262,
+      272,
+      2812,
+      2936,
+      3037,
+      319,
+      321,
+      334,
+      3411,
+      355,
+      360,
+      379,
+      3837,
+      394,
+      4026,
+      4116,
+      423,
+      4331,
+      441,
+      4512,
+      461,
+      474,
+      484,
+      4912,
+      500,
+      5116,
+      5215,
+      530,
+      54432,
+      5510,
+      561,
+      574,
+      589,
+      590,
+      600,
+      612,
+      6212,
+      633,
+      644,
+      652,
+      661,
+      670,
+      683,
+      698,
+      7021,
+      716,
+      727,
+      738,
+      7458,
+      759,
+      7625,
+      7717,
+      780,
+      790,
+      804,
+      814,
+      827,
+      8326,
+      84649,
+      859,
+      861,
+      876,
+      885,
+      892,
+      9050,
+      910,
+      9276,
+      9312,
+      941,
+      9586,
+      9631,
+      9710,
+      98336,
+      991,
+      1002,
+      1017,
+      1025,
+      10314,
+      1040,
+      10536,
+      10622,
+      107128,
+      1083,
+      1095,
+      1103,
+      11128,
+      1121,
+      1131,
+      1141,
+      1156,
+      116235,
+      11719,
+      11830,
+      119108,
+      1203,
+      1213,
+      1224,
+      1233,
+      12421,
+      1254,
+      12610,
+      12727,
+      1287,
+      12914,
+      1300,
+      1318,
+      1329,
+      1330,
+      13415,
+      1351,
+      1363,
+      1371,
+      1388,
+      1390,
+      1408,
+      1414,
+      14224,
+      1432
+    ],
+    "surface_roughness_psd": [
+      564,
+      615,
+      129,
+      142,
+      1515,
+      1724,
+      18494,
+      1935,
+      20155,
+      21142,
+      220,
+      230,
+      251,
+      262,
+      272,
+      2936,
+      3037,
+      319,
+      321,
+      334,
+      3411,
+      355,
+      379,
+      3837,
+      394,
+      4026,
+      4116,
+      4512,
+      461,
+      484,
+      500,
+      530,
+      589,
+      590,
+      683,
+      780,
+      790,
+      804,
+      9710,
+      1131,
+      1203,
+      1213,
+      12610,
+      12727,
+      1287,
+      1329,
+      1330,
+      1363,
+      1388,
+      1408,
+      1414,
+      14224
+    ],
+    "inverse_problems_metrology": [
+      40,
+      564,
+      71,
+      80,
+      240,
+      262,
+      394,
+      4116,
+      84649,
+      9050,
+      910,
+      9276,
+      11128,
+      1121,
+      1363
+    ],
+    "afm_metrology": [
+      14,
+      23,
+      1010,
+      20155,
+      272,
+      334,
+      379,
+      394,
+      474,
+      54432,
+      716,
+      827,
+      8326,
+      859,
+      1330
+    ]
+  },
+  "metrics_used": {
+    "POWER SPECTRAL DENSITY": [
+      "Systematic errors in the measurement of power spectral densi",
+      "Comparative study of surface roughness with power spectral d",
+      "More systematic errors in the measurement of power spectral ",
+      "Analytic form for the power spectral density in one, two, an",
+      "Localized power spectral density analysis on atomic force mi",
+      "Setting up a proper power spectral density (PSD) and autocor",
+      "Setting up a proper power spectral density and autocorrelati",
+      "Comparison of optical surface roughness measured by stylus p",
+      "Cross-check of different techniques for two-dimensional powe",
+      "More systematic errors in the measurement of power spectral ",
+      "Model based error separation of power spectral density artef",
+      "Power spectral density analysis of mid-spatial frequency err",
+      "Corrected power spectral density of the surface roughness of"
+    ],
+    "MODULATION TRANSFER FUNCTION": [
+      "Binary pseudo-random patterned structures for modulation tra",
+      "Binary pseudo-random gratings and arrays for calibration of "
+    ],
+    "PSD": [
+      "Surface characterisation by parameter-based technique, slici",
+      "Setting up a proper power spectral density (PSD) and autocor"
+    ],
+    "CORRELATION LENGTH": [
+      "Surface roughness measurements using power spectrum density "
+    ],
+    "AUTOCORRELATION": [
+      "Setting up a proper power spectral density (PSD) and autocor",
+      "Setting up a proper power spectral density and autocorrelati"
+    ],
+    "RA": [
+      "The effect of stylus tip radius on Ra, Rq, Rp, Rv, and Rt pa",
+      "Investigating the Impact of Probe Geometry Characteristics o"
+    ],
+    "RQ": [
+      "The effect of stylus tip radius on Ra, Rq, Rp, Rv, and Rt pa"
+    ],
+    "RT": [
+      "The effect of stylus tip radius on Ra, Rq, Rp, Rv, and Rt pa"
+    ]
+  },
+  "formalisms": {
+    "transfer function": [
+      99,
+      600,
+      683,
+      7625,
+      780,
+      790,
+      814
+    ],
+    "Zernike": [
+      142,
+      633,
+      14224
+    ],
+    "multifractal": [
+      220
+    ],
+    "convolution": [
+      8326
+    ],
+    "morphological filter": [
+      876
+    ],
+    "Fourier": [
+      9312,
+      98336,
+      1224,
+      1233
+    ],
+    "wavelet": [
+      98336
+    ]
+  },
+  "limitations": [
+    "Systematic errors in the measurement of power spectral density Reference 564 citations\nSystematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C.",
+    "systematic errors in the measurement of power spectral density Reference 262 citations\nMore systematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C.",
+    "systematic errors in the measurement of power spectral density Reference 4116 citations\nMore systematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C.",
+    "error separation of power spectral density artefacts in wavefront measurement Reference 590 citations\nModel based error separation of power spectral density artefacts in wavefront measurement\nOpens document details in a new tab\nHaberl, A.",
+    "error budget Reference 600 citations\nContribution of the phase transfer function of extended measurement cavities to mid spatial frequencies and the overall error budget\nOpens document details in a new tab\nFütterer, G.",
+    "error due to elastic–plastic deformation on nanoindentation measurements of elastic modulus and hardness Reference 759 citations\nEffect of surface detection error due to elastic–plastic deformation on nanoindentation measurements of elastic modulus and hardness\nOpens document details in a new tab\nFulco, S.",
+    "bias in step height measurements by atomic force microscopy Reference 859 citations\nNanoscale roughness and bias in step height measurements by atomic force microscopy\nOpens document details in a new tab\nSeah, M.",
+    "error comparison in multi-frequency phase-shifting profilometry based on few fringes Reference 9631 citations\nNoise-induced phase error comparison in multi-frequency phase-shifting profilometry based on few fringes\nOpens document details in a new tab\nWang, J.",
+    "error analysis Reference 10536 citations\nOptical testing with computer generated holograms: Comprehensive error analysis\nOpens document details in a new tab\nZhao, C.",
+    "lack, F.",
+    "error smoothing using machine learning Reference 1203 citations\nForce controlled mid-spatial frequency error smoothing using machine learning\nOpens document details in a new tab\nConiglio, J.",
+    "error Reference 1414 citations\nUsefulness of orthogonal basis sets for predicting optical performance of wavefronts with mid-spatial frequency error\nOpens document details in a new tab\nHosseinimakarem, Z."
+  ],
+  "cross_domain_links": [
+    {
+      "ref_a": 14,
+      "ref_b": 14,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 14,
+      "ref_b": 14,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 14,
+      "ref_b": 14,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 23,
+      "ref_b": 23,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 23,
+      "ref_b": 23,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 23,
+      "ref_b": 23,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 40,
+      "ref_b": 40,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 564,
+      "ref_b": 564,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 564,
+      "ref_b": 564,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 564,
+      "ref_b": 564,
+      "link": "surface_roughness_psd ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 615,
+      "ref_b": 615,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 71,
+      "ref_b": 71,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 80,
+      "ref_b": 80,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 1010,
+      "ref_b": 1010,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 1010,
+      "ref_b": 1010,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 1010,
+      "ref_b": 1010,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 113,
+      "ref_b": 113,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 129,
+      "ref_b": 129,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 142,
+      "ref_b": 142,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1515,
+      "ref_b": 1515,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1724,
+      "ref_b": 1724,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 18494,
+      "ref_b": 18494,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1935,
+      "ref_b": 1935,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 20155,
+      "ref_b": 20155,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 21142,
+      "ref_b": 21142,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 220,
+      "ref_b": 220,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 230,
+      "ref_b": 230,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 240,
+      "ref_b": 240,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 251,
+      "ref_b": 251,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 262,
+      "ref_b": 262,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 262,
+      "ref_b": 262,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 262,
+      "ref_b": 262,
+      "link": "surface_roughness_psd ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 272,
+      "ref_b": 272,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 2936,
+      "ref_b": 2936,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 3037,
+      "ref_b": 3037,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 319,
+      "ref_b": 319,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 321,
+      "ref_b": 321,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 334,
+      "ref_b": 334,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 3411,
+      "ref_b": 3411,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 355,
+      "ref_b": 355,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 379,
+      "ref_b": 379,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 3837,
+      "ref_b": 3837,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "stylus_profilometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "surface_roughness_psd ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 394,
+      "ref_b": 394,
+      "link": "inverse_problems_metrology ↔ afm_metrology"
+    },
+    {
+      "ref_a": 4026,
+      "ref_b": 4026,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 4116,
+      "ref_b": 4116,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 4116,
+      "ref_b": 4116,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 4116,
+      "ref_b": 4116,
+      "link": "surface_roughness_psd ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 423,
+      "ref_b": 423,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 4512,
+      "ref_b": 4512,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 461,
+      "ref_b": 461,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 474,
+      "ref_b": 474,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 484,
+      "ref_b": 484,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 4912,
+      "ref_b": 4912,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 500,
+      "ref_b": 500,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 5116,
+      "ref_b": 5116,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 5215,
+      "ref_b": 5215,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 530,
+      "ref_b": 530,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 530,
+      "ref_b": 530,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 530,
+      "ref_b": 530,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 54432,
+      "ref_b": 54432,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 54432,
+      "ref_b": 54432,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 54432,
+      "ref_b": 54432,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 5510,
+      "ref_b": 5510,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 589,
+      "ref_b": 589,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 590,
+      "ref_b": 590,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 612,
+      "ref_b": 612,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 683,
+      "ref_b": 683,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 698,
+      "ref_b": 698,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 716,
+      "ref_b": 716,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 716,
+      "ref_b": 716,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 716,
+      "ref_b": 716,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 727,
+      "ref_b": 727,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 7625,
+      "ref_b": 7625,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 780,
+      "ref_b": 780,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 790,
+      "ref_b": 790,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 804,
+      "ref_b": 804,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 827,
+      "ref_b": 827,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 827,
+      "ref_b": 827,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 827,
+      "ref_b": 827,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 8326,
+      "ref_b": 8326,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 84649,
+      "ref_b": 84649,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 859,
+      "ref_b": 859,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 859,
+      "ref_b": 859,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 859,
+      "ref_b": 859,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 876,
+      "ref_b": 876,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 885,
+      "ref_b": 885,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 9050,
+      "ref_b": 9050,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 910,
+      "ref_b": 910,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 9276,
+      "ref_b": 9276,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 9710,
+      "ref_b": 9710,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 11128,
+      "ref_b": 11128,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 1121,
+      "ref_b": 1121,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 1131,
+      "ref_b": 1131,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1203,
+      "ref_b": 1203,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1213,
+      "ref_b": 1213,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 12610,
+      "ref_b": 12610,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 12727,
+      "ref_b": 12727,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1287,
+      "ref_b": 1287,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1329,
+      "ref_b": 1329,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "stylus_profilometry ↔ optical_interferometry"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "stylus_profilometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "stylus_profilometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "optical_interferometry ↔ afm_metrology"
+    },
+    {
+      "ref_a": 1330,
+      "ref_b": 1330,
+      "link": "surface_roughness_psd ↔ afm_metrology"
+    },
+    {
+      "ref_a": 1363,
+      "ref_b": 1363,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1363,
+      "ref_b": 1363,
+      "link": "optical_interferometry ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 1363,
+      "ref_b": 1363,
+      "link": "surface_roughness_psd ↔ inverse_problems_metrology"
+    },
+    {
+      "ref_a": 1388,
+      "ref_b": 1388,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1408,
+      "ref_b": 1408,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 1414,
+      "ref_b": 1414,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    },
+    {
+      "ref_a": 14224,
+      "ref_b": 14224,
+      "link": "optical_interferometry ↔ surface_roughness_psd"
+    }
+  ],
+  "references": [
+    {
+      "ref_id": 14,
+      "title": "Wide-scale surface characterization by combination of scanning force microscopy, white light interferometry and light scattering",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "1999",
+      "citations": 14,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 23,
+      "title": "Wide scale surface measurement using white light interferometry and atomic force microscopy",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "1998",
+      "citations": 23,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 32,
+      "title": "High resolution topometry in conjunction with macro structures",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Technisches Messen",
+      "year": "1999",
+      "citations": 32,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 40,
+      "title": "Iterative Regularisation and Uncertainty Propagation in Solving Ill-Posed Problems: A GOCE-Based Regional Gravity Field Modelling",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Pure and Applied Geophysics",
+      "year": "2026",
+      "citations": 40,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 564,
+      "title": "Systematic errors in the measurement of power spectral density",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Micro/Nanolithography, MEMS, and MOEMS",
+      "year": "2013",
+      "citations": 564,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": [
+        "Systematic errors in the measurement of power spectral density Reference 564 citations\nSystematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C."
+      ]
+    },
+    {
+      "ref_id": 615,
+      "title": "Thresholding Methods for Reduction in Data Processing Errors in the Laser-Textured Surface Topography Measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials",
+      "year": "2022",
+      "citations": 615,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 71,
+      "title": "Image reconstruction in optical interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics InfoBase Conference Papers",
+      "year": "2011",
+      "citations": 71,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 80,
+      "title": "Image reconstruction in optical interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics InfoBase Conference Papers",
+      "year": "2011",
+      "citations": 80,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 99,
+      "title": "Binary pseudo-random patterned structures for modulation transfer function calibration and resolution characterization of a full-field transmission soft x-ray microscope",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Review of Scientific Instruments",
+      "year": "2015",
+      "citations": 99,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [
+        "modulation transfer function"
+      ],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1010,
+      "title": "Nonlinear distortion in atomic force microscopy (AFM) measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement Science and Technology",
+      "year": "2009",
+      "citations": 1010,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 113,
+      "title": "Nonlinear characteristics of a stylus profilometer",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "1987",
+      "citations": 113,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 129,
+      "title": "Topography stitching in the spatial frequency domain for the representation of mid-spatial frequency errors",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "2022",
+      "citations": 129,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 134,
+      "title": "Standardization of methods for extracting statistics from surface profile measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2014",
+      "citations": 134,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 142,
+      "title": "Considering a Zernike polynomial representation for spatial frequency content of optical surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics InfoBase Conference Papers",
+      "year": "2015",
+      "citations": 142,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Zernike"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1515,
+      "title": "Surface characterisation by parameter-based technique, slicing method and PSD analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement: Journal of the International Measurement Confederation",
+      "year": "2011",
+      "citations": 1515,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "PSD"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1640,
+      "title": "Some considerations about the use of contact and confocal microscopy methods in surface texture measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials",
+      "year": "2018",
+      "citations": 1640,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1724,
+      "title": "Characterisation of individual areal features",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Characterisation of Areal Surface Texture",
+      "year": "2013",
+      "citations": 1724,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 18494,
+      "title": "Quantitative characterization of surface topography using spectral analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Surface Topography: Metrology and Properties",
+      "year": "2017",
+      "citations": 18494,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1935,
+      "title": "Spectral Approach on Multiscale Roughness Characterization of Nominally Rough Surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Tribology",
+      "year": "1935",
+      "citations": 1935,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 20155,
+      "title": "Analyzing atomic force microscopy images using spectral methods",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Applied Physics",
+      "year": "1997",
+      "citations": 20155,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 21142,
+      "title": "Surface roughness measurements using power spectrum density analysis with enhanced spatial correlation length",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Physical Chemistry C",
+      "year": "2016",
+      "citations": 21142,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "correlation length"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 220,
+      "title": "Comparative study of surface roughness with power spectral density and multifractal spectrum",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2007",
+      "citations": 220,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [
+        "multifractal"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 230,
+      "title": "Power Spectrum Analysis of Surface Roughness for Paper and Paperboard",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Palpu Chongi Gisul/Journal of Korea Technical Association of the Pulp and Paper Industry",
+      "year": "2023",
+      "citations": 230,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 240,
+      "title": "On the Artifacts Involved in the Measurements of Engineering 3D Topography and a Correction Method",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Sciences (Switzerland)",
+      "year": "2026",
+      "citations": 240,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 251,
+      "title": "Spectral Analysis of Topography as Proxy for Lineament Analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Geophysical Research: Solid Earth",
+      "year": "2025",
+      "citations": 251,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 262,
+      "title": "More systematic errors in the measurement of power spectral density",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2015",
+      "citations": 262,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": [
+        "systematic errors in the measurement of power spectral density Reference 262 citations\nMore systematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C."
+      ]
+    },
+    {
+      "ref_id": 272,
+      "title": "On the nature and propagation of errors in roughness parameters obtained from spectral analysis of atomic force microscopy topographic images",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Vacuum Science and Technology A: Vacuum, Surfaces and Films",
+      "year": "2022",
+      "citations": 272,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 2812,
+      "title": "2D Surface Roughness Quantification for Enhanced Petrophysical Applications",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "SPE Journal",
+      "year": "2023",
+      "citations": 2812,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 2936,
+      "title": "Contact.engineering—Create, analyze and publish digital surface twins from topography measurements across many scales",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Surface Topography: Metrology and Properties",
+      "year": "2022",
+      "citations": 2936,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 3037,
+      "title": "Analytic form for the power spectral density in one, two, and three dimensions",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Micro/Nanolithography, MEMS, and MOEMS",
+      "year": "2011",
+      "citations": 3037,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 319,
+      "title": "The relation between fractal signature and topography parameters: A numerical and experimental study",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Surface Topography: Metrology and Properties",
+      "year": "2018",
+      "citations": 319,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 321,
+      "title": "Role of fractal geometry in roughness characterization and contact mechanics of surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Tribology",
+      "year": "1990",
+      "citations": 42,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 334,
+      "title": "Localized power spectral density analysis on atomic force microscopy images for advanced patterning applications",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2019",
+      "citations": 334,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "afm_metrology"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 3411,
+      "title": "Setting up a proper power spectral density (PSD) and autocorrelation analysis for material and process characterization",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2018",
+      "citations": 3411,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "PSD",
+        "power spectral density",
+        "autocorrelation"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 355,
+      "title": "Setting up a proper power spectral density and autocorrelation analysis for material and process characterization",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Micro/ Nanolithography, MEMS, and MOEMS",
+      "year": "2018",
+      "citations": 355,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density",
+        "autocorrelation"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 360,
+      "title": "Surface metrology tools support quality needs",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Quality",
+      "year": "2007",
+      "citations": 360,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 379,
+      "title": "Comparison of optical surface roughness measured by stylus profiler, AFM, and white light interferometer using power spectral density",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2010",
+      "citations": 379,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "afm_metrology"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 3837,
+      "title": "Power spectral densities: A multiple technique study of different Si wafer surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Vacuum Science and Technology B: Microelectronics and Nanometer Structures",
+      "year": "2002",
+      "citations": 3837,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 394,
+      "title": "Spectral analysis of irregular roughness artifacts measured by atomic force microscopy and laser scanning microscopy",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Microscopy and Microanalysis",
+      "year": "2014",
+      "citations": 394,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "inverse_problems_metrology",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 4026,
+      "title": "Cross-check of different techniques for two-dimensional power spectral density measurements of x-ray optics",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2005",
+      "citations": 4026,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 4116,
+      "title": "More systematic errors in the measurement of power spectral density",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Micro/ Nanolithography, MEMS, and MOEMS",
+      "year": "2015",
+      "citations": 4116,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": [
+        "systematic errors in the measurement of power spectral density Reference 4116 citations\nMore systematic errors in the measurement of power spectral density\nOpens document details in a new tab\nMack, C."
+      ]
+    },
+    {
+      "ref_id": 423,
+      "title": "COMPUTER SIMULATION TO ASSESS THE EFFECT OF STYLUS GEOMETRY ON SURFACE METROLOGY.",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Manufacturing Engineering Transactions",
+      "year": "1984",
+      "citations": 423,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 4331,
+      "title": "The accuracy of fast 3D topography measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "International Journal of Machine Tools and Manufacture",
+      "year": "2001",
+      "citations": 4331,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 441,
+      "title": "An appraisal of errors of orientation and sampling in the estimation of parameters of rough surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Wear",
+      "year": "1972",
+      "citations": 441,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 4512,
+      "title": "Comparison of methods for management of measurement errors in surface topography measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Procedia CIRP",
+      "year": "2023",
+      "citations": 4512,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 461,
+      "title": "Calibration and adjustment of areal surface topography measuring instruments",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Recent Advances in Topography Research",
+      "year": "2013",
+      "citations": 461,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 474,
+      "title": "Advances in calibration methods for micro- and nanoscale surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2012",
+      "citations": 474,
+      "domain_tags": [
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 484,
+      "title": "Metrological-Characteristics-Based Calibration of Optical Areal Surface Measuring Instruments and Evaluation of Measurement Uncertainty for Surface Texture Measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Instruments",
+      "year": "2025",
+      "citations": 484,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 4912,
+      "title": "Uncertainties in calibrating a stylus type surface texture measuring instrument with an interferometrically measured step",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Metrologia",
+      "year": "1978",
+      "citations": 4912,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 500,
+      "title": "Virtual instruments for surface topography measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of the 10th Anniversary International Conference of the European Society for Precision Engineering and Nanotechnology, EUSPEN 2008",
+      "year": "2008",
+      "citations": 500,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 5116,
+      "title": "Assessment of the effect of stylus tip radius on milled, bored, and honed surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "International Journal of Advanced Manufacturing Technology",
+      "year": "2019",
+      "citations": 5116,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 5215,
+      "title": "The effect of stylus tip radius on Ra, Rq, Rp, Rv, and Rt parameters in turned and milled samples",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "International Journal of Advanced Manufacturing Technology",
+      "year": "2018",
+      "citations": 5215,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [
+        "Ra",
+        "Rq",
+        "Rt"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 530,
+      "title": "Effect of Simulated Mechanical Filtration by the Stylus Tip on Changes in the Parameters of Areal Surface Texture",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials",
+      "year": "2025",
+      "citations": 530,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 54432,
+      "title": "Comparison of surface roughness measurements by stylus profiler, AFM and non-contact optical profiler",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Wear",
+      "year": "1995",
+      "citations": 54432,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 5510,
+      "title": "Effects of a stylus on the surface roughness determination in a contact method for paper and paperboard",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Nordic Pulp and Paper Research Journal",
+      "year": "1986",
+      "citations": 5510,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 561,
+      "title": "Binary pseudo-random array (BPRA) for inspection and calibration for cylindrical wavefront interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2023",
+      "citations": 561,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 574,
+      "title": "Binary pseudo-random array standards for calibration of 3D optical surface profilers used for metrology with significantly curved x-ray optics",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2024",
+      "citations": 574,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 589,
+      "title": "Traceable functional characterization of surface topography with angular-resolved scattering light measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Surface Topography: Metrology and Properties",
+      "year": "2021",
+      "citations": 589,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 590,
+      "title": "Model based error separation of power spectral density artefacts in wavefront measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2018",
+      "citations": 590,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error separation of power spectral density artefacts in wavefront measurement Reference 590 citations\nModel based error separation of power spectral density artefacts in wavefront measurement\nOpens document details in a new tab\nHaberl, A."
+      ]
+    },
+    {
+      "ref_id": 600,
+      "title": "Contribution of the phase transfer function of extended measurement cavities to mid spatial frequencies and the overall error budget",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2018",
+      "citations": 600,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": [
+        "error budget Reference 600 citations\nContribution of the phase transfer function of extended measurement cavities to mid spatial frequencies and the overall error budget\nOpens document details in a new tab\nFütterer, G."
+      ]
+    },
+    {
+      "ref_id": 612,
+      "title": "A comparison between contact type profilometer and different 3D optical techniques: A case study in characterization of machined surface structures",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Quality - Access to Success",
+      "year": "2012",
+      "citations": 612,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 6212,
+      "title": "Applications of data fusion in optical coordinate metrology: a review",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "International Journal of Advanced Manufacturing Technology",
+      "year": "2023",
+      "citations": 6212,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 633,
+      "title": "Measurement of complex surfaces using precision coordinate measuring machine with Zernike algorithms",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement Science and Technology",
+      "year": "2025",
+      "citations": 633,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Zernike"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 644,
+      "title": "Surface metrology of bone surface attachments of knee ligaments",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Anatomical Record",
+      "year": "2022",
+      "citations": 644,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 652,
+      "title": "Influence of flexible body contact deformation on the linear dimension measurement precision",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Solid State Phenomena",
+      "year": "2013",
+      "citations": 652,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 661,
+      "title": "Contact deformations under the influence of measurement force",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Procedia Engineering",
+      "year": "2015",
+      "citations": 661,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 670,
+      "title": "Contact deformations under the influence of measurement force",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Energy Procedia",
+      "year": "2015",
+      "citations": 670,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 683,
+      "title": "The use of multiscale transfer functions for understanding the impact of successive mechanical treatments on surface topography",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Tribology International",
+      "year": "2017",
+      "citations": 683,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 698,
+      "title": "Surface scattering and the 3D transfer characteristics of optical profilometers",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2020",
+      "citations": 698,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 7021,
+      "title": "Transfer characteristics of optical profilers with respect to rectangular edge and step height measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2017",
+      "citations": 7021,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 716,
+      "title": "Quantitative surface roughness determination of materials by AFM: Some limitations",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials Science Forum",
+      "year": "2002",
+      "citations": 716,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 727,
+      "title": "Step height measurement of microscale thermoplastic polymer specimens using contact stylus profilometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Precision Engineering",
+      "year": "2016",
+      "citations": 727,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 738,
+      "title": "Towards quantitative modelling of surface deformation of polymer micro-structures under tactile scanning measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement Science and Technology",
+      "year": "2014",
+      "citations": 738,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 7458,
+      "title": "Effective elastic modulus of film-on-substrate systems under normal and tangential contact",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of the Mechanics and Physics of Solids",
+      "year": "2008",
+      "citations": 7458,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 759,
+      "title": "Effect of surface detection error due to elastic–plastic deformation on nanoindentation measurements of elastic modulus and hardness",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Materials Research",
+      "year": "2021",
+      "citations": 759,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error due to elastic–plastic deformation on nanoindentation measurements of elastic modulus and hardness Reference 759 citations\nEffect of surface detection error due to elastic–plastic deformation on nanoindentation measurements of elastic modulus and hardness\nOpens document details in a new tab\nFulco, S."
+      ]
+    },
+    {
+      "ref_id": 7625,
+      "title": "Binary pseudo-random gratings and arrays for calibration of modulation transfer functions of surface profilometers",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+      "year": "2010",
+      "citations": 7625,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [
+        "modulation transfer function"
+      ],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 7717,
+      "title": "Development of pseudorandom binary arrays for calibration of surface profile metrology tools",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Vacuum Science and Technology B: Microelectronics and Nanometer Structures",
+      "year": "2009",
+      "citations": 7717,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 780,
+      "title": "The three-dimensional transfer function in surface topography measurement by coherence scanning interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Technisches Messen",
+      "year": "2026",
+      "citations": 780,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 790,
+      "title": "Concept and application of the three-dimensional transfer function in optical surface topography measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Technisches Messen",
+      "year": "2025",
+      "citations": 790,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 804,
+      "title": "Towards a continuous frequency band chirp material measure for surface topography measuring instrument calibration",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2021",
+      "citations": 804,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 814,
+      "title": "Enhancing visualization with real-time frequency-based transfer functions",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2011",
+      "citations": 814,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "transfer function"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 827,
+      "title": "Influences of geometrical factors on quantitative surface roughness evaluations by atomic force microscopy",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Nanoscience and Nanotechnology",
+      "year": "2009",
+      "citations": 827,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 8326,
+      "title": "Deconvolution of tip affected atomic force microscope images and comparison to Rutherford backscattering spectrometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Vacuum Science and Technology B: Microelectronics and Nanometer Structures",
+      "year": "1997",
+      "citations": 8326,
+      "domain_tags": [
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "convolution"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 84649,
+      "title": "Algorithms for scanned probe microscope image simulation, surface reconstruction, and tip estimation",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Research of the National Institute of Standards and Technology",
+      "year": "1997",
+      "citations": 84649,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 859,
+      "title": "Nanoscale roughness and bias in step height measurements by atomic force microscopy",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement Science and Technology",
+      "year": "2013",
+      "citations": 859,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "bias in step height measurements by atomic force microscopy Reference 859 citations\nNanoscale roughness and bias in step height measurements by atomic force microscopy\nOpens document details in a new tab\nSeah, M."
+      ]
+    },
+    {
+      "ref_id": 861,
+      "title": "Investigating the Impact of Probe Geometry Characteristics on the Ra in the International Metrology Comparison of Surface Roughness",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "2023 2nd International Conference on Optical Imaging and Measurement, ICOIM 2023",
+      "year": "2023",
+      "citations": 861,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [
+        "Ra"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 876,
+      "title": "Surface characterization by morphological filtering",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Technisches Messen",
+      "year": "2005",
+      "citations": 876,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "morphological filter"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 885,
+      "title": "Algorithm for Constructing a Morphological Disk Filter for Analyzing Surface Roughness",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement Techniques",
+      "year": "2017",
+      "citations": 885,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 892,
+      "title": "Filters for contour measurement",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Wear",
+      "year": "2008",
+      "citations": 892,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 9050,
+      "title": "Selection of regularization parameter for optical topography",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Biomedical Optics",
+      "year": "2009",
+      "citations": 9050,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 910,
+      "title": "Compact discrepancy and chi-squared principles for over-determined inverse problems",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Journal of Inverse and Ill-Posed Problems",
+      "year": "2017",
+      "citations": 910,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 9276,
+      "title": "Image reconstruction in optical interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "IEEE Signal Processing Magazine",
+      "year": "2010",
+      "citations": 9276,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 9312,
+      "title": "Comparison of Fourier-transform and data-dependent system profilometry by use of interferometric regeneration",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "1999",
+      "citations": 9312,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Fourier"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 941,
+      "title": "Data-dependent systems profilometry of two-dimensional surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "1999",
+      "citations": 941,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 9586,
+      "title": "Phase extraction accuracy comparison based on multi-frequency phase-shifting method in fringe projection profilometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement: Journal of the International Measurement Confederation",
+      "year": "2022",
+      "citations": 9586,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 9631,
+      "title": "Noise-induced phase error comparison in multi-frequency phase-shifting profilometry based on few fringes",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics and Laser Technology",
+      "year": "2023",
+      "citations": 9631,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error comparison in multi-frequency phase-shifting profilometry based on few fringes Reference 9631 citations\nNoise-induced phase error comparison in multi-frequency phase-shifting profilometry based on few fringes\nOpens document details in a new tab\nWang, J."
+      ]
+    },
+    {
+      "ref_id": 9710,
+      "title": "S-transform application in phase extraction of spectrally resolved interferometry measuring step height",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "2022",
+      "citations": 9710,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 98336,
+      "title": "Comparison of Fourier transform, windowed Fourier transform, and wavelet transform methods for phase extraction from a single fringe pattern in fringe projection profilometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics and Lasers in Engineering",
+      "year": "2010",
+      "citations": 98336,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Fourier",
+        "wavelet"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 991,
+      "title": "A Comparison of electronic heterodyne moire deflectometry and electronic heterodyne holographic interferometry for flow measurements",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "SAE Technical Papers",
+      "year": "1985",
+      "citations": 991,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1002,
+      "title": "Low-Noise Stabilization of Demodulation in Fiber-Optic Hydrophones Using Heterodyne Algorithm with Non-Polarization-Maintaining Optical Path and Serial Acousto-Optic Modulation",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Guangxue Xuebao/Acta Optica Sinica",
+      "year": "2024",
+      "citations": 1002,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1017,
+      "title": "Influence of chromatic dispersion on a dual-wavelength passive-homodyne detection method for fiber-coupled interferometers",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "1994",
+      "citations": 1017,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1025,
+      "title": "Development of an optical system for non-contact type measurement of heart rate and heart rate variability",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied System Innovation",
+      "year": "2021",
+      "citations": 1025,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 10314,
+      "title": "A Review on Recent Advances in Signal Processing in Interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Sensors",
+      "year": "2025",
+      "citations": 10314,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1040,
+      "title": "New Applications of Computer Generated Holograms for Optical Testing",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optical Fabrication and Testing in Proceedings Optica Design and Fabrication Congress 2023, IODC, OFT - Part of Optica Design and Fabrication Congress",
+      "year": "2023",
+      "citations": 1040,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 10536,
+      "title": "Optical testing with computer generated holograms: Comprehensive error analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2013",
+      "citations": 10536,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error analysis Reference 10536 citations\nOptical testing with computer generated holograms: Comprehensive error analysis\nOpens document details in a new tab\nZhao, C."
+      ]
+    },
+    {
+      "ref_id": 10622,
+      "title": "Computer generated holograms for the optical shop testing of aspheres",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2005",
+      "citations": 10622,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 107128,
+      "title": "Applications of computer-generated holograms for interferometric measurement of large aspheric optics",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "1995",
+      "citations": 107128,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1083,
+      "title": "Experience of computer generated holograms (CGH) application for testing, alignment, and positioning of astronomical and space mirrors aspherical surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2019",
+      "citations": 1083,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1095,
+      "title": "Computer-generated holograms for precision optical testing",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2016",
+      "citations": 1095,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1103,
+      "title": "Analysis of the current status of research on accuracy traceability based on computational holographic detection technology(inner cover paper)",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Hongwai yu Jiguang Gongcheng/Infrared and Laser Engineering",
+      "year": "2024",
+      "citations": 1103,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 11128,
+      "title": "Adjustment of regularization in ill-posed linear inverse problems by the empirical Bayes approach",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Geophysical Prospecting",
+      "year": "2004",
+      "citations": 11128,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1121,
+      "title": "Influence of noise to PCS particle sizing with Tikhonov Regularization inverse algorithm",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2009",
+      "citations": 1121,
+      "domain_tags": [
+        "optical_interferometry",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1131,
+      "title": "Analyzing and mitigating mid-spatial frequency errors",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics InfoBase Conference Papers",
+      "year": "2019",
+      "citations": 1131,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1141,
+      "title": "The use of advanced 3D surface metrology for the characterisation of epi-wafers and Si structures",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Physica Status Solidi C: Conferences",
+      "year": "2005",
+      "citations": 1141,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1156,
+      "title": "On the use of RMS roughness for surface roughness characterization",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials Science Forum",
+      "year": "2002",
+      "citations": 1156,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 116235,
+      "title": "Paradigm shifts in surface metrology. Part II. The current shift",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+      "year": "2007",
+      "citations": 116235,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 11719,
+      "title": "Characterization of optical surfaces for the present generations of synchrotron sources",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2008",
+      "citations": 11719,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "lack, F."
+      ]
+    },
+    {
+      "ref_id": 11830,
+      "title": "Selection of Methods of Surface Texture Characterisation for Reduction of the Frequency‐Based Errors in the Measurement and Data Analysis Processes",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Sensors",
+      "year": "2022",
+      "citations": 11830,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 119108,
+      "title": "Simple estimates for the effects of mid-spatial-frequency surface errors on image quality",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "2000",
+      "citations": 119108,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1203,
+      "title": "Force controlled mid-spatial frequency error smoothing using machine learning",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2022",
+      "citations": 1203,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error smoothing using machine learning Reference 1203 citations\nForce controlled mid-spatial frequency error smoothing using machine learning\nOpens document details in a new tab\nConiglio, J."
+      ]
+    },
+    {
+      "ref_id": 1213,
+      "title": "Power spectral density analysis of mid-spatial frequency errors in the BK7 glass lens polishing process",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Applied Optics",
+      "year": "2024",
+      "citations": 1213,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "Power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1224,
+      "title": "Simulation of MSF-errors using Fourier transformation",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2018",
+      "citations": 1224,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Fourier"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1233,
+      "title": "Simulation of MSF errors using Fourier transform",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2018",
+      "citations": 1233,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Fourier"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 12421,
+      "title": "Processing remote sensing images using the 2-D FFT - noise reduction and other applications",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Geophysics",
+      "year": "1993",
+      "citations": 12421,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1254,
+      "title": "Peculiarities of Pre-Processing of Tomographic Images for Segmentation of Paranasal Sinuses",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "2019 IEEE 39th International Conference on Electronics and Nanotechnology, ELNANO 2019 - Proceedings",
+      "year": "2019",
+      "citations": 1254,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 12610,
+      "title": "Evaluation of High-Frequency Measurement Errors from Turned Surface Topography Data Using Machine Learning Methods",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials",
+      "year": "2024",
+      "citations": 12610,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 12727,
+      "title": "Suppression of the high-frequency errors in surface topography measurements based on comparison of various spline filtering methods",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Materials",
+      "year": "2021",
+      "citations": 12727,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1287,
+      "title": "Study of etched surface topography with the compensation of contactless vibrational measurement errors",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Measurement: Journal of the International Measurement Confederation",
+      "year": "2025",
+      "citations": 1287,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 12914,
+      "title": "Comparison of some algorithms for acquisition footprint suppression and their effect on attribute analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "SEG Technical Program Expanded Abstracts",
+      "year": "2008",
+      "citations": 12914,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1300,
+      "title": "Comparison of some algorithms for acquisition footprint suppression and their effect on attribute analysis",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "78th Society of Exploration Geophysicists International Exposition and Annual Meeting, SEG 2008",
+      "year": "2008",
+      "citations": 1300,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1318,
+      "title": "Model-based topography characterisation of machined surfaces in three dimensions",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "International Journal of Machine Tools and Manufacture",
+      "year": "1995",
+      "citations": 1318,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1329,
+      "title": "Corrected power spectral density of the surface roughness of tire rubber sliding on abrasive material",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Tribology International",
+      "year": "2021",
+      "citations": 1329,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [
+        "power spectral density"
+      ],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1330,
+      "title": "Reference areal surface metrology by high speed metrological large range AFM",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of the 16th International Conference of the European Society for Precision Engineering and Nanotechnology, EUSPEN 2016",
+      "year": "2016",
+      "citations": 1330,
+      "domain_tags": [
+        "stylus_profilometry",
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "afm_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 13415,
+      "title": "Comparison Of Wyko and Tis Measurements Of Surface Finish",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "1987",
+      "citations": 13415,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1351,
+      "title": "Implementation of the metrological characteristics framework using additively manufactured material measures",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2024",
+      "citations": 1351,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1363,
+      "title": "Uncertainty propagation of field areal surface texture parameters using the metrological characteristics approach",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "European Society for Precision Engineering and Nanotechnology, Conference Proceedings - 23rd International Conference and Exhibition, EUSPEN 2023",
+      "year": "2023",
+      "citations": 1363,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd",
+        "inverse_problems_metrology"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1371,
+      "title": "The study of optimization on process parameters of high-accuracy computerized numerical control polishing",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2017",
+      "citations": 1371,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1388,
+      "title": "Research on the Influence of the Material Removal Profile of a Spherical Polishing Tool on the Mid-Spatial Frequency Errors of Optical Surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Micromachines",
+      "year": "2024",
+      "citations": 1388,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1390,
+      "title": "Measurement of Mid Spatial Frequencies of Diamond Turned Optics by using Dual-mode Snapshot Interferometry",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2024",
+      "citations": 1390,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1408,
+      "title": "Workflow for modeling of generalized mid-spatial frequency errors in optical systems",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics Express",
+      "year": "2024",
+      "citations": 1408,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1414,
+      "title": "Usefulness of orthogonal basis sets for predicting optical performance of wavefronts with mid-spatial frequency error",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2017",
+      "citations": 1414,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": [
+        "error Reference 1414 citations\nUsefulness of orthogonal basis sets for predicting optical performance of wavefronts with mid-spatial frequency error\nOpens document details in a new tab\nHosseinimakarem, Z."
+      ]
+    },
+    {
+      "ref_id": 14224,
+      "title": "Zernike polynomials for mid-spatial frequency representation on optical surfaces",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Proceedings of SPIE - The International Society for Optical Engineering",
+      "year": "2016",
+      "citations": 14224,
+      "domain_tags": [
+        "optical_interferometry",
+        "surface_roughness_psd"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [
+        "Zernike"
+      ],
+      "limitations_found": []
+    },
+    {
+      "ref_id": 1432,
+      "title": "Desensitization to mid-spatial-frequency surface errors",
+      "authors": [
+        "opens author details in a new tab"
+      ],
+      "journal": "Optics Express",
+      "year": "2019",
+      "citations": 1432,
+      "domain_tags": [
+        "optical_interferometry"
+      ],
+      "metrics_found": [],
+      "formalisms_found": [],
+      "limitations_found": []
+    }
+  ],
+  "statistics": {
+    "total_references": 143,
+    "domains": {
+      "stylus_profilometry": 26,
+      "optical_interferometry": 143,
+      "surface_roughness_psd": 52,
+      "inverse_problems_metrology": 15,
+      "afm_metrology": 15
+    },
+    "total_limitation_statements": 12
+  }
+}

@@ -1,0 +1,39 @@
+LATEX MATH-MODE INTEGRITY AUDIT
+============================================================
+Total issues: 7
+
+Line 38: [MISSING BACKSLASH]
+  Found: um{
+  Fix:   \num{
+  Context: um{5.45e13}$vs.\ $
+
+Line 39: [MISSING BACKSLASH]
+  Found: um{
+  Fix:   \num{
+  Context: um{3.19e13}$bits) despi
+
+Line 456: [MISSING BACKSLASH]
+  Found: times
+  Fix:   \times
+  Context: es $I_o/I_s = 1.71$ times more information ab
+
+Line 37: [UNBALANCED $]
+  Found: 37 unmatched $ signs
+  Fix:   Check line for missing/misplaced $
+  Context: This is a computational study. Surface topography measurements are intrinsically filter-bandwidth-li
+
+Line 39: [UNBALANCED $]
+  Found: 13 unmatched $ signs
+  Fix:   Check line for missing/misplaced $
+  Context: um{3.19e13}$bits) despite higher RMSE. I propose the Capacity--Uniformity Product $\Xi = C_\mathrm{t
+
+Line 37: [POSSIBLY CORRUPTED CRAMER-RAO]
+  Found: This is a computational study. Surface topography measurements are intrinsically filter-bandwidth-li
+  Fix:   Cram\'{e}r--Rao
+  Context: This is a computational study. Surface topography measurements are intrinsically filter-bandwidth-li
+
+Line 39: [POSSIBLY CORRUPTED CRAMER-RAO]
+  Found: um{3.19e13}$bits) despite higher RMSE. I propose the Capacity--Uniformity Product $\Xi = C_\mathrm{t
+  Fix:   Cram\'{e}r--Rao
+  Context: um{3.19e13}$bits) despite higher RMSE. I propose the Capacity--Uniformity Product $\Xi = C_\mathrm{t
+

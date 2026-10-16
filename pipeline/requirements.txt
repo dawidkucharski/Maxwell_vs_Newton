@@ -1,0 +1,7 @@
+numpy>=1.24.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+pyyaml>=6.0
+striprtf>=0.0.26
+scikit-image>=0.21.0
+tqdm>=4.65.0

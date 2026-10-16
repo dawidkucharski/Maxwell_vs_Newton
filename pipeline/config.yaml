@@ -1,0 +1,109 @@
+# ============================================================
+# Maxwell_vs_Newton — Automated Research Discovery Pipeline
+# Configuration file
+# ============================================================
+
+pipeline:
+  name: "Surface Metrology Discovery Pipeline"
+  version: "1.0.0"
+  max_iterations: 5
+  novelty_threshold: 0.7
+
+# ------------------------------------------------------------
+# Block 1: Literature Mining
+# ------------------------------------------------------------
+literature:
+  input_file: "../literature_overview.rtf"
+  domains:
+    - stylus_profilometry
+    - optical_interferometry
+    - surface_roughness_psd
+    - inverse_problems_metrology
+    - afm_metrology
+  extract:
+    - assumptions_models
+    - metrics_used
+    - mathematical_formalisms
+    - limitations_stated
+
+# ------------------------------------------------------------
+# Block 2: Research Gap Detector
+# ------------------------------------------------------------
+gap_detection:
+  search_patterns:
+    - missing_unified_operator_framework
+    - missing_frequency_domain_interpretation
+    - missing_anisotropy_analysis
+    - missing_information_theoretic_formulation
+    - missing_equivalence_regimes_between_sensors
+
+# ------------------------------------------------------------
+# Block 3: Hypothesis Generator
+# ------------------------------------------------------------
+hypothesis:
+  output_types:
+    - new_operator_model
+    - new_measurable_quantity
+    - new_scaling_law
+
+# ------------------------------------------------------------
+# Block 4: Physics + Signal Simulator
+# ------------------------------------------------------------
+simulation:
+  grid_size: 512          # px
+  physical_size: 0.0001    # m (100 µm)
+  # Stylus parameters
+  stylus:
+    tip_radius: 0.000002     # m (2 µm)
+    scan_speed: 0.00005      # m/s
+    sampling_interval: 0.0000002  # m (200 nm)
+    cone_angle: 45.0       # degrees
+  # Optical parameters
+  optical:
+    wavelength: 0.00000055     # m (550 nm)
+    NA: 0.55
+    magnification: 50.0
+    camera_noise_std: 0.001
+    unwrapping_error_prob: 0.01
+  # Surface generation
+  surface:
+    hurst_exponent: 0.7
+    rms_roughness: 5.0e-8   # m (50 nm)
+    correlation_length: 5.0e-6  # m
+    roll_off_wavelength: 1.0e-5  # m (10 µm)
+
+# ------------------------------------------------------------
+# Block 5: Discovery Engine
+# ------------------------------------------------------------
+discovery:
+  compute:
+    - transfer_functions
+    - information_loss
+    - anisotropy_tensor
+    - spectral_distortion_metric
+  psd:
+    window: "hann"
+    averaging: 8
+
+# ------------------------------------------------------------
+# Block 6: Novelty Detector
+# ------------------------------------------------------------
+novelty:
+  required_findings:
+    - scaling_law
+    - universality_class
+    - equivalence_regime_k_space
+    - new_invariant_metric
+  min_required: 1
+
+# ------------------------------------------------------------
+# Block 7: Publication Generator
+# ------------------------------------------------------------
+publication:
+  target_journals:
+    - "Measurement Science and Technology"
+    - "Surface Topography: Metrology and Properties"
+    - "Applied Optics"
+    - "Optics Express"
+    - "Measurement"
+  template_dir: "../elsarticle"
