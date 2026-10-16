@@ -191,3 +191,20 @@ Estimates: impact (1–5), reviewer impact (1–5), difficulty (1–5, 5=hard), 
 | 20 | Add explicit "no experimental facilities; roadmap offered as falsifiable targets" line to the abstract (one clause). | 1 | 2 | 1 | 0.25 h | +1 |
 
 **Top-20 conclusion.** Actions 1–4 are the pre-submission must-do set (they kill the two critical and two high-severity findings). Actions 5–11 are strongly recommended and cost under a day combined. Actions 12–20 are cheap polish. Total effort ≈ 1.5–2 working days; expected effect: first-round decision moves from a likely Major Revision toward Minor Revision / Accept, and desk-rejection probability drops materially.
+
+---
+
+## EXECUTION LOG (2026-10-16) — Top-20 roadmap applied
+
+Actions 1–4 (must-do), 5–11 (recommended), and 12–20 (polish, except #13 partial, #15 and #19 skipped as negative value/effort) were executed. Verified consequences that changed the manuscript beyond the recommendations:
+
+| Finding | Outcome after fix |
+|---|---|
+| T1 H convention | `block8` now uses the amplitude convention. **The MI ratio flips to I_o/I_s = 0.68** — the "optical transmits 1.6–1.7× more MI" claim was an artifact of double-squaring plus estimator choice and is **withdrawn**; the manuscript reports the ratio as estimator-dependent (0.7–1.6) and relies on the robust per-band ranking. |
+| T4 ensemble | `pipeline/run_ensemble.py` (seeds 100–129) regenerated `ensemble_stats.json`: α_s = 0.0095±0.0037, α_o = 0.0013±0.0006 (stylus ≈7× optical; intervals no longer overlap), f_cross = 454±166 mm⁻¹ (λ_cross = 2.2 µm), eq_frac = 9.6%±0.3% (was 18.3%±0.2%). All manuscript occurrences updated; roadmap baseline marker updated. |
+| T3 Gramian | κ redefined as max\|H\|²/min\|H\|² over the passband (matches code); Ξ_o/Ξ_s = 5.9 (recomputed). |
+| T2 SNR bound | Operational second-moment width definitions + SI S4.3 "status of the bound" paragraph (definitionally anchored ansatz, falsification protocol); cover-letter wording softened. |
+| T8/T9 variants | Δx = 100/200/400 nm: RMSE 13.6/16.3/16.7 nm, 3 dB at 1255/1049/671 mm⁻¹; polychromatic OTF (500–700 nm): 96.5% of passband within 3 dB. Added to robustness section; data in `robustness/variant_simulations.json`. |
+| Housekeeping | Monochromatic mean-λ statement; falsifiability sentences (bound, scaling law); sweep parameter table; figs 8/10/public-benchmark referenced; search-basis footnote; tip-tolerance cross-ref; h5py pinned; ensemble seeds in Data Availability. |
+
+Builds: main 60 pp, SI 19 pp, cover 3 pp — 0 errors, 0 undefined citations/references. 14/14 verification tests pass. Committed as `191ae13`.
