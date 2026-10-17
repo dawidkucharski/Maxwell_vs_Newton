@@ -187,6 +187,41 @@ def test_scaling_out_of_sample():
     record("T7 scaling law out-of-sample", r2_out > 0.3,
            f"delta_train={A[0]:.2f}, R2_train={r2_in:.3f}, R2_test={r2_out:.3f}, rmse_log10={rmse:.3f}")
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T8. Information-loss slope: I(f) ∝ f^0.01 claim (independent computation)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_information_loss_slope():
+    h_true = np.load(os.path.join(PIPE, 'outputs', 'iter01', 'h_true.npy'))
+    h_stylus = np.load(os.path.join(PIPE, 'outputs', 'iter01', 'h_stylus.npy'))
+    dx = 100e-6 / h_true.shape[0]
+
+    def psd2d(h):
+        w = np.hanning(h.shape[0])[:, None] * np.hanning(h.shape[1])[None, :]
+        return np.abs(np.fft.fft2(h * w)) ** 2 * dx ** 2 / np.sum(w ** 2)
+
+    Pt = np.fft.fftshift(psd2d(h_true))
+    Ps = np.fft.fftshift(psd2d(h_stylus))
+    fx = np.fft.fftshift(np.fft.fftfreq(h_true.shape[0], d=dx))
+    FX, FY = np.meshgrid(fx, fx)
+    fr = np.sqrt(FX ** 2 + FY ** 2)
+
+    # azimuthal average of the log ratio, including negative values
+    fmax = np.max(fr) * 0.95
+    edges = np.linspace(0, fmax, 101)
+    centers, Il = [], []
+    for i in range(100):
+        m = (fr >= edges[i]) & (fr < edges[i + 1])
+        if m.sum() == 0:
+            continue
+        centers.append(0.5 * (edges[i] + edges[i + 1]))
+        Il.append(np.mean(np.log10(np.maximum(Pt[m], 1e-35) / np.maximum(Ps[m], 1e-35))))
+    f_c = np.array(centers)
+    I_c = np.array(Il)
+    band = (f_c > 0.5e5) & (f_c < 1.5e6)
+    slope = np.polyfit(np.log10(f_c[band]), I_c[band], 1)[0]
+    record("T8 info-loss slope consistent with manuscript (0.4)", abs(slope - 0.45) < 0.15,
+           f"slope={slope:.3f} (log10-log10 over {band.sum()} bins)")
+
 if __name__ == "__main__":
     test_otf_autocorrelation()
     test_small_slope_dilation()
@@ -195,6 +230,7 @@ if __name__ == "__main__":
     test_analytic_stylus_isotropy()
     test_sweep_refits()
     test_scaling_out_of_sample()
+    test_information_loss_slope()
     n_pass = sum(1 for _, ok, _ in RESULTS if ok)
     print(f"\n{n_pass}/{len(RESULTS)} passed")
     sys.exit(0 if n_pass == len(RESULTS) else 1)

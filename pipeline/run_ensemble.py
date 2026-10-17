@@ -47,6 +47,9 @@ def main():
     rmse_s, rmse_o, corr_s, corr_o = [], [], [], []
     alpha_s, alpha_o = [], []
     f_cross, eq_frac = [], []
+    mi_s, mi_o = [], []
+    I_s, I_o = [], []
+    I_band = {}
 
     for i in range(N):
         seed = SEED0 + i
@@ -70,6 +73,13 @@ def main():
         alpha_o.append(disc.anisotropy.optical['anisotropy_degree'])
         f_cross.append(disc.crossover_analysis['crossover_frequency_m'])
         eq_frac.append(disc.crossover_analysis['equivalence_fraction_vs_threshold']['3dB'])
+        il = disc.information_loss
+        mi_s.append(il.mi_stylus)
+        mi_o.append(il.mi_optical)
+        I_s.append(il.I_stylus)
+        I_o.append(il.I_optical)
+        for band, val in il.I_per_band.items():
+            I_band.setdefault(band, []).append(val)
 
     def arr(x):
         return np.asarray(x)
@@ -98,6 +108,15 @@ def main():
         'f_cross_std': float(arr(f_cross).std()),
         'eq_frac_mean': float(arr(eq_frac).mean()),
         'eq_frac_std': float(arr(eq_frac).std()),
+        'mi_stylus_mean': float(arr(mi_s).mean()),
+        'mi_stylus_std': float(arr(mi_s).std()),
+        'mi_optical_mean': float(arr(mi_o).mean()),
+        'mi_optical_std': float(arr(mi_o).std()),
+        'I_stylus_mean': float(arr(I_s).mean()),
+        'I_stylus_std': float(arr(I_s).std()),
+        'I_optical_mean': float(arr(I_o).mean()),
+        'I_optical_std': float(arr(I_o).std()),
+        'I_per_band': {b: [float(np.mean(v)), float(np.std(v))] for b, v in I_band.items()},
         'N_ensemble': N,
         'seeds': list(range(SEED0, SEED0 + N)),
     }
@@ -113,6 +132,11 @@ def main():
     print(f"  rmse_s = {stats['rmse_stylus_mean']*1e9:.1f} +/- {stats['rmse_stylus_std']*1e9:.1f} nm")
     print(f"  rmse_o = {stats['rmse_optical_mean']*1e9:.1f} +/- {stats['rmse_optical_std']*1e9:.1f} nm")
     print(f"  corr_s = {stats['corr_stylus_mean']:.4f}, corr_o = {stats['corr_optical_mean']:.4f}")
+    print(f"  MI proxy: s = {stats['mi_stylus_mean']:.3f} +/- {stats['mi_stylus_std']:.3f}, "
+          f"o = {stats['mi_optical_mean']:.3f} +/- {stats['mi_optical_std']:.3f}")
+    print(f"  I integrated: s = {stats['I_stylus_mean']:.3e} +/- {stats['I_stylus_std']:.3e}, "
+          f"o = {stats['I_optical_mean']:.3e} +/- {stats['I_optical_std']:.3e}")
+    print(f"  I per band: {stats['I_per_band']}")
 
 
 if __name__ == '__main__':
