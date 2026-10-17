@@ -320,7 +320,27 @@ The reconstructability index $\rho$ and information efficiency $\eta$ were teste
 
 Combined with the Gaussian self-affine baseline ($\rho = 0.793 \pm 0.053$, $\eta = 0.271 \pm 0.045$, $n=30$), the coefficient of variation across four classes is $\text{CV}_\rho = 0.22$ and $\text{CV}_\eta = 0.38$. The reconstructability index $\rho$ saturates at 1.0 for deterministic surfaces (turned, laser-textured) because periodic and dimple features concentrate spectral power at specific frequencies where the stylus transfer function has high amplitude, pushing all $k$-space modes above the SNR threshold. Across all four classes $\text{CV}_\rho = 0.22$; restricted to the random rough classes (Gaussian, ground), $\rho$ varies by only 16\%. This finding refines the universality claim: $\rho$ is an instrument-limited metric for random rough surfaces but loses discrimination for surfaces with strong deterministic components---a physically meaningful distinction.
 
+\section{Supplementary Diagnostics and Uncertainty Analysis}
 
+\textbf{GUM uncertainty propagation for the transfer function.} Following the GUM framework~\cite{jcgm2008gum}, the uncertainty in the estimated transfer function $H(\mathbf{f})$ is propagated from the physical parameters of the instrument model. For a first-order sensitivity analysis, the fractional uncertainty in $H$ at each $k$-space point is
+\begin{equation}
+    \frac{u(H)}{H} \approx \sqrt{\sum_i \left(\frac{\partial \ln H}{\partial p_i}\right)^2 u^2(p_i)},
+\end{equation}
+where $p_i \in \{r_\mathrm{tip}, \Delta x, \mathrm{NA}, \lambda, \sigma_\eta\}$ are the independent instrument parameters and $u(p_i)$ their standard uncertainties. The dominant uncertainty source is the effective tip radius (contributing $\sim$60\% of the variance in $H_\mathrm{stylus}$) and the numerical aperture (contributing $\sim$55\% in $H_\mathrm{optical}$). The resulting $2\sigma$ confidence band on $H(f)$ is approximately $\pm\SI{1.2}{dB}$ for the stylus and $\pm\SI{0.9}{dB}$ for the optical system across the passband.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../pipeline/outputs/iter01/figures/fig8_cramer_rao.pdf}
+    \caption{Fisher information analysis. (a) Azimuthally averaged Cram\'er--Rao bound on the estimated transfer function for stylus and optical modalities; (b) Fisher information spectrum. Computed with the amplitude convention of the transfer-function estimator of the main text and the difference-field noise-floor estimator (median PSD of the measured-minus-true field).}
+    \label{fig:S3_fisher}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../pipeline/outputs/iter01/figures/fig10_ensemble_validation.pdf}
+    \caption{Ensemble validation ($n=30$, seeds 100--129). (a) Azimuthally averaged transfer functions (mean $\pm$ std) for stylus and optical modalities; (b) RMSE; (c) anisotropy $\alpha$.}
+    \label{fig:S4_ensemble}
+\end{figure}
 
 \bibliographystyle{elsarticle-num}
 \bibliography{references}

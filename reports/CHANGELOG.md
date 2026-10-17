@@ -124,3 +124,17 @@ Executed the Round-2 Top-20 roadmap:
 - **R11–R17:** verification-suite sentence in Data Availability; fig8 caption
   states noise estimator; γ "testable at larger n"; SI "natural first-order".
 - Builds: 61 pp + 19 pp + 3 pp, 0 errors, 0 undefined. 15/15 tests pass.
+- **Public-data extension (stylus):** Aksulu 2021 ball-standard calibration
+  profiles (Zenodo 10.5281/zenodo.4471347, CC-BY-4.0) downloaded to
+  data_public/aksulu2021. Direct tip validation impossible: published profiles
+  carry 44/120 um scatter (M40/M1000) and are non-circular (edge artefacts
+  -623/-9286 um dominate). Honest reframe: synthetic-geometry parallel-curve
+  cross-check on the fitted calibration geometry — simulator reproduces
+  measured radius = true radius - tip radius within 3-5% for r_tip = 2/5/50 um.
+  Manuscript + cover letter now state this geometric check with the noise-floor
+  caveat; Aksulu cited. T9 added (self-contained, no data dependency) — 16/16.
+- **SI relocation (page reduction):** fig8 Fisher/CRB and fig10 ensemble moved
+  to Supplementary Material as Fig. S3/S4 (main text keeps one-sentence
+  pointers); GUM uncertainty-propagation derivation moved to a new SI section
+  (main text keeps the 1.2/0.9 dB bands and the threshold comparison).
+- Builds: 60 pp + 21 pp + 3 pp, 0 errors, 0 undefined. 16/16 tests pass.
