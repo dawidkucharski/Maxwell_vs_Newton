@@ -138,3 +138,19 @@ Executed the Round-2 Top-20 roadmap:
   pointers); GUM uncertainty-propagation derivation moved to a new SI section
   (main text keeps the 1.2/0.9 dB bands and the threshold comparison).
 - Builds: 60 pp + 21 pp + 3 pp, 0 errors, 0 undefined. 16/16 tests pass.
+- **Round-3 audit execution (Top-20, all applied):** C1 scaling-law example
+  corrected (NA=0.3 cutoff 545→1091 mm^-1; 8.5→17; 58→2.2e2; 0.74→2.8);
+  C2 "bound holds" → "metrological bound is adopted" (aligned with SI ansatz
+  status); H1 "fourteen"→"sixteen automated tests"; H3 "λ<1µm (above the
+  optical cutoff)"→"λ<0.5µm (above 2000 mm^-1)"; H2 trilemma reworded (SNR is
+  the operative lever; σ² cancels in explicit F); H4 Ξ paragraph carries the
+  surface-class caveat; M1 N=512 grid stated at first headline use (Results +
+  abstract); M2 decision-matrix scope note; M3 Aksulu added to Data
+  Availability; M4 anisotropy-claim second sentence hedged; M5 "four
+  manufactured classes"→"four surface classes" (abstract + Conclusions);
+  M6 η=I/I_perfect and B_eq formulas added (match block11 code); M7 SI broken
+  "Eq.~hstylus"/"Eq.~(metrological uncertainty bound)" fixed; M8 water-filling
+  constraint stated + duplicate sentence removed; M9 SI §1 provenance note;
+  M10 0.1%-σ floor reconciled with SI 0.5-1.0 nm budget; scalar-OTF/vector
+  clause in Methods; SI fringe count 9→11.
+- Builds: 61 pp + 21 pp + 3 pp, 0 errors, 0 undefined. 16/16 tests pass.
