@@ -154,3 +154,17 @@ Executed the Round-2 Top-20 roadmap:
   M10 0.1%-σ floor reconciled with SI 0.5-1.0 nm budget; scalar-OTF/vector
   clause in Methods; SI fringe count 9→11.
 - Builds: 61 pp + 21 pp + 3 pp, 0 errors, 0 undefined. 16/16 tests pass.
+- **Science audit (branch audit-science):** baseline + priority-zero audits
+  executed. Verified: stylus H values and 3dB point (T10); MMSE formula vs
+  Monte Carlo (T11); OTF support; scaling relation re-tested with blocked CV
+  (slope 1.904±0.134; blocked R2=0.518; median ratio error ×1.93; residual-σ
+  r=0.81) → downgraded to order-of-magnitude descriptor. Removed/replaced:
+  untraceable mode counts (254,542/97,301 → 127,472/61,631, SNR>1);
+  elastic groove-depth + r_eff formulas (plastic regime); coherence-envelope
+  lateral-filter claim; skin-depth sampling claim. Downgraded: fusion
+  optimality (minimum-variance under stated model); MMSE claim (scoped to
+  linear Gaussian model); confocal analogy; public-benchmark scope stated;
+  ρ CV triple (0.16/0.22/0.067) reconciled. Fixed TAB-corrupted \textbf.
+  Reports: baseline_audit.md, change_log.md, final_submission_readiness.md,
+  scaling_law_audit.json, stylus_channel_audit.json, mode_counts_audit.json.
+- Builds: 62 pp + 21 pp + 3 pp, 0 errors, 0 undefined. 18/18 tests pass.

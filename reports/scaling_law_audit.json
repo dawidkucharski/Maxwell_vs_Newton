@@ -1,0 +1,22 @@
+{
+  "n_points": 180,
+  "slope": 1.9042880384596126,
+  "slope_se": 0.1342719738886554,
+  "r2_in": 0.5305141874348902,
+  "r2_random_8020": 0.5113418437915339,
+  "r2_blocked_leave_group_out": 0.5182781459572723,
+  "r2_leave_tip_out": 0.522935754275375,
+  "r2_leave_na_out": 0.48218297312633396,
+  "r2_constant_baseline": 0.0,
+  "median_relative_error_ratio": 0.9349158512571261,
+  "p90_relative_error_ratio": 12.827183738852566,
+  "residual_confounding": {
+    "resid_vs_tip": 0.11406478463275184,
+    "resid_vs_na": -0.32960887012519263,
+    "resid_vs_H": -0.15078227082104112,
+    "resid_vs_sigma": 0.8070213700316233
+  },
+  "slope_with_2NA_lambda_convention": 1.9042880384596144,
+  "convention_note": "sweep cutoff_ratio uses NA/lambda; slope is invariant to the constant factor 2 (2NA/lambda), only the fitted prefactor shifts.",
+  "design_note": "all 180 combos share one surface realisation (seed 42); random 80/20 tests parameter interpolation for a fixed realisation, not realisation generalisation."
+}

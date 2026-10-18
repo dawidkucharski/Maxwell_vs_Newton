@@ -1,81 +1,46 @@
-# Final Submission Readiness — Phase 10
+# Final Submission Readiness — Science Audit Gate
 
-Date: 2026-10-16. Branch: `stmp-revision` (baseline preserved on `main`, commit `ed79ded`).
+Date: 2026-10-18. Branch: `audit-science`. All statements below are backed by committed code, committed outputs or the reports referenced.
 
-## Verdict
+## Pass/fail per priority-zero audit
 
-**Submission-ready for STMP as a fully computational study with honest, verified claims.** All 10 mission rules are satisfied as documented below. No fatal submission blockers remain.
+| # | Audit | Status | Evidence |
+|---|---|---|---|
+| 1 | Reproducible baseline | **PASS** | 18/18 tests; clean builds; headline→artefact map in `reports/baseline_audit.md` |
+| 2 | Stylus model (dilation vs linear TF) | **PASS** | Dilation geometry (paraboloid tip, cone 45°, boundary, raster 100–400 nm) audited in `block4`; PSD ratio is a biased power-response estimate (noise adds to numerator; curvature bias adds low-f excess) — this is disclosed in the manuscript; cross-spectral H and coherence computed in `reports/stylus_channel_audit.json`; linearised model captures the low-f excess; 3 dB point reproduced and locked by T10 |
+| 3 | Frequency-domain recommendations | **PASS** | Cutoff nomenclature fixed in Round 3 (λ<0.5 µm); T8 slope band 0.05–1.5 mm⁻¹ lies inside FOV limits (fundamental 10 mm⁻¹, Nyquist 2.56 mm⁻¹); decision matrix scope note added |
+| 4 | Optical model | **PASS with noted limits** | OTF support 2NA/λ verified (T1, `block4`); monochromatic scalar imaging-OTF with 1D unwrapping, pixel MTF negligible at mag 50; public benchmark now explicitly a model-description check (fitted amplitude, slope, cutoff scale) |
+| 5 | Information-theory formulation | **PASS with corrections** | MMSE formula verified by Monte Carlo (T11, rel. 0.2 %); MI (1/2) factor correct for real fields; pipeline C_total double-counts Hermitian halves — documented; capacity vs MI distinction stated; bound status aligned (adopted benchmark, not theorem); untraceable mode counts replaced (127,472/61,631) |
+| 6 | Scatterometry and fusion | **PASS with downgrades** | Rayleigh–Rice constants re-checked (f_max=2/λ=3760 mm⁻¹ ✓); "optimal fusion" downgraded to minimum-variance linear under the stated model; raw-PSD bias caveat added; demo explicitly uses known synthetic H, N |
+| 7 | Contact mechanics / physical SI | **PASS with removals** | Hertzian numbers re-derived ✓ (a=201 nm, ψ=5.83); elastic-extrapolated groove depth and effective-radius formula removed; coherence-envelope lateral-filter claim removed; skin-depth claim reworded |
+| 8 | Cross-manuscript consistency | **PASS** | ρ CV triple (0.16/0.22/0.067) reconciled like-for-like; scaling-law terminology consistent; test count 18 everywhere; stylus H values consistent (Methods/Results/Robustness all trace to variant procedure) |
+| 9 | Scaling-law re-test | **PASS with downgrade** | `reports/scaling_law_audit.json`: slope 1.904±0.134; blocked R²=0.518; leave-tip 0.523; leave-NA 0.482; null 0; median ratio error ×1.93, p90 ×12.8; residual–σ r=0.81 → presented as order-of-magnitude descriptor |
+| 10 | Scope and novelty | **PASS** | Hedges retained; "carries over without modification" qualified; contributions delimited vs prior art in Comparison with Prior Work |
+| 11 | Reproducibility / publication | **PASS with plan** | Eighteen-test suite incl. new T10/T11; audit scripts committed; public-data provenance (CC-BY-4.0, DOIs) stated; repository snapshot preserved; public deposit prepared for acceptance (author decision to defer) |
 
-## Rule-by-rule compliance
+## Ranked issues
 
-1. **Original project preserved.** `main` holds the pristine baseline (`ed79ded`); all revision work lives on `stmp-revision` (4 phase commits). Nothing in the baseline was overwritten without a branch trail.
+Blocking: **none.** All previously unverifiable claims were either reproduced, replaced by reproducible values, or removed.
 
-2. **No assumption of correctness of existing equations/code/values/claims.** Every central equation, number, and claim was re-derived or recomputed independently (verification suite, 14/14 passing). This overturned the central stylus model (Gaussian tip filter → dilation transfer), the γ≈5 claim, the δ uncertainty, the linearity statement, α values, and the MI ratio.
+Major (resolved, residual limits stated): scaling relation is a coarse descriptor; stylus PSD ratio is a biased response estimate (disclosed); fusion requires calibrated H/N experimentally; mode counts are estimator-dependent (stated).
 
-3. **No result generated to satisfy a desired conclusion.** The null γ result, the sub-linear RMSE branch, the withdrawn "stylus cutoff = 159 mm⁻¹ attenuation point" interpretation, and the method-dependent MI ratio (1.61–1.71) are reported as found, including findings that weaken the original narrative.
+Minor: stale `iter01` npy arrays remain in the repo (documented as not used for claims); the physical SI now contains only verifiable statements.
 
-4. **No invented references, DOIs, data, or measurements.** All 11 newly added references were verified against Crossref (DOIs in `references.bib`); the public dataset is real and downloaded (SHA-256 in `data_public/hirose2025/SHA256SUMS`, provenance in `verification/fetch_public_data.sh`); every manuscript number traces to a committed JSON or the benchmark script.
+## Reviewer simulation
 
-5. **Audit was not the endpoint — fixes were executed, tests run, manuscript revised.** Phases 5–9 executed: pipeline re-run (bit-identical outputs), honest fits written to `scaling_law_fits.json`, 4 missing figure generators written and run, manuscript/supplementary/cover letter revised, all three documents recompiled cleanly.
+**Reviewer 1 — surface-texture metrology.** Accepts the dilation-based stylus treatment; confirms the PSD-ratio caveats are now explicit. Asks that the empirical scaling relation not be called predictive — fixed. Recommendation: **Minor Revision / Accept**.
 
-## Phase deliverable summary
+**Reviewer 2 — optical instrumentation.** Accepts the imaging-OTF scope statement and the benchmark's model-description framing; notes the scalar/monochromatic simplifications are disclosed and quantified (polychromatic 96.5 %, public cutoff shift 15 %). Recommendation: **Minor Revision**.
 
-| Phase | Deliverable | Status |
-|-------|-------------|--------|
-| 1 | `reports/initial_audit.md`, git setup | done (f2350dc) |
-| 2 | `reports/mathematical_physics_audit.md` + `verification/run_tests.py` (14/14) | done (7c1d9a2) |
-| 3 | `reports/literature_novelty_audit.md` + 10 verified refs | done (85df68d) |
-| 4 | `reports/public_data_audit.md` | done (85df68d) |
-| 5 | Rebuilt evidence: pipeline re-run, honest refits (`fix_scaling_fits.py`) | done (16aedb7) |
-| 6 | Challenge tests: T1–T7, public-data fit, crossover refit | done |
-| 7 | Public-data benchmark: Hirose et al. 2025 WLI-ITF, `reports/public_data_benchmark.json` | done |
-| 8 | Manuscript revision (main + supplementary + cover letter) | done (16aedb7) |
-| 9 | Reproducibility QC: figures regenerated from code, all numbers traced | done |
-| 10 | This report + `reports/CHANGELOG.md` | done |
+**Reviewer 3 — information theory.** Accepts the corrected mode counting, the (1/2)-factor terminology note, the MMSE Monte Carlo verification and the bound's benchmark status. Notes Ξ/Π remain heuristic figures of merit — already labelled as such. Recommendation: **Minor Revision**.
 
-## Key corrected claims (manuscript now matches evidence)
+## Remaining scientific risks
 
-- **Stylus transfer** (Eq. hstylus): small-slope dilation, $H\approx1$ with curvature bias $(r_\mathrm{tip}/2)\langle|\nabla h|^2\rangle$; empirical values 2.2/0.91/0.74/0.57 at 17/292/567/843 mm⁻¹, 3 dB at ≈1049 mm⁻¹. Gaussian $\exp(-2\pi^2r^2f^2)$ idealisation removed (refuted: predicts ~10⁻³ at 292 mm⁻¹).
-- **"f_c,stylus = 159 mm⁻¹"** retained only as a definitional tip-radius scale for the scaling law, no longer as a filter attenuation point.
-- **$H_\mathrm{stylus}\propto f^{-1.52}$ removed**; local descriptor now $f^{-0.43}$.
-- **γ ≈ 5 removed**: honest refit γ = −0.02 ± 0.19 (n=3), reported as null result.
-- **δ = 1.90 ± 0.13 (SE)**, R² = 0.53 in-sample, 0.51 out-of-sample (80/20).
-- **α_s = 0.011 ± 0.011 (n=180)** with explicit definition-dependence note; ensemble 0.0049±0.0026 (n=30) unchanged.
-- **I_o/I_s = 1.6–1.7** (1.61 independent recompute; 1.71 pipeline estimator), terminology fixed (MI under fixed prior, not water-filling capacity).
-- **Linearity** rewritten with the actual sub-linear → crossing → super-linear data (ratios 0.003 → 0.34 → 0.96 → 1.60 over σ = 5–200 nm).
-- **ρ** definition unified (1−MMSE/σ²) and flagged as a linearised quantity for the nonlinear stylus channel.
-- **H_optical** scoped as an imaging-OTF model valid below the unwrapping-error floor; coherence envelope explicitly out of scope and quantified against public data (c = 1.15 ± 0.01).
-- **Novelty narrowed** against Wu (1999/2000), McCool (1984), Clark & Greivenkamp (2002), de Groot (2021), Dai et al. (2020), Takacs et al. (2010), Leach & Sherlock (2013), Haitjema (2015), Greco & Boyer (2019), Hirose et al. (2025).
+1. No paired experimental tactile–optical dataset; validation is computational + two public cross-checks (one geometric).
+2. The bound is an adopted benchmark, not a theorem; reviewers seeking a proof may still object (status is stated).
+3. Scaling relation is exploratory-quality (R²≈0.5); now honestly framed.
+4. Fusion optimality holds only under the stated model; experimental implementation needs calibrated H and noise PSDs.
 
-## Public-data benchmark (Phase 7) — headline result
+## Recommendation
 
-Measured WLI spectra of three BPRA samples (Hirose et al. 2025, CC-BY-4.0, Zenodo 10.5281/zenodo.15750880) fit with log PSD = log A + β log f + log H_model(f; c·2NA/λ):
-- c = 1.15 ± 0.01 across samples; shape correlation ≈0.97; log-RMS 0.06–0.07.
-- Interpretation: measured roll-off ≈15% beyond the monochromatic 2NA/λ cutoff — the expected size of the omitted WLI coherence envelope; the incoherent-OTF model is quantitatively adequate within its passband.
-- Honest limitation retained: no public paired stylus+optical dataset exists (contact.engineering API unreachable from this environment), so the stylus channel rests on simulator tests and literature, as stated in the manuscript.
-
-## Build state
-
-- `elsarticle/manuscript.pdf`: 57 pages, 0 errors, 0 undefined citations/references.
-- `elsarticle/manuscript_supplementary.pdf`: 18 pages, clean.
-- `elsarticle/cover_letter.pdf`: 3 pages, clean.
-- All 18 figures present in `pipeline/outputs/iter01/figures/`, regenerated from code (`pipeline/generate_missing_figures.py`, `visualisation.py`, `regenerate_roadmap.py`, `verification/public_data_benchmark.py`).
-- `verification/run_tests.py`: 14/14 passing after all changes.
-
-## Remaining honest limitations (stated in the manuscript, not blockers)
-
-1. Fully computational study; no experimental facilities (stated in cover letter, manuscript, roadmap section).
-2. WLI coherence envelope omitted from the optical model (quantified at ≈15% via the public benchmark).
-3. Stylus channel validated by simulator tests + literature only; no public paired dataset available.
-4. γ null result has n=3; treated as inconclusive rather than a demonstrated independence.
-5. α and MI-ratio are definition-dependent; same-definition comparisons only.
-
-## Submission package checklist
-
-- [x] `manuscript.tex/.pdf` — STMP research paper, elsarticle, numbered citations
-- [x] `manuscript_supplementary.tex/.pdf` — 18-page SI
-- [x] `cover_letter.tex/.pdf` — STMP-targeted, single-anonymous choice, Zenodo commitment
-- [x] `references.bib` — 80 entries, all DOI-verified
-- [x] Figures — all regenerated from code
-- [x] Code + data availability statement (Zenodo upon acceptance; public benchmark provenance documented)
-- [ ] Zenodo deposit of the repository (recommended at acceptance; per project workflow, check before final submission milestone)
+**SUBMIT** to STMP after the routine rebuild/commit of this branch. The manuscript now contains no claim that cannot be traced to a committed artefact, and every known overstatement has been removed or scoped.

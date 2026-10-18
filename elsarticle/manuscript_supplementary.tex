@@ -43,10 +43,9 @@ A diamond stylus with tip radius $r_\mathrm{tip} = \SI{2}{\micro m}$ under a nor
 \end{equation}
 where $1/E_\mathrm{eff} = (1-\nu_\mathrm{tip}^2)/E_\mathrm{tip} + (1-\nu_\mathrm{surf}^2)/E_\mathrm{surf}$. For the baseline parameters, the contact radius is $a = \SI{201}{nm}$, with a mean contact pressure $p_\mathrm{mean} = \SI{7.9}{GPa}$ and peak pressure $p_\mathrm{max} = \SI{11.8}{GPa}$.
 
-The peak pressure exceeds the steel hardness ($H = \SI{5}{GPa}$), placing the contact in the \textbf{plastic regime}. The Greenwood--Williamson plasticity index~\cite{greenwood1966contact} is $\psi = (E_\mathrm{eff}/H)\sqrt{\sigma/r_\mathrm{tip}} = 5.83$, confirming significant plastic deformation. This has three critical implications for stylus measurements:
+The peak pressure exceeds the steel hardness ($H = \SI{5}{GPa}$), placing the contact in the \textbf{plastic regime}. The Greenwood--Williamson plasticity index~\cite{greenwood1966contact} is $\psi = (E_\mathrm{eff}/H)\sqrt{\sigma/r_\mathrm{tip}} = 5.83$, confirming significant plastic deformation. Two implications follow for stylus measurements:
 \begin{enumerate}
-    \item The tip leaves a permanent groove of depth $\delta \approx a^2/(2r_\mathrm{tip}) \approx \SI{10}{nm}$, directly modifying the surface being measured.
-    \item The effective tip radius under load increases to $r_\mathrm{eff} \approx r_\mathrm{tip}(1 + p_\mathrm{mean}/E_\mathrm{eff})^{1/3}$, slightly reducing the morphological filtering effect.
+    \item The Hertzian elastic analysis is not quantitatively valid in the plastic regime; the elastic contact radius $a \approx \SI{201}{nm}$ is retained only as an order-of-magnitude scale of the deformed zone. A quantitative prediction of the permanent groove depth would require an elastic--plastic contact model, which is beyond the scope of this work.
     \item For softer materials (aluminium, polymers), plastic deformation dominates and the stylus measurement becomes inherently destructive---the measured profile is the plastically deformed surface, not the original.
 \end{enumerate}
 The JKR adhesion correction~\cite{johnson1971surface} increases the effective contact radius by only \SI{1.5}{\percent} for the baseline parameters, indicating that adhesion is negligible for diamond-on-steel at millinewton loads, but becomes significant for nanoscale tips ($r_\mathrm{tip} < \SI{100}{nm}$) or soft materials.
@@ -55,7 +54,7 @@ The JKR adhesion correction~\cite{johnson1971surface} increases the effective co
 
 White-light interferometry uses broadband illumination to achieve vertical sectioning. The interference signal is modulated by a coherence envelope of width $l_c = \lambda_0^2/\Delta\lambda$, where $\lambda_0 = \SI{550}{nm}$ and $\Delta\lambda \approx \SI{100}{nm}$ for a typical LED source. For the baseline parameters: $l_c = \SI{3.0}{\micro m}$, giving an axial resolution $\sigma_z = l_c/(2\sqrt{2\ln 2}) \approx \SI{1.3}{\micro m}$ and approximately 11 measurable interference fringes within the envelope.
 
-At high numerical aperture ($\mathrm{NA} = 0.55$), oblique rays reduce the effective coherence length by an obliquity factor $\sqrt{1-\mathrm{NA}^2} \approx 0.84$, yielding $l_c^\mathrm{eff} \approx \SI{2.5}{\micro m}$. The coherence envelope acts as a Gaussian window in the axial direction, equivalent to a low-pass filter in the spatial frequency domain with width $\sigma_{f_z} = 1/(2\pi\sigma_z)$. This filters out surface features with wavelengths shorter than approximately $\SI{2}{\micro m}$ in the axial direction, complementing the lateral diffraction limit.
+At high numerical aperture ($\mathrm{NA} = 0.55$), oblique rays reduce the effective coherence length by an obliquity factor $\sqrt{1-\mathrm{NA}^2} \approx 0.84$, yielding $l_c^\mathrm{eff} \approx \SI{2.5}{\micro m}$. The coherence envelope acts as a Gaussian window in the axial direction, setting the axial sectioning. It does not impose a linear lateral spatial-frequency filter; rather, the interplay between axial sectioning and steep surface slopes truncates the interference signal and produces data drop-outs---a nonlinear data-loss mechanism (see below) rather than a linear lateral transfer.
 
 The interplay between lateral resolution (set by NA) and axial resolution (set by $l_c$) creates an anisotropic 3D transfer function that is not captured by 2D PSD analysis alone. For surfaces with steep slopes (exceeding $\arctan(\lambda/l_c) \approx \SI{10}{\degree}$), the coherence envelope truncates the interference signal, leading to data drop-outs that appear as ``holes'' in the measured topography.
 
@@ -77,7 +76,7 @@ The two modalities respond to fundamentally different material properties:
     \item \textbf{Optical}: Responds to \emph{electromagnetic} properties---complex refractive index $n+ik$. Steel reflects 57\% of incident light at $\SI{550}{nm}$; glass reflects only 4\%, resulting in a 14$\times$ reduction in SNR. Transparent materials present additional challenges from subsurface reflections.
 \end{itemize}
 
-For the baseline steel surface ($\sigma = \SI{50}{nm}$, $\lambda = \SI{550}{nm}$), the Rayleigh criterion $\sigma < \lambda/(8\cos\theta_i) \approx \SI{69}{nm}$ is satisfied, placing the surface in the \textbf{specular regime}. The optical skin depth in steel is approximately $\SI{13}{nm}$, meaning the measurement probes only the top $\sim\SI{15}{nm}$ of the surface---a fundamentally different sampling volume than the stylus, which probes the top $\sim a \approx \SI{200}{nm}$ (the contact depth).
+For the baseline steel surface ($\sigma = \SI{50}{nm}$, $\lambda = \SI{550}{nm}$), the Rayleigh criterion $\sigma < \lambda/(8\cos\theta_i) \approx \SI{69}{nm}$ is satisfied, placing the surface in the \textbf{specular regime}. The optical skin depth in steel is approximately $\SI{13}{nm}$. Because WLI height is recovered from the phase of the reflected field rather than from a volumetric average of the material, the skin depth bounds the probed material volume but does not directly set the sampled height region; the contrast with the stylus contact depth ($\sim a \approx \SI{200}{nm}$) is therefore illustrative of the different physical interactions rather than a literal measurement-volume statement.
 
 \subsection{Physical Uncertainty Budget}
 
@@ -180,7 +179,7 @@ The addition of scatterometry generalises the $k$-space operator framework from 
 
 In a multi-instrument metrology system, the combined information capacity is not additive---the overlap regions in $k$-space must be accounted for through the joint transfer matrix $\mathbf{H}(\mathbf{f}) = [H_1(\mathbf{f}), H_2(\mathbf{f}), \dots, H_N(\mathbf{f})]^T$, and the Fisher information becomes $\mathcal{F}_\mathrm{joint}(\mathbf{f}) = \sum_i |H_i(\mathbf{f})|^2 / N_i(\mathbf{f})$. For scatterometry, the ``noise spectrum'' $N_\mathrm{scat}(\mathbf{f})$ is determined by the BSDF noise floor ($\sim\SI{e-8}{sr^{-1}}$ for a well-designed instrument) propagated through the calibration kernel $\mathcal{K}^{-1}$.
 
-The three-way comparison underscores a methodological principle: \textbf{no single measurement modality can fully characterise a rough surface across all spatial frequencies}. The spectral bandwidth of each instrument is limited by first-principles physics---contact geometry for the stylus, diffraction for WLI, and the scattering hemisphere ($|f| \leq 2/\lambda$) for scatterometry. Multi-instrument fusion, weighted by the inverse of the Cram\'{e}r--Rao uncertainty at each $k$-space point, is the optimal strategy for broadband surface metrology.
+The three-way comparison underscores a methodological principle: \textbf{no single measurement modality can fully characterise a rough surface across all spatial frequencies}. The spectral bandwidth of each instrument is limited by first-principles physics---contact geometry for the stylus, diffraction for WLI, and the scattering hemisphere ($|f| \leq 2/\lambda$) for scatterometry. Multi-instrument fusion, weighted by the inverse of the Cram\'{e}r--Rao uncertainty at each $k$-space point, is the minimum-variance linear fusion strategy under the stated independent-noise linear observation model, and a practical trust-region strategy more generally.
 
 \begin{figure}[htbp]
     \centering
@@ -202,7 +201,7 @@ The complementarity of the three transfer functions suggests a practical reconst
     \label{eq:fusion}
 \end{equation}
 
-where the weights $w_i(\mathbf{f})$ are the per-mode Fisher information of each instrument---the transfer function squared divided by the noise PSD. Each modality therefore dominates the fused estimate precisely in the $k$-space band where its own transfer function is highest and its noise lowest, reproducing the trust-region structure identified in the main text.
+where the weights $w_i(\mathbf{f})$ are the per-mode Fisher information of each instrument---the transfer function squared divided by the noise PSD. Each modality therefore dominates the fused estimate precisely in the $k$-space band where its own transfer function is highest and its noise lowest, reproducing the trust-region structure identified in the main text. This is the minimum-variance linear combination of the model-corrected PSD estimates under the stated independent-noise linear observation model. In a fully experimental setting the $H_i(\mathbf{f})$ and $N_i(\mathbf{f})$ must first be obtained by instrument calibration; residual transfer-function attenuation or noise bias in uncalibrated PSDs would propagate into the fused estimate, so the demonstration below uses the known synthetic quantities.
 
 \begin{figure}[htbp]
     \centering
@@ -211,7 +210,7 @@ where the weights $w_i(\mathbf{f})$ are the per-mode Fisher information of each 
     \label{fig:S2_fusion}
 \end{figure}
 
-The fused estimate matches the true PSD across the combined bandwidth from $\SI{10}{mm^{-1}}$ to $\SI{3760}{mm^{-1}}$, where each single modality covers only a sub-band. This supports the methodological principle of the main text: multi-instrument fusion weighted by local information uncertainty is the optimal strategy for broadband surface metrology.
+The fused estimate matches the true PSD across the combined bandwidth from $\SI{10}{mm^{-1}}$ to $\SI{3760}{mm^{-1}}$, where each single modality covers only a sub-band. This supports the methodological principle of the main text: multi-instrument fusion weighted by local information uncertainty is a practical minimum-variance strategy (under the stated model) for broadband surface metrology.
 
 
 \section{Surface-Class Universality Stress-Test}

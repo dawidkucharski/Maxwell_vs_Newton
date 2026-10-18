@@ -1,0 +1,15 @@
+{
+  "method": "count of DFT bins with per-mode SNR > threshold; SNR = H(power) * S_true / noise_floor; noise floor = median of positive bins of difference-field periodogram (block8 convention); N=512, seed 42 baseline arrays.",
+  "stylus": {
+    "n_modes_SNR_gt_1": 61631,
+    "n_modes_SNR_gt_0p5": 81717,
+    "noise_floor": 1.6587316995067206e-30
+  },
+  "optical": {
+    "n_modes_SNR_gt_1": 127472,
+    "n_modes_SNR_gt_0p5": 182155,
+    "noise_floor": 2.2033845563264e-29
+  },
+  "total_bins": 262144,
+  "caveat": "mode counts are grid- and noise-estimator-dependent; quoted for illustration of mode coverage only, not as an absolute capacity."
+}

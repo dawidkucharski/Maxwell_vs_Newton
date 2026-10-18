@@ -244,6 +244,62 @@ def test_ball_parallel_curve():
     record("T9 ball dilation = parallel curve (R-r)", abs(shift + r) / r < 0.06,
            f"shift={shift*1e3:+.2f} um, expected {(-r)*1e3:+.2f} um")
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T10. Stylus transfer-function headline values (variant-consistent method)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_stylus_H_reproducible():
+    """Reproduces manuscript stylus H values with the committed method:
+    ratio of azimuthal means of Hanning-windowed periodograms, seed 42,
+    N=512, baseline params (variant_simulations.py procedure)."""
+    from variant_simulations import baseline_params, psd2d, azavg
+    N = 512
+    dx = 100e-6 / N
+    h_true = np.load(os.path.join(PIPE, 'outputs', 'iter01', 'h_true.npy'))
+    fx = np.fft.fftshift(np.fft.fftfreq(N, d=dx))
+    FX, FY = np.meshgrid(fx, fx)
+    fr = np.sqrt(FX ** 2 + FY ** 2)
+    Pt = psd2d(h_true, dx)
+    fc, _ = azavg(Pt, fr)
+    p = baseline_params()
+    hs, _ = simulate_stylus(h_true, p)
+    Ps = psd2d(hs, dx)
+    _, Hs1 = azavg(Ps, fr)
+    _, Pt1 = azavg(Pt, fr)
+    H = Hs1 / np.maximum(Pt1, 1e-30)
+    refs = {17: 2.2, 292: 0.91, 567: 0.74, 843: 0.57}
+    vals = {}
+    for f_mm, ref in refs.items():
+        i = np.argmin(np.abs(fc / 1e3 - f_mm))
+        vals[f_mm] = float(H[i])
+    i50 = np.where(H <= 0.5)[0]
+    f3 = float(fc[i50[0]] / 1e3) if len(i50) else None
+    ok = all(abs(vals[f] - ref) < max(0.05, 0.15 * ref) for f, ref in refs.items()) \
+        and f3 is not None and abs(f3 - 1049) < 60
+    record("T10 stylus H headline values + 3 dB point reproducible", ok,
+           f"H={ {f: round(v,2) for f, v in vals.items()} }, f3dB={f3:.0f} mm-1")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# T11. MMSE formula vs Monte Carlo Wiener filtering (1D Gaussian channel)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_mmse_formula():
+    rng = np.random.RandomState(7)
+    n = 128
+    f = np.arange(n) / n
+    H_amp = 1.0 / (1.0 + (f / 0.15) ** 2)
+    S_h = 1.0 / (1.0 + (f / 0.05) ** 2)
+    S_eta = 0.2
+    mmse_formula = np.sum(S_h * S_eta / (H_amp ** 2 * S_h + S_eta)) / n
+    mc_errs = []
+    for _ in range(4000):
+        x = np.sqrt(S_h) * (rng.randn(n) + 1j * rng.randn(n)) / np.sqrt(2)
+        y = H_amp * x + np.sqrt(S_eta) * (rng.randn(n) + 1j * rng.randn(n)) / np.sqrt(2)
+        x_hat = (H_amp * S_h / (H_amp ** 2 * S_h + S_eta)) * y
+        mc_errs.append(np.mean(np.abs(x - x_hat) ** 2))
+    mmse_mc = float(np.mean(mc_errs))
+    rel = abs(mmse_mc - mmse_formula) / mmse_formula
+    record("T11 MMSE formula == Monte Carlo Wiener (complex-mode channel)",
+           rel < 0.02, f"formula={mmse_formula:.4f}, MC={mmse_mc:.4f}, rel={rel:.3f}")
+
 if __name__ == "__main__":
     test_otf_autocorrelation()
     test_small_slope_dilation()
@@ -254,6 +310,8 @@ if __name__ == "__main__":
     test_scaling_out_of_sample()
     test_information_loss_slope()
     test_ball_parallel_curve()
+    test_stylus_H_reproducible()
+    test_mmse_formula()
     n_pass = sum(1 for _, ok, _ in RESULTS if ok)
     print(f"\n{n_pass}/{len(RESULTS)} passed")
     sys.exit(0 if n_pass == len(RESULTS) else 1)
