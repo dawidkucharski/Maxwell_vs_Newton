@@ -30,3 +30,13 @@ All entries are corrections or downgrades from the Round-3 state (commit d51d6d0
 ## Verified unchanged (do not re-edit)
 
 Stylus H values (2.2/0.91/0.74/0.57, 1049 mm⁻¹), Δx sweep RMSE/3 dB, polychromatic 96.5 %, OTF support 2000 mm⁻¹, equivalence 9.6 %±0.3 %/454±166 mm⁻¹, grid convergence, γ null result, α values, MI proxy/per-band values, ρ/η/ε definitions, public benchmark c=1.15±0.01, ball-standard geometric check, Ξ/Π values.
+
+## Round-4 execution additions (same day)
+
+17. **Cover letter** "is the optimal strategy" → "is a practical minimum-variance strategy under the stated independent-noise model" (matched to manuscript).
+18. **Abstract** bound claim "is obtained" → "is proposed and evaluated as a falsifiable benchmark" (aligned with SI S4.3 ansatz status); "confirms" → "supports" the methodological principle.
+19. **Introduction** "predictive rather than descriptive" → "quantitative and mechanism-based rather than descriptive".
+20. **Optical-model invariance** "any physically reasonable OTF…" → "unchanged across the three tested optical-model variants … not a proof".
+21. **Conclusions** "establishes" → "indicates" (three-way complementarity).
+22. **Fusion demo (new finding, verified).** Held-out audit (`verification/audit_fusion_holdout.py`, seeds 42/777/999) showed that the scatterometry PSD returned by the Rayleigh–Rice inversion is not on the same absolute scale as the height PSD (median ≈1e-18 vs ≈1e-30), and that the fused curve's accuracy claim was therefore unsupported. The SI text and fig. S2 caption now state that the demo is *illustrative* of the trust-region weighting rule, not a quantitative validation; the independent-noise assumption is stated explicitly.
+23. **Cover letter** "Hertzian contact mechanics" → "order-of-magnitude contact-mechanics analysis".

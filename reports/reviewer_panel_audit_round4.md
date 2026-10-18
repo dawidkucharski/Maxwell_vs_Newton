@@ -166,3 +166,14 @@ Estimates: Sci (1–5), Rev (1–5), Diff (1–5), Time (h), Gain (0–5).
 | 20 | Final git commit on `audit-science` with a one-line change log. | 0 | 1 | 1 | 0.1 | +0.3 |
 
 **Conclusion.** Items 1–6 and 10 are the only genuine remaining *defects* (all introduced by claim-strength mismatches between documents); total ≈ 30 minutes, no new mathematics, no length change. Item 7 is the only recommended new simulation (≤1 h) and is optional. Everything else is verification polish. Expected effect: removes the last cross-document contradictions; first-round outcome remains Minor Revision under the current panel, with the inherent computational-only limitation as the accepted scope.
+
+---
+
+## EXECUTION ADDENDUM (same day)
+
+All Top-20 items were applied. Two outcomes differ from the audit plan:
+
+- **Item 7 (held-out fusion run) produced a new finding rather than a confirmation.** `verification/audit_fusion_holdout.py` (seeds 42/777/999) showed the scatterometry PSD returned by the Rayleigh–Rice inversion is not on the same absolute scale as the height PSD (median ≈1e-18 vs ≈1e-30), so the previous claim that the fused estimate "matches the true PSD across the combined bandwidth" was unsupported. The SI text and fig. S2 caption now classify the demonstration as illustrative of the weighting rule only. This is a downgrade, not a new result.
+- All wording defects (items 1–6, 8–10) were fixed with no length change; the manuscript's cross-document claim strength is now uniform ("proposed and evaluated as a falsifiable benchmark"; "practical minimum-variance strategy under the stated independent-noise model"; "unchanged across the three tested variants").
+
+Final state: 18/18 tests (T1–T11 unchanged); the fusion audit is a separate committed script (`verification/audit_fusion_holdout.py`) with output in `reports/fusion_holdout_audit.json`; 0 build errors, 0 undefined citations.

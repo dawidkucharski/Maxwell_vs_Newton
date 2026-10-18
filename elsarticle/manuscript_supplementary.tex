@@ -206,11 +206,11 @@ where the weights $w_i(\mathbf{f})$ are the per-mode Fisher information of each 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../pipeline/outputs/iter01/figures/figS2_fusion_demo.pdf}
-    \caption{Computational demonstration of $k$-space trust-region fusion. (a) Individual PSD estimates from stylus, WLI, and scatterometry together with the true PSD. (b) The fused estimate (Eq.~\ref{eq:fusion}) follows the true PSD across the entire three-decade bandwidth, whereas no single modality does.}
+    \caption{Illustrative computational demonstration of $k$-space trust-region fusion. (a) Individual PSD estimates from stylus, WLI, and scatterometry together with the true PSD. (b) The fused estimate (Eq.~\ref{eq:fusion}) illustrates the trust-region weighting rule; the scatterometry PSD scale is set by its Rayleigh--Rice calibration kernel, so the panel is illustrative rather than a quantitative accuracy claim (see text).}
     \label{fig:S2_fusion}
 \end{figure}
 
-The fused estimate matches the true PSD across the combined bandwidth from $\SI{10}{mm^{-1}}$ to $\SI{3760}{mm^{-1}}$, where each single modality covers only a sub-band. This supports the methodological principle of the main text: multi-instrument fusion weighted by local information uncertainty is a practical minimum-variance strategy (under the stated model) for broadband surface metrology.
+The demonstration is illustrative rather than a quantitative validation: it uses the model's known transfer functions and noise floors, and it shows the trust-region weighting principle---each modality dominating where its own response is highest and its noise lowest. A held-out numerical audit of this demo (verification/audit\_fusion\_holdout.py) found that the scatterometry PSD estimate returned by the current Rayleigh--Rice inversion is not on the same absolute scale as the height PSD, so the fused curve in panel (b) should be read as a visual illustration of the weighting rule, not as evidence of quantitative fused accuracy. This supports the methodological principle of the main text: multi-instrument fusion weighted by local information uncertainty is a practical minimum-variance strategy (under the stated model and with mutually independent noise across modalities) for broadband surface metrology.
 
 
 \section{Surface-Class Universality Stress-Test}
