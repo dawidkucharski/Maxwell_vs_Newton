@@ -53,3 +53,4 @@ Stylus H values (2.2/0.91/0.74/0.57, 1049 mm⁻¹), Δx sweep RMSE/3 dB, polychr
 31. **Sampling-depth bullet corrected** (SI regime map): contact radius vs skin depth now presented as a qualitative interaction-volume contrast, not a measurement-depth equivalence.
 32. **Six-class CV annotated** with n = 5 per class.
 33. Build: manuscript 62 pp, SI 22 pp, 0 errors, 0 undefined; 18/18 tests. All withdrawn phrases verified absent.
+34. **Round 5:** symbols renamed ($\mathcal{S}$, similarity ratio $\mathcal{R}_\mathrm{S}$; no longer "MI"/"MIR"); anisotropy bullet retitled "across the sweep" (removed "universality/confirming/robust"); averaging band 1.5–2 µm (disjoint with the stylus-preference region). No page change: 62+22+3 pp, 0 errors, 18/18.
