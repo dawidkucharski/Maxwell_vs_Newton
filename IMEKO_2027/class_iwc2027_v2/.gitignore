@@ -1,0 +1,9 @@
+auxiliary files:
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.synctex.gz
+.DS_Store
+__MACOSX/
