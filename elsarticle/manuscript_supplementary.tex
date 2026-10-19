@@ -62,11 +62,11 @@ The interplay between lateral resolution (set by NA) and axial resolution (set b
 
 For $\mathrm{NA} > 0.5$, the scalar optical transfer function $H_\mathrm{optical}(f)$ of the main text becomes increasingly inaccurate. Vector diffraction theory~\cite{richards1959electromagnetic} predicts three corrections:
 \begin{enumerate}
-    \item \textbf{Apodisation}: The aplanatic lens imposes a $\sqrt{\cos\theta}$ amplitude factor, reducing the effective pupil transmission to 91\% at the pupil edge.
-    \item \textbf{Fresnel transmission losses}: At the air--glass interface, the average (unpolarised) transmission decreases from 96\% at normal incidence to 85\% at $\theta_\mathrm{max} = \SI{33.4}{\degree}$.
+    \item \textbf{Apodisation}: The aplanatic lens imposes a $\sqrt{\cos\theta}$ amplitude factor, reducing the effective pupil transmission to $\sqrt{\cos\SI{33.4}{\degree}} \approx 91\%$ at the pupil edge (computed from the stated NA and wavelength).
+    \item \textbf{Fresnel transmission losses}: For a single uncoated air--glass interface ($n=1.5$) at $\theta_\mathrm{max} = \SI{33.4}{\degree}$, the unpolarised Fresnel average remains $\approx 96\%$; multi-element and coated objectives introduce additional, system-specific losses that are not modelled here.
     \item \textbf{Depolarisation}: Cross-polarisation coupling at high angles mixes s and p components, violating the scalar assumption.
 \end{enumerate}
-The combined effect reduces the effective NA to $\mathrm{NA}_\mathrm{eff} = 0.504$ (92\% of nominal) and introduces a vector correction factor $\alpha \approx 0.05$ to the scalar OTF. The Strehl ratio of 0.91 confirms near-diffraction-limited performance. For applications requiring the highest resolution (metrology of precision optics), these corrections become essential: the effective diffraction cutoff is approximately \SI{1830}{mm^{-1}} rather than the scalar \SI{2000}{mm^{-1}}.
+These effects modify the OTF shape and transmission near the cutoff but do not change the support of the incoherent OTF; the baseline analysis therefore retains the scalar OTF and treats the vector corrections as a few-percent effect on the effective cutoff, not as a quantitative correction. A full vector-diffraction calculation would be required for metrology of high-NA precision optics.
 
 \subsection{Material Property Contrast: Why Surface Composition Matters}
 
@@ -80,30 +80,7 @@ For the baseline steel surface ($\sigma = \SI{50}{nm}$, $\lambda = \SI{550}{nm}$
 
 \subsection{Physical Uncertainty Budget}
 
-Applying the first-order uncertainty propagation method (GUM~\cite{jcgm2008gum}) to the key physical parameters yields the uncertainty budget in Table~\ref{tab:uncertainty}.
-
-\begin{table}[htbp]
-    \centering
-    \caption{Physical uncertainty budget for stylus and optical profilometry.}
-    \label{tab:uncertainty}
-    \begin{tabular}{lcc}
-        \toprule
-        \textbf{Uncertainty source} & \textbf{Stylus} & \textbf{Optical} \\
-        \midrule
-        Tip radius ($\pm\SI{100}{nm}$) & $\SI{0.5}{nm}$ & --- \\
-        Normal load ($\pm\SI{50}{\micro N}$) & $\SI{0.1}{nm}$ & --- \\
-        Wavelength calibration ($\pm\SI{1}{nm}$) & --- & $\SI{0.3}{nm}$ \\
-        NA uncertainty ($\pm 0.01$) & --- & $\SI{0.5}{nm}$ \\
-        Thermal drift ($\pm\SI{0.1}{K}$) & $\SI{0.12}{nm}$ & $\SI{0.12}{nm}$ \\
-        Base measurement noise & $\SI{0.5}{nm}$ & $\SI{1.0}{nm}$ \\
-        \midrule
-        \textbf{Combined standard uncertainty} & \textbf{$\pm\SI{0.9}{nm}$} & \textbf{$\pm\SI{1.4}{nm}$} \\
-        \textbf{Relative uncertainty ($k{=}1$)} & \textbf{1.8\%} & \textbf{2.7\%} \\
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-The dominant uncertainty source for the stylus is the tip radius tolerance ($\pm\SI{100}{nm}$), contributing 55\% of the combined variance. For the optical system, base measurement noise (phase unwrapping errors and camera noise) dominates at 51\%. Reducing stylus uncertainty requires traceable tip radius calibration; reducing optical uncertainty requires improved phase unwrapping algorithms or higher SNR illumination.
+Applying a first-order sensitivity analysis in the GUM framework~\cite{jcgm2008gum} identifies the dominant uncertainty sources: for the stylus, the tip-radius tolerance enters through the curvature bias $(r_\mathrm{tip}/2)\langle|\nabla h|^2\rangle$ and through the definitional tip-radius scale; for the optical system, phase-unwrapping errors and camera noise dominate. A numerical combined-uncertainty budget is deliberately not quoted: the sensitivity coefficients depend on the surface spectrum, the calibration state of the instrument and the correlation between inputs, none of which is fixed by the model. Under a conservative gain-error interpretation, the nominal tolerances ($\pm\SI{100}{nm}$ tip radius, i.e.\ 5\%; $\pm0.01$ NA, i.e.\ 2\%) correspond to $\approx\SI{0.4}{dB}$ and $\approx\SI{0.2}{dB}$ respectively, well below the \SI{3}{dB} equivalence threshold. A traceable budget for a specific instrument would require measured sensitivity coefficients; reducing stylus uncertainty therefore requires traceable tip-radius calibration, and reducing optical uncertainty requires improved phase unwrapping or higher SNR.
 
 \subsection{Physical Regime Map for Surface Metrology}
 
@@ -111,7 +88,7 @@ The physical analysis reveals that stylus and optical profilometry operate in fu
 \begin{itemize}
     \item \textbf{Contact regime}: For steel surfaces, the stylus operates in the plastic regime ($p_\mathrm{max} > H$) for $r_\mathrm{tip} < \SI{10}{\micro m}$ at $F_n = \SI{1}{mN}$. Elastic contact requires either larger tips or lower loads.
     \item \textbf{Optical regime}: For $\sigma = \SI{50}{nm}$, the surface is specular at $\lambda = \SI{550}{nm}$. Transition to the diffuse regime occurs at $\sigma > \SI{69}{nm}$. Diffuse surfaces reduce optical SNR by $\sim$50\% due to speckle.
-    \item \textbf{Sampling depth}: The stylus probes $\sim\SI{200}{nm}$ into the surface (contact radius); the optical probes $\sim\SI{13}{nm}$ (skin depth). For coated or oxidised surfaces, these two modalities literally measure different volumes of material.
+    \item \textbf{Probed material volume}: The stylus contact zone ($a \approx \SI{200}{nm}$) and the optical skin depth ($\approx\SI{13}{nm}$) differ by an order of magnitude, so for coated or oxidised surfaces the two modalities are sensitive to different parts of the surface layer. This is a qualitative contrast between interaction volumes, not a literal measurement-depth equivalence for either modality.
 \end{itemize}
 
 This physical regime analysis completes the measurement framework: the operator $\mathcal{M}$, transfer function $H(\mathbf{f})$, information capacity $C$, and fundamental limits (CRB, $\Xi$, uncertainty principle) are all grounded in the specific physics of tip--surface contact and light--surface interaction. The framework is now closed: from physical first principles to fundamental information limits, via the instrument transfer function.
@@ -327,7 +304,7 @@ Combined with the Gaussian self-affine baseline ($\rho = 0.793 \pm 0.053$, $\eta
 \begin{equation}
     \frac{u(H)}{H} \approx \sqrt{\sum_i \left(\frac{\partial \ln H}{\partial p_i}\right)^2 u^2(p_i)},
 \end{equation}
-where $p_i \in \{r_\mathrm{tip}, \Delta x, \mathrm{NA}, \lambda, \sigma_\eta\}$ are the independent instrument parameters and $u(p_i)$ their standard uncertainties. The dominant uncertainty source is the effective tip radius (contributing $\sim$60\% of the variance in $H_\mathrm{stylus}$) and the numerical aperture (contributing $\sim$55\% in $H_\mathrm{optical}$). The resulting $2\sigma$ confidence band on $H(f)$ is approximately $\pm\SI{1.2}{dB}$ for the stylus and $\pm\SI{0.9}{dB}$ for the optical system across the passband.
+where $p_i \in \{r_\mathrm{tip}, \Delta x, \mathrm{NA}, \lambda, \sigma_\eta\}$ are the independent instrument parameters and $u(p_i)$ their standard uncertainties. The dominant uncertainty sources are the effective tip radius for the stylus and the numerical aperture for the optical system. Under a conservative gain-error interpretation, the nominal tolerances ($\pm\SI{100}{nm}$ tip radius, i.e.\ 5\%; $\pm0.01$ NA, i.e.\ 2\%) correspond to $\approx\SI{0.4}{dB}$ and $\approx\SI{0.2}{dB}$ in $H(f)$, well below the \SI{3}{dB} equivalence threshold. Measured sensitivity coefficients are not available for a specific instrument, so no combined $2\sigma$ band is quoted.
 
 \begin{figure}[htbp]
     \centering

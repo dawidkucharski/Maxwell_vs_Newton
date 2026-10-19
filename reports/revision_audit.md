@@ -1,0 +1,44 @@
+# Revision Audit — STMP final scientific audit
+
+Date: 2026-10-19. Branch: `audit-science` (HEAD f14fd7c + working-tree fixes committed with this report).
+Baseline: no `manuscript(2).pdf` / `manuscript_supplementary(2).pdf` were present in the repository; the authoritative sources are `elsarticle/manuscript.tex` and `elsarticle/manuscript_supplementary.tex`. Baseline build: 62 pp + 22 pp, 0 errors, 0 undefined; tests 18/18.
+
+Status labels: **VERIFIED AND FIXED** · **VERIFIED AND RETAINED WITH QUALIFICATION** · **NOT REPRODUCIBLE** (removed/replaced) · **REMOVED**.
+
+| # | Issue | Location | Severity | Evidence | Reproducibility | Corrective action | Verification |
+|---|---|---|---|---|---|---|---|
+| 1 | Protocol recommended optical for λ < 0.5 µm, i.e. *beyond* the stated 2000 mm⁻¹ cutoff (self-contradictory) | `manuscript.tex` §4.1, instrument-selection protocol, item 4 | **Critical** | f_c = 2NA/λ = 2000 mm⁻¹ ↔ 0.5 µm; frequencies above cutoff are outside the passband | Arithmetic from the paper's own definitions | Replaced with: prefer optical for **0.5–1.5 µm** (≈670–2000 mm⁻¹); **below 0.5 µm neither modality resolves** the modelled passband; artefacts only. Decision-matrix rationale corrected to the 0.5 µm diffraction limit | ✅ 0 errors; wording greps |
+| 2 | Information-loss slope quoted "over 0.05–1.5 mm⁻¹" although T8 computes 50–1500 mm⁻¹ (transcription ×1000) | `manuscript.tex` §3.3 Results | **Critical** | `verification/run_tests.py` T8: band `(f_c > 0.5e5) & (f_c < 1.5e6)` m⁻¹ = 50–1500 mm⁻¹ | **NOT REPRODUCIBLE** as written; reproducible as 50–1500 | Corrected to `\SIrange{50}{1500}{mm^{-1}}`; slope 0.447 unchanged and matches | ✅ T8 passes; text now equals code band |
+| 3 | Stylus PSD ratio presented as a power transfer function without stating noise bias in the numerator | `manuscript.tex` §2.3 (transfer functions) | High | `block4`: additive noise; PSD ratio = (S+bias+noise)/S. Fresh ensemble: low-f excess from curvature bias (linearised model 1.70 vs measured 1.92) | Verified; bias quantified | Renamed "**empirical power** transfer function"; explicit clause: noise enters the numerator and is **not subtracted** → upper-biased; linearised amplitude response via Eq. (3) and cross-spectral check (`audit_stylus_channel.py`) | ✅ T10 + audit JSON |
+| 4 | Discussion called the bound "absolute … cannot be reduced … by any algorithm", while abstract/SI call it a benchmark/ansatz | `manuscript.tex` §4.1 practitioner paragraph | High | Main text vs SI S4.3 | Internal consistency | Removed "absolute" and "by any algorithm"; now "instrument-independent reference … expected to be bounded from below … a measured product substantially below this would falsify the formulation" | ✅ greps: 0 residual |
+| 5 | Correlation of log-PSDs called "mutual information proxy" | `manuscript.tex` §3.3, Table 4 | Medium | It is not an MI estimator | Definitional | Renamed "**spectral-similarity proxy** (not a Shannon mutual-information estimator)"; table entry now "spectral similarity 0.91" | ✅ greps |
+| 6 | Channel "capacity" = MI under fixed prior; pipeline omits ½ and counts both Hermitian halves | `manuscript.tex` §5 terminology note; `block8` | Medium | Code inspection: `C_total = Σ log2(...) · Δf²` over all bins without ½ | Verified; documented | Terminology note states MI-under-prior, ½-factor omission, ratio-invariance; water-filling capacity distinguished | ✅ note present |
+| 7 | MMSE formula and ρ = 1 − MMSE/σ² asserted without independent check | `manuscript.tex` §5.4 | High | New T11: Monte Carlo Wiener on complex-mode channel, rel. diff 0.2 % | **Verified** | Retained; T11 added; linear-Gaussian caveat stated | ✅ 18/18 tests |
+| 8 | Total-information ranking changes with noise estimator | `manuscript.tex` §5.2–5.3 | High | Ratios 0.68 vs 1.61 across estimators | Verified | No total ranking claimed; per-band picture only | ✅ retained qualification |
+| 9 | Hertzian elastic radius extrapolated to plastic regime (groove depth, r_eff formula) | SI §1.1 | **Critical** (earlier) | a=201 nm, ψ=5.83 re-derived; p_max>H | Verified | Removed groove depth and r_eff formula; elastic analysis explicitly non-quantitative in plastic regime | ✅ SI text |
+| 10 | "Sampling depth" bullet equated Hertz contact radius and skin depth with measurement depths | SI §1.6 regime map | High | Conceptually invalid | — | Replaced with "probed material volume … qualitative contrast, not a literal measurement-depth equivalence" | ✅ greps: 0 "Sampling depth" |
+| 11 | Coherence envelope described as lateral low-pass filter | SI §1.2 | High (earlier) | Conceptually invalid | — | Rewritten: axial sectioning only; steep-slope truncation = nonlinear data loss | ✅ SI text |
+| 12 | Vector diffraction: 85 % Fresnel transmission, NA_eff 0.504, Strehl 0.91, α≈0.05, 1830 mm⁻¹ (8 %) asserted without derivation | SI §1.3; `manuscript.tex` §2.1 | High | Recomputed: √cos33.4° = 0.914 (91 % ✓); single-interface unpolarised Fresnel at 33.4° ≈ 96 % (not 85 %) | **NOT REPRODUCIBLE** as stated | Kept derivable 91 %; replaced 85 % with computed ≈96 % and noted system-specific losses; removed NA_eff, α, Strehl, 1830 mm⁻¹; main text now "few-percent effect" | ✅ recomputation |
+| 13 | Numerical GUM uncertainty budget (±0.9/±1.4 nm; 55 %/51 % variance) not derivable | SI Table 1 + GUM section; `manuscript.tex` §2.3 | High | No sensitivity coefficients or covariance documented | **NOT REPRODUCIBLE** | Removed numeric table and percentages/2σ dB bands; replaced with qualitative source ranking + conservative gain-error estimate (5 %→0.42 dB; 2 %→0.17 dB) and explicit statement that a traceable budget needs measured coefficients | ✅ main/SI consistent |
+| 14 | Material optics numbers | SI §1.4 | Medium | Steel R = [(n−1)²+k²]/[(n+1)²+k²] = 56.8 % ✓; glass ≈4 % ✓; skin depth λ/(4πk)=13.3 nm ✓; Rayleigh 69 nm ✓ | **Verified** | Retained | ✅ recomputation |
+| 15 | Scatterometry PSD not on height-PSD scale (median 1e-18 vs 1e-30); fusion called validation | SI §2–3, fig. S2 | High | `audit_fusion_holdout.py` seeds 42/777/999 | **NOT REPRODUCIBLE** as quantitative | Fusion text + caption downgraded to **illustrative of the weighting rule**; scale mismatch disclosed in SI; no quantitative fused-accuracy claim | ✅ SI text |
+| 16 | λ≈1–10 mm mid-spatial-frequency statement | `manuscript.tex` §4.2 | Low | Domain statement about optical fabrication, not a data claim | Verified as domain context | Retained | ✅ |
+| 17 | Surface-class CVs (0.22/0.067/0.16) and n=5 | Abstract, §3.4, §5, Roadmap | Medium | SI tables; six-class test n=5/class | Verified | Like-for-like wording; "n=5 per class" added at CV=0.067 | ✅ greps |
+| 18 | Public benchmark: fitted vs known parameters | `manuscript.tex` §3.2 | Medium | `public_data_benchmark.py`: fits amplitude, slope, cutoff scale c | Verified | Scope clause: model-description check; c is the single fitted instrument parameter | ✅ text |
+| 19 | Scaling relation over-interpreted | Abstract, §3.5, §4.1 | High (earlier) | Blocked CV 0.518; median ratio error ×1.93; residual–σ r=0.81 | Verified | "Approximately described"; order-of-magnitude descriptor; section retitled; convention and single-realisation notes | ✅ `scaling_law_audit.json` |
+| 20 | Full build/consistency | All sources | — | 0 errors, 0 undefined, 0 bibtex warnings; 18/18 tests | — | Clean rebuild after fixes | ✅ |
+
+## Scope recommendation (Phase 3)
+
+The defensible core is the stylus-vs-optical operator comparison with the empirically validated transfer functions, the equivalence regime, and the public-data cross-checks. The information-theoretic section is retained because its individual formulas are standard and now independently tested (T11), and its claims are explicitly scoped; scatterometry/fusion is retained **only** as a labelled conceptual/illustrative extension (its quantitative validation failed and is disclosed). No further restructuring is required for STMP; a shorter paper would remove an honest, disclaimed extension without materially increasing defensibility.
+
+## Build audit (Phase 4)
+
+- `manuscript.tex` → `manuscript.pdf`: **62 pp**, 0 errors, 0 undefined citations/references.
+- `manuscript_supplementary.tex` → `manuscript_supplementary.pdf`: **22 pp**, 0 errors, 0 undefined.
+- Search for withdrawn phrases: `0.05--1.5`, `by any algorithm`, `Sampling depth`, `absolute, instrument-independent`, `optimal strategy`, `any physically reasonable OTF` → **0 occurrences**.
+- Tests: **18/18** pass.
+
+## Verdict
+
+**READY.** Every issue identified in this audit is either fixed (1–5, 9–13), verified and retained with stated qualification (3, 6–8, 14–19), or removed/replaced where not reproducible (2, 12, 13, 15). The remaining limitations — computational-only validation, illustrative scatterometry/fusion, heuristic composite metrics — are disclosed in the manuscript and do not rest on unsupported numerical claims.

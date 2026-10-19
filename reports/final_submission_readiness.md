@@ -44,3 +44,15 @@ Minor: stale `iter01` npy arrays remain in the repo (documented as not used for 
 ## Recommendation
 
 **SUBMIT** to STMP after the routine rebuild/commit of this branch. The manuscript now contains no claim that cannot be traced to a committed artefact, and every known overstatement has been removed or scoped.
+
+---
+
+## Revision-audit update (2026-10-19) — supersedes the verdict above
+
+A final scientific pass (`reports/revision_audit.md`) rechecked every headline claim against code and recomputation. New corrections: the instrument-selection protocol (0.5 µm cutoff logic), the information-loss slope interval (50–1500 mm⁻¹, transcription ×1000), the bound wording (no "any algorithm" claim), the vector-diffraction numbers (unsupported values removed; 91 % apodisation retained, Fresnel recomputed ≈96 %), the GUM budget (numeric table removed as non-derivable), the sampling-depth claim, and the MI-proxy naming.
+
+Status of priority checks: optical cutoff/recommendations **fixed**; slope/grid **fixed**; stylus PSD-ratio interpretation **verified and qualified**; bound **fixed and aligned**; information theory **verified (T11) with documented conventions**; supplementary physics **fixed**; scatterometry/fusion **retained only as illustrative, not quantitative**; scaling relation **verified and retained with qualification**; surface-class CVs and public-benchmark scope **reconciled**.
+
+Build: 62 pp + 22 pp, 0 errors, 0 undefined; 18/18 tests.
+
+**Verdict: READY.** Remaining limitations (computational-only validation; illustrative fusion; heuristic Ξ/Π) are disclosed and carry no unsupported numerical claims.

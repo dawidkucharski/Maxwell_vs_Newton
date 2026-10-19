@@ -40,3 +40,16 @@ Stylus H values (2.2/0.91/0.74/0.57, 1049 mm⁻¹), Δx sweep RMSE/3 dB, polychr
 21. **Conclusions** "establishes" → "indicates" (three-way complementarity).
 22. **Fusion demo (new finding, verified).** Held-out audit (`verification/audit_fusion_holdout.py`, seeds 42/777/999) showed that the scatterometry PSD returned by the Rayleigh–Rice inversion is not on the same absolute scale as the height PSD (median ≈1e-18 vs ≈1e-30), and that the fused curve's accuracy claim was therefore unsupported. The SI text and fig. S2 caption now state that the demo is *illustrative* of the trust-region weighting rule, not a quantitative validation; the independent-noise assumption is stated explicitly.
 23. **Cover letter** "Hertzian contact mechanics" → "order-of-magnitude contact-mechanics analysis".
+
+## 2026-10-19 revision audit (final scientific pass)
+
+24. **Instrument-selection protocol corrected (Critical).** The old item "λ < 0.5 µm (above the optical cutoff) → only optical valid" was self-contradictory. Now: prefer optical for feature wavelengths 0.5–1.5 µm (≈670–2000 mm⁻¹); below 0.5 µm **neither** modality resolves features in the modelled passband. Decision-matrix rationale aligned.
+25. **Information-loss slope interval corrected (Critical).** "0.05–1.5 mm⁻¹" → "50–1500 mm⁻¹", matching T8's computed band (0.5e5–1.5e6 m⁻¹). Slope value 0.447 unchanged.
+26. **PSD ratio renamed and scoped.** "Empirical power transfer function"; explicit statement that additive noise enters the numerator and is not subtracted (upper-biased estimate); linearised amplitude response via Eq. (3) and cross-spectral check.
+27. **Bound overclaim removed.** "absolute … cannot be reduced … by any algorithm" → instrument-independent reference with a falsifiability statement, matching the abstract/SI benchmark status.
+28. **MI proxy renamed** to "spectral-similarity proxy (not a Shannon mutual-information estimator)"; decision-table entry updated.
+29. **Vector-diffraction numbers corrected.** Kept the derivable √cosθ ≈ 91 % apodisation; replaced the unsupported 85 % Fresnel claim with the recomputed ≈96 % single-interface value; removed NA_eff = 0.504, α ≈ 0.05, Strehl 0.91 and 1830 mm⁻¹; main text now says "few-percent effect".
+30. **Uncertainty budget replaced.** Removed the non-derivable nm table (±0.9/±1.4 nm; 55 %/51 %) and the 2σ dB bands; replaced with a qualitative ranking plus a conservative gain-error estimate (5 % → 0.42 dB, 2 % → 0.17 dB) and an explicit statement that a traceable budget requires measured sensitivity coefficients.
+31. **Sampling-depth bullet corrected** (SI regime map): contact radius vs skin depth now presented as a qualitative interaction-volume contrast, not a measurement-depth equivalence.
+32. **Six-class CV annotated** with n = 5 per class.
+33. Build: manuscript 62 pp, SI 22 pp, 0 errors, 0 undefined; 18/18 tests. All withdrawn phrases verified absent.
