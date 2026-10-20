@@ -7,3 +7,15 @@ auxiliary files:
 *.synctex.gz
 .DS_Store
 __MACOSX/
+# template package files (not project content)
+fig1.jpg
+fig2.jpg
+wide_image.jpg
+imeko.png
+logo_IMEKO2027_v1.png
+imeko-wc-authors-guide.pdf
+imeko-wc-bare-article.tex
+imeko-wc-bare-article.bib
+imeko-wc-bare-article.pdf
+imeko_wc.cls
+imeko_wc.bst
