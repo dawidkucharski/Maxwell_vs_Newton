@@ -1,0 +1,19 @@
+{
+  "title": "Maxwell_vs_Newton: A Unified k-Space Operator Framework for Stylus and Optical Profilometry",
+  "description": "Simulation pipeline, verification suite and generated outputs for comparing stylus profilometry and optical interferometry through instrument transfer functions, spectral information loss, anisotropy, equivalence regimes and information-theoretic diagnostics. Companion to the manuscript 'Optical Profilometry Versus the Stylus: A Spectral Theory for Closing the Accuracy Gap'.",
+  "creators": [
+    {"name": "Kucharski, Dawid", "affiliation": "Institute of Mechanical Technology, Poznan University of Technology, Poland"},
+    {"name": "Jakubowicz, Michał", "affiliation": "Institute of Mechanical Technology, Poznan University of Technology, Poland"}
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "surface metrology",
+    "stylus profilometry",
+    "white-light interferometry",
+    "instrument transfer function",
+    "power spectral density",
+    "information theory"
+  ]
+}

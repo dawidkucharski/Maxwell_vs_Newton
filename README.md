@@ -83,3 +83,21 @@ pdflatex manuscript.tex
 
 This project is part of ongoing research at Poznan University of Technology,
 Institute of Mechanical Engineering. Contact: dawid.kucharski@put.poznan.pl
+
+## Citation
+
+Please cite this repository as:
+
+> Kucharski, D., Jakubowicz, M. (2026). Maxwell_vs_Newton: A Unified k-Space
+> Operator Framework for Stylus and Optical Profilometry (Version 1.0.0).
+> GitHub repository, https://github.com/dawidkucharski/Maxwell_vs_Newton.
+
+A Zenodo DOI will be assigned at acceptance of the companion manuscript and
+added to this file and to CITATION.cff.
+
+## Public data provenance
+
+The public-data cross-checks use the CC-BY-4.0 dataset of Hirose et al.
+(Zenodo 10.5281/zenodo.15750880, DOI 10.1364/AO.562002) and the CC-BY-4.0
+ball-standard profiles of Aksulu (Zenodo 10.5281/zenodo.4471347), fetched by
+`verification/fetch_public_data.sh` with provenance recorded in `data_public/`.
