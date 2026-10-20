@@ -32,7 +32,8 @@ DESCRIPTION = (
     "instrument transfer functions, spectral information loss, anisotropy, "
     "equivalence regimes and information-theoretic diagnostics. Companion "
     "to the manuscript 'Optical Profilometry Versus the Stylus: A Spectral "
-    "Theory for Closing the Accuracy Gap'.")
+    "Theory for Closing the Accuracy Gap'. Repository: "
+    "https://github.com/dawidkucharski/Maxwell_vs_Newton")
 AFFILIATION = ("Institute of Mechanical Technology, "
                "Poznan University of Technology, Poland")
 KEYWORDS = [
@@ -46,6 +47,10 @@ KEYWORDS = [
 PUBLICATION_DATE = "2026-10-20"
 VERSION = "1.0.0"
 REPO_URL = "https://github.com/dawidkucharski/Maxwell_vs_Newton"
+
+# Vocabulary ids verified against https://zenodo.org/api/vocabularies/
+RESOURCE_TYPE = "software"
+RIGHTS_ID = "mit-cmu"
 
 
 def get_token():
@@ -128,8 +133,9 @@ def http(method, url, token=None, data=None, raw=None, bearer=True,
         return 0, {"error": str(err)}
 
 
-def deposit_new(token, files, tag):
-    meta = {
+def metadata_body():
+    """InvenioRDM metadata (nested under 'metadata' as Zenodo now expects)."""
+    return {
         "metadata": {
             "title": TITLE,
             "creators": [{
@@ -141,84 +147,59 @@ def deposit_new(token, files, tag):
                     "affiliations": [{"name": AFFILIATION}],
                 }
             }],
-            "resource_type": {"id": "software"},
+            "resource_type": {"id": RESOURCE_TYPE},
             "publication_date": PUBLICATION_DATE,
             "description": DESCRIPTION,
             "version": VERSION,
             "keywords": [{"subject": k} for k in KEYWORDS],
-            "rights": [{"id": "MIT", "title": {"en": "MIT License"}}],
+            "rights": [{"id": RIGHTS_ID}],
         }
     }
-    status, rec = http("POST", "https://zenodo.org/api/records",
-                       token=token, data=meta)
-    if status not in (200, 201) or "id" not in rec:
-        raise RuntimeError(f"new-API draft creation failed: {rec}")
-    rid = rec["id"]
-    base = f"https://zenodo.org/api/records/{rid}/draft/files"
+
+
+def upload_files(token, rec, files, bearer, records_base):
+    """Upload via InvenioRDM draft-files endpoint or legacy bucket link."""
+    rid = rec.get("id")
+    links = rec.get("links", {}) or {}
+    if "files" in links:
+        base = links["files"]
+    elif "bucket" in links:
+        base = links["bucket"]
+    else:
+        base = f"{records_base}/{rid}/draft/files"
     for path in files:
         status, _ = http("PUT", f"{base}/{path.name}", token=token,
-                         raw=path.read_bytes(),
+                         raw=path.read_bytes(), bearer=bearer,
                          content_type="application/octet-stream")
         if status not in (200, 201):
-            raise RuntimeError(f"new-API upload failed for {path.name}: "
-                               f"status {status}")
+            raise RuntimeError(f"upload failed for {path.name}: status {status}")
+
+
+def deposit(token, files, bearer, depo_base, records_base):
+    status, rec = http("POST", depo_base, token=token,
+                       data=metadata_body(), bearer=bearer)
+    if status not in (200, 201) or not rec or "id" not in rec:
+        raise RuntimeError(f"draft creation failed (status {status}): {rec}")
+    rid = rec["id"]
+    upload_files(token, rec, files, bearer, records_base)
     status, _ = http("POST",
-                     f"https://zenodo.org/api/records/{rid}/draft/"
-                     "actions/publish", token=token)
+                     f"{depo_base}/{rid}/actions/publish",
+                     token=token, bearer=bearer)
     if status not in (200, 202):
-        raise RuntimeError(f"new-API publish failed: status {status}")
-    status, rec = http("GET", f"https://zenodo.org/api/records/{rid}",
-                       token=token)
+        raise RuntimeError(f"publish failed: status {status}")
+    status, rec = http("GET", f"{records_base}/{rid}", token=token,
+                       bearer=bearer)
     doi = None
     try:
         doi = rec["metadata"]["pids"]["doi"]["identifier"]
     except (KeyError, TypeError):
-        doi = f"10.5281/zenodo.{rid}"
+        pass
+    if not doi:
+        try:
+            doi = rec["metadata"]["prereserve_doi"]["doi"]
+        except (KeyError, TypeError):
+            doi = f"10.5281/zenodo.{rid}"
     return doi, rid
-
-
-def deposit_legacy(token, files, tag):
-    meta = {
-        "title": TITLE,
-        "description": DESCRIPTION,
-        "upload_type": "software",
-        "creators": [{"name": "Kucharski, Dawid",
-                      "affiliation": AFFILIATION}],
-        "license": "MIT",
-        "access_right": "open",
-        "version": VERSION,
-        "keywords": KEYWORDS,
-        "publication_date": PUBLICATION_DATE,
-        "related_identifiers": [
-            {"relation": "isSupplementTo", "identifier": REPO_URL,
-             "resource_type": "software"},
-        ],
-    }
-    status, rec = http("POST",
-                       "https://zenodo.org/api/deposit/depositions",
-                       token=token, data=meta, bearer=False)
-    if status not in (200, 201) or "id" not in rec:
-        raise RuntimeError(f"legacy-API draft creation failed: {rec}")
-    did = rec["id"]
-    bucket = rec["links"]["bucket"]
-    for path in files:
-        status, _ = http("PUT", f"{bucket}/{path.name}", token=token,
-                         raw=path.read_bytes(), bearer=False,
-                         content_type="application/octet-stream")
-        if status not in (200, 201):
-            raise RuntimeError(f"legacy-API upload failed for {path.name}: "
-                               f"status {status}")
-    status, rec = http("POST",
-                       f"https://zenodo.org/api/deposit/depositions/{did}/"
-                       "actions/publish", token=token, bearer=False)
-    if status not in (200, 202):
-        raise RuntimeError(f"legacy-API publish failed: status {status}")
-    doi = None
-    try:
-        doi = rec["metadata"]["prereserve_doi"]["doi"]
-    except (KeyError, TypeError):
-        doi = f"10.5281/zenodo.{did}"
-    return doi, did
 
 
 def main():
@@ -228,10 +209,17 @@ def main():
     files = build_files(tag)
     print("files       : " + ", ".join(str(p.name) for p in files))
     doi = None
-    for name, fn in (("new API", deposit_new), ("legacy API",
-                                                deposit_legacy)):
+    attempts = [
+        ("new API (Bearer)", True,
+         "https://zenodo.org/api/records",
+         "https://zenodo.org/api/records"),
+        ("legacy API (token query)", False,
+         "https://zenodo.org/api/deposit/depositions",
+         "https://zenodo.org/api/records"),
+    ]
+    for name, bearer, depo_base, records_base in attempts:
         try:
-            doi, rid = fn(token, files, tag)
+            doi, rid = deposit(token, files, bearer, depo_base, records_base)
             print(f"deposited via {name}, record {rid}")
             break
         except Exception as err:  # noqa: BLE001 - fallback is intentional
