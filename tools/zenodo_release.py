@@ -133,8 +133,14 @@ def http(method, url, token=None, data=None, raw=None, bearer=True,
         return 0, {"error": str(err)}
 
 
-def metadata_body():
-    """InvenioRDM metadata (nested under 'metadata' as Zenodo now expects)."""
+def metadata_body(resource_type_as_object=True):
+    """InvenioRDM metadata (nested under 'metadata' as Zenodo now expects).
+
+    The new /api/records endpoint accepts the resource type as an object
+    {"id": ...}; the legacy deposit endpoint wants a plain string.
+    """
+    rtype = ({"id": RESOURCE_TYPE} if resource_type_as_object
+             else RESOURCE_TYPE)
     return {
         "metadata": {
             "title": TITLE,
@@ -147,7 +153,7 @@ def metadata_body():
                     "affiliations": [{"name": AFFILIATION}],
                 }
             }],
-            "resource_type": {"id": RESOURCE_TYPE},
+            "resource_type": rtype,
             "publication_date": PUBLICATION_DATE,
             "description": DESCRIPTION,
             "version": VERSION,
@@ -155,6 +161,47 @@ def metadata_body():
             "rights": [{"id": RIGHTS_ID}],
         }
     }
+
+
+def _auth(url, token, bearer, headers):
+    if token:
+        if bearer:
+            headers["Authorization"] = f"Bearer {token}"
+        else:
+            sep = "&" if "?" in url else "?"
+            url += sep + "access_token=" + urllib.parse.quote(token)
+    return url
+
+
+def _upload_one(token, base, path, bearer):
+    """Try several upload variants until one returns 2xx."""
+    name = path.name
+    data = path.read_bytes()
+    ctype = "application/zip" if path.suffix == ".zip" else "application/pdf"
+    boundary = "----zenodo-upload-7f3a2c"
+    part = (f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="file"; '
+            f'filename="{name}"\r\n'
+            f"Content-Type: application/octet-stream\r\n\r\n").encode()
+    body = part + data + f"\r\n--{boundary}--\r\n".encode()
+    variants = [
+        (base, "POST", body,
+         f"multipart/form-data; boundary={boundary}"),
+        (f"{base}/{name}", "PUT", data, ctype),
+        (f"{base}/{name}", "PUT", data, "application/octet-stream"),
+    ]
+    for url, method, payload, hdr_ct in variants:
+        headers = {"Content-Type": hdr_ct}
+        url = _auth(url, token, bearer, headers)
+        req = urllib.request.Request(url, data=payload, headers=headers,
+                                     method=method)
+        try:
+            with urllib.request.urlopen(req, timeout=300) as resp:
+                if resp.status in (200, 201, 202):
+                    return True
+        except (urllib.error.HTTPError, urllib.error.URLError):
+            continue
+    return False
 
 
 def upload_files(token, rec, files, bearer, records_base):
@@ -168,16 +215,15 @@ def upload_files(token, rec, files, bearer, records_base):
     else:
         base = f"{records_base}/{rid}/draft/files"
     for path in files:
-        status, _ = http("PUT", f"{base}/{path.name}", token=token,
-                         raw=path.read_bytes(), bearer=bearer,
-                         content_type="application/octet-stream")
-        if status not in (200, 201):
-            raise RuntimeError(f"upload failed for {path.name}: status {status}")
+        if not _upload_one(token, base, path, bearer):
+            raise RuntimeError(f"upload failed for {path.name}")
 
 
-def deposit(token, files, bearer, depo_base, records_base):
+def deposit(token, files, bearer, depo_base, records_base,
+            resource_type_as_object=True):
     status, rec = http("POST", depo_base, token=token,
-                       data=metadata_body(), bearer=bearer)
+                       data=metadata_body(resource_type_as_object),
+                       bearer=bearer)
     if status not in (200, 201) or not rec or "id" not in rec:
         raise RuntimeError(f"draft creation failed (status {status}): {rec}")
     rid = rec["id"]
@@ -212,14 +258,15 @@ def main():
     attempts = [
         ("new API (Bearer)", True,
          "https://zenodo.org/api/records",
-         "https://zenodo.org/api/records"),
+         "https://zenodo.org/api/records", True),
         ("legacy API (token query)", False,
          "https://zenodo.org/api/deposit/depositions",
-         "https://zenodo.org/api/records"),
+         "https://zenodo.org/api/records", False),
     ]
-    for name, bearer, depo_base, records_base in attempts:
+    for name, bearer, depo_base, records_base, rtype_obj in attempts:
         try:
-            doi, rid = deposit(token, files, bearer, depo_base, records_base)
+            doi, rid = deposit(token, files, bearer, depo_base, records_base,
+                               rtype_obj)
             print(f"deposited via {name}, record {rid}")
             break
         except Exception as err:  # noqa: BLE001 - fallback is intentional
