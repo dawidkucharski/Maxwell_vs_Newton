@@ -1,6 +1,6 @@
 # Maxwell_vs_Newton — k-Space Transfer Functions for Surface Metrology
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23493876.svg)](https://doi.org/10.5281/zenodo.23493876)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23493875.svg)](https://doi.org/10.5281/zenodo.23493875)
 
 Automated discovery pipeline for comparing stylus profilometry, white-light
 interferometry (WLI), and scatterometry through a unified $k$-space operator
@@ -91,8 +91,8 @@ Institute of Mechanical Engineering. Contact: dawid.kucharski@put.poznan.pl
 Please cite this repository as:
 
 > Kucharski, D. (2026). Maxwell_vs_Newton: A Unified k-Space
-> Operator Framework for Stylus and Optical Profilometry (Version 1.0.1).
-> Zenodo, https://doi.org/10.5281/zenodo.23493876. GitHub repository,
+> Operator Framework for Stylus and Optical Profilometry (Version 1.0.2).
+> Zenodo, https://doi.org/10.5281/zenodo.23493875. GitHub repository,
 > https://github.com/dawidkucharski/Maxwell_vs_Newton.
 
 Each GitHub release is archived on Zenodo and receives its own DOI
