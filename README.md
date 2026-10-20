@@ -88,7 +88,7 @@ Institute of Mechanical Engineering. Contact: dawid.kucharski@put.poznan.pl
 
 Please cite this repository as:
 
-> Kucharski, D., Jakubowicz, M. (2026). Maxwell_vs_Newton: A Unified k-Space
+> Kucharski, D. (2026). Maxwell_vs_Newton: A Unified k-Space
 > Operator Framework for Stylus and Optical Profilometry (Version 1.0.0).
 > GitHub repository, https://github.com/dawidkucharski/Maxwell_vs_Newton.
 
