@@ -174,7 +174,7 @@ def _auth(url, token, bearer, headers):
 
 
 def _upload_one(token, base, path, bearer):
-    """Try several upload variants until one returns 2xx."""
+    """Try several upload variants; return (ok, last_error_detail)."""
     name = path.name
     data = path.read_bytes()
     ctype = "application/zip" if path.suffix == ".zip" else "application/pdf"
@@ -185,12 +185,14 @@ def _upload_one(token, base, path, bearer):
             f"Content-Type: application/octet-stream\r\n\r\n").encode()
     body = part + data + f"\r\n--{boundary}--\r\n".encode()
     variants = [
-        (base, "POST", body,
+        ("multipart POST", base, "POST", body,
          f"multipart/form-data; boundary={boundary}"),
-        (f"{base}/{name}", "PUT", data, ctype),
-        (f"{base}/{name}", "PUT", data, "application/octet-stream"),
+        (f"PUT {ctype}", f"{base}/{name}", "PUT", data, ctype),
+        ("PUT octet-stream", f"{base}/{name}", "PUT", data,
+         "application/octet-stream"),
     ]
-    for url, method, payload, hdr_ct in variants:
+    last = None
+    for label, url, method, payload, hdr_ct in variants:
         headers = {"Content-Type": hdr_ct}
         url = _auth(url, token, bearer, headers)
         req = urllib.request.Request(url, data=payload, headers=headers,
@@ -198,10 +200,14 @@ def _upload_one(token, base, path, bearer):
         try:
             with urllib.request.urlopen(req, timeout=300) as resp:
                 if resp.status in (200, 201, 202):
-                    return True
-        except (urllib.error.HTTPError, urllib.error.URLError):
-            continue
-    return False
+                    return True, None
+                last = f"{label}: HTTP {resp.status}"
+        except urllib.error.HTTPError as err:
+            last = (f"{label}: HTTP {err.code} "
+                    f"{err.read().decode('utf-8', 'replace')[:300]}")
+        except urllib.error.URLError as err:
+            last = f"{label}: {err}"
+    return False, last
 
 
 def upload_files(token, rec, files, bearer, records_base):
@@ -214,9 +220,13 @@ def upload_files(token, rec, files, bearer, records_base):
         base = links["bucket"]
     else:
         base = f"{records_base}/{rid}/draft/files"
+    errors = []
     for path in files:
-        if not _upload_one(token, base, path, bearer):
-            raise RuntimeError(f"upload failed for {path.name}")
+        ok, detail = _upload_one(token, base, path, bearer)
+        if not ok:
+            errors.append(f"{path.name}: {detail}")
+    if errors:
+        raise RuntimeError("upload failed — " + " ; ".join(errors))
 
 
 def deposit(token, files, bearer, depo_base, records_base,
@@ -228,11 +238,20 @@ def deposit(token, files, bearer, depo_base, records_base,
         raise RuntimeError(f"draft creation failed (status {status}): {rec}")
     rid = rec["id"]
     upload_files(token, rec, files, bearer, records_base)
-    status, _ = http("POST",
-                     f"{depo_base}/{rid}/actions/publish",
-                     token=token, bearer=bearer)
-    if status not in (200, 202):
-        raise RuntimeError(f"publish failed: status {status}")
+    pub_urls = [
+        f"{depo_base}/{rid}/actions/publish",
+        f"{records_base}/{rid}/draft/actions/publish",
+    ]
+    published = False
+    pub_errors = []
+    for url in pub_urls:
+        status, body = http("POST", url, token=token, bearer=bearer)
+        if status in (200, 202):
+            published = True
+            break
+        pub_errors.append(f"{url}: status {status} {body}")
+    if not published:
+        raise RuntimeError("publish failed — " + " ; ".join(pub_errors))
     status, rec = http("GET", f"{records_base}/{rid}", token=token,
                        bearer=bearer)
     doi = None
