@@ -13,3 +13,4 @@ data_public/
 # latexmk build state
 *.fdb_latexmk
 *.fls
+dist/

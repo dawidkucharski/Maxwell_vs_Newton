@@ -1,0 +1,36 @@
+name: Zenodo release deposit
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to archive (defaults to v1.0.0)"
+        required: false
+        default: "v1.0.0"
+
+permissions:
+  contents: read
+
+jobs:
+  zenodo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository (full history for tags)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Deposit release to Zenodo
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          # Prefer the manually dispatched tag; on release events use the
+          # published tag name.
+          GITHUB_REF_NAME: ${{ inputs.tag || github.ref_name }}
+        run: python tools/zenodo_release.py
