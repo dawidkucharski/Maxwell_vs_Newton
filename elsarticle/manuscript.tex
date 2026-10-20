@@ -322,7 +322,7 @@ The framework developed here yields directly actionable guidance for surface met
         \addlinespace
         Moderately rough ($H\approx0.5$, $\sigma\approx50$~nm) & $1$--$5$~\textmu{}m & Either (cross-validate) & Equivalence regime at $\lambda\approx2.2$~\textmu{}m; \SI{9.6}{\percent}$\pm$\SI{0.3}{\percent} $k$-space agreement \\
         \addlinespace
-        Rough ($H<0.4$, $\sigma>50$~nm) & $<1$~\textmu{}m & Optical & Resolves feature wavelengths down to the $\SI{0.5}{\micro m}$ diffraction limit, where the stylus response has collapsed; stylus curvature bias $\propto r_\mathrm{tip}$ \\
+        Rough ($H<0.4$, $\sigma>50$~nm) & $<1$~\textmu{}m & Optical & Resolves feature wavelengths down to the $\SI{0.5}{\micro m}$ diffraction limit, where the stylus response has rolled off; stylus curvature bias $\propto r_\mathrm{tip}$ \\
         \addlinespace
         Anisotropic (ground, turned) & Varies with direction & Optical & $\alpha_o=0.0013\pm0.0006$avoids the scan-direction bias of the stylus ($\alpha_s=0.0095\pm0.0037$) \\
         \addlinespace
@@ -333,12 +333,12 @@ The framework developed here yields directly actionable guidance for surface met
 
 \textbf{Scope of the decision matrix.} The smooth and moderately rough rows follow the 180-point sweep ($\sigma\le\SI{50}{nm}$, $H\in\{0.3,0.5,0.7\}$); the rough-surface ($\sigma>\SI{50}{nm}$) guidance extrapolates using the stylus-linearity sweep of \S\ref{sec:limitations} (tested up to $\sigma=\SI{200}{nm}$), and the smooth-surface RMSE bound follows the raster sweep (stylus RMSE \SI{13.6}--\SI{16.7}{nm} at $\sigma=\SI{50}{nm}$).
 
-\textbf{How to use the equivalence criterion.} A practitioner comparing stylus and optical measurements of the same surface can apply the following protocol:
+\textbf{How to use the equivalence criterion.} A practitioner comparing stylus and optical measurements of the same surface can apply the following protocol, which is conditional on the modelled surface class, sampling interval, noise assumptions and instrument models of this study:
 \begin{enumerate}
     \item Compute the PSDs of both measured topographies.
     \item Identify spatial frequencies where they differ by more than \SI{3}{dB}---these lie outside the equivalence regime and indicate modality-specific bias.
     \item For wavelengths $\lambda > \SI{2}{\micro m}$ (below $f_\mathrm{cross}$), prefer the stylus measurement.
-    \item For feature wavelengths between $\approx\SI{0.5}{\micro m}$ and $\approx\SI{1.5}{\micro m}$ (spatial frequencies $\approx$ \SIrange{670}{2000}{mm^{-1}}), prefer the optical measurement: the stylus response has collapsed near its sampling scale, whereas the optical system is still within its passband. Below $\SI{0.5}{\micro m}$ (above the optical diffraction cutoff), neither modality resolves features within the modelled passband, and any apparent structure at those scales is an instrument artefact rather than surface topography.
+    \item For feature wavelengths between $\approx\SI{0.5}{\micro m}$ and $\approx\SI{1.5}{\micro m}$ (spatial frequencies $\approx$ \SIrange{670}{2000}{mm^{-1}}), prefer the optical measurement: the stylus response has rolled off near its sampling scale, whereas the optical system is still within its passband. Below $\SI{0.5}{\micro m}$ (above the optical diffraction cutoff), neither modality resolves features within the modelled passband, and any apparent structure at those scales is an instrument artefact rather than surface topography.
     \item In the crossover band $\lambda \approx \SI{1.5}{-}\SI{2}{\micro m}$, the two measurements can be averaged, as both carry valid information.
 \end{enumerate}
 
@@ -519,7 +519,7 @@ The I-MMSE identity~\cite{guo2005mutual} relates mutual information to reconstru
 
 In quantum mechanics, Heisenberg's uncertainty principle states that $\Delta x \cdot \Delta p \geq \hbar/2$. In Fourier analysis, the classical uncertainty principle states that a function and its Fourier transform cannot both be sharply localised: $\Delta x \cdot \Delta f \geq 1/(4\pi)$. Here a \textbf{SNR-Dependent Resolution--Bandwidth Trade-off} is applied to surface measurements, incorporating the finite signal-to-noise ratio of any real instrument (a metrological specialisation of noise-generalised uncertainty bounds from signal processing).
 
-Define the effective spatial resolution $\Delta x_\mathrm{eff}$ as the second-moment width of the instrument's point-spread function and the effective frequency resolution $\Delta f_\mathrm{eff}$as the second-moment width of the noise-truncated transfer function, i.e.\ of the band where $|H(\mathbf{f})|^2 S_h(\mathbf{f}) \geq S_\eta(\mathbf{f})$. With these operational definitions, for a linear measurement operator $\mathcal{M}$with transfer function $ H(\mathbf{f})$ and additive noise $\eta$, the following metrological bound is adopted (its operational definitions, derivation and status are given in Supplementary Material \S S4.3):
+Define the effective spatial resolution $\Delta x_\mathrm{eff}$ as the second-moment width of the instrument's point-spread function and the effective frequency resolution $\Delta f_\mathrm{eff}$as the second-moment width of the noise-truncated transfer function, i.e.\ of the band where $|H(\mathbf{f})|^2 S_h(\mathbf{f}) \geq S_\eta(\mathbf{f})$. With these operational definitions, for a linear measurement operator $\mathcal{M}$with transfer function $ H(\mathbf{f})$ and additive noise $\eta$, the following metrological bound is adopted (its operational definitions and status are given in Supplementary Material \S S4.3):
 \begin{equation}
     \Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq \frac{1}{4\pi}\left(1 + \frac{1}{\overline{\mathrm{SNR}}}\right)
     \label{eq:metrological_uncertainty}
