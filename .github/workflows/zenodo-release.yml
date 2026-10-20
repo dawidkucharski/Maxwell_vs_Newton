@@ -1,8 +1,8 @@
 name: Zenodo release deposit
 
+# Manual dispatch only: automatic archiving is handled by the Zenodo GitHub
+# integration. Use this workflow as a fallback if the integration is disabled.
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       tag:
