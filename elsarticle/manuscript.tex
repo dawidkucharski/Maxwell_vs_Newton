@@ -426,7 +426,7 @@ The framework does more than diagnose why stylus and optical profilometry disagr
     
     \item \textbf{Increase NA to 0.7--0.9.} High-NA Mirau objectives (NA = 0.8) are commercially available and increase the optical cutoff frequency from $\SI{2000}{mm^{-1}}$ to $\SI{2909}{mm^{-1}}$ (NA = 0.8 at $\lambda = 550$nm). At NA = 0.9, the cutoff reaches $\SI{3273}{mm^{-1}}$.
     
-    \item \textbf{Use shorter wavelengths ($\lambda = 400$--$\SI{450}{nm}$).} Blue LED or diode laser sources shift the diffraction limit to higher spatial frequencies. Combined with NA = 0.8, the cutoff reaches $\SI{4000}{mm^{-1}}$, covering the entire spatial frequency range where the stylus transfer function has rolled off below 0.5.
+    \item \textbf{Use shorter wavelengths ($\lambda = 400$--$\SI{450}{nm}$).} Blue LED or diode laser sources shift the diffraction limit to higher spatial frequencies. At the short end ($\lambda = \SI{400}{nm}$), combined with NA = 0.8, the cutoff reaches $\SI{4000}{mm^{-1}}$, covering the entire spatial frequency range where the stylus transfer function has rolled off below 0.5.
     
     \item \textbf{Improve phase unwrapping.} Replacing 1D row-by-row unwrapping (used here; \SI{1}{\percent} error probability) with 2D quality-guided or temporal phase-shifting methods reduces the dominant optical noise source at mid-frequencies. A reduction from \SI{1}{\percent} to \SI{0.1}{\percent} unwrapping error probability is realistic with temporal phase shifting.
 \end{enumerate}
@@ -528,8 +528,8 @@ where $\overline{\mathrm{SNR}} = \iint |H(\mathbf{f})|^2 S_h(\mathbf{f}) \, d^2\
 
 For the baseline parameters: $\overline{\mathrm{SNR}}_\mathrm{stylus} \approx 56$, $\overline{\mathrm{SNR}}_\mathrm{optical} \approx 32$. The corresponding uncertainty products are:
 \begin{itemize}
-    \item Stylus: $\Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq 0.081$ (18\% above the classical limit)
-    \item Optical: $\Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq 0.083$ (31\% above the classical limit)
+    \item Stylus: $\Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq 0.081$ (1.8\% above the classical limit)
+    \item Optical: $\Delta x_\mathrm{eff} \cdot \Delta f_\mathrm{eff} \geq 0.082$ (3.1\% above the classical limit)
 \end{itemize}
 The stylus approaches the classical Fourier limit more closely than the optical system, despite its lower total information throughput---a manifestation of the trade-off between \emph{information quantity} (throughput) and \emph{information quality} (proximity to fundamental limits). The bound is directly testable and falsifiable: $\Delta x_\mathrm{eff}$ follows from a measured point-spread function, $\Delta f_\mathrm{eff}$ from a measured transfer function, and $\overline{\mathrm{SNR}}$ from measured signal and noise PSDs. A measured product significantly below $(1/4\pi)(1 + 1/\overline{\mathrm{SNR}})$ would falsify the formulation; a product saturating at the bound indicates a well-matched instrument.
 
