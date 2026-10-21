@@ -199,7 +199,7 @@ A crucial test of any measurement-theoretic framework is whether its metrics gen
 The coefficient of variation (CV = $\sigma/\mu$) across classes reveals three categories of metric behaviour:
 
 \begin{enumerate}
-    \item \textbf{Universal metrics} (CV $< 0.3$): The \emph{reconstructability index} $\rho$ is remarkably stable (CV = 0.067), varying only from 0.79 (biological) to 0.82 (Gaussian self-affine, ground) for the stylus. The \emph{information efficiency} $\eta$ is similarly universal (CV = 0.165, range 0.18--0.32). The \emph{mutual information} $I(h;y)$ varies by only a factor of 3.5$\times$ across all six classes (CV = 0.29), spanning $9.2\times10^9$ to $3.2\times10^{10}$ bits. These three metrics capture \textbf{instrument-limited} rather than surface-limited properties---they depend on the measurement physics ($r_\mathrm{tip}$, NA, $\lambda$) and are only weakly modulated by the surface.
+    \item \textbf{Universal metrics} (CV $< 0.3$): The \emph{reconstructability index} $\rho$ is stable within this six-class set (CV = 0.067), ranging from 0.79 (biological) to 0.82 (Gaussian self-affine, ground) for the stylus. The $n=20$ ground ensemble of \S S5 yields the lower value $\rho = 0.5890\pm0.0104$ for the same anisotropy parameters; the full random-rough spread ($0.59$--$0.82$, CV $=0.16$) is therefore the class-to-class range reported in the main text, while the CV $=0.067$ of this section refers to the six-class realisation set only. The \emph{information efficiency} $\eta$ is similarly universal (CV = 0.165, range 0.18--0.32). The \emph{mutual information} $I(h;y)$ varies by only a factor of 3.5$\times$ across all six classes (CV = 0.29), spanning $9.2\times10^9$ to $3.2\times10^{10}$ bits. These three metrics capture \textbf{instrument-limited} rather than surface-limited properties---they depend on the measurement physics ($r_\mathrm{tip}$, NA, $\lambda$) and are only weakly modulated by the surface.
     
     \item \textbf{Weakly surface-dependent metrics} (0.3 $<$ CV $<$ 1.0): The \emph{capacity--uniformity product} $\Xi$ (CV = 0.68), \emph{information-equivalent bandwidth} $B_\mathrm{eq}$ (CV = 0.44), and \emph{information--energy ratio} $\varepsilon$ (CV = 0.72) show moderate surface sensitivity. $\Xi$, previously introduced as a ``practical figure of merit'' for instrument qualification, spans nearly two orders of magnitude across classes ($6.1\times10^8$ for the periodic grating to $1.0\times10^{10}$ for laser-textured), suggesting that single-number instrument comparison via $\Xi$ requires specification of the reference surface class.
     
@@ -273,7 +273,7 @@ where $\Delta f_\mathrm{eff}^2$ is the effective 2D band area (band-edge constan
     \log_2\!\left(1 + \overline{\mathrm{SNR}}\right),
     \label{eq:trilemma_explicit}
 \end{equation}
-which is the explicit form of the Information--Energy--Resolution trilemma of the main text. The dimensionless combination $A/(2\sigma^2)$ is fixed by the measurement configuration, so the trade-off holds, as stated, for a fixed instrument and measurement area.
+which is the explicit form of the Information--Energy--Resolution trilemma of the main text. Because $\sigma^2$ cancels between the two factors, Eq.~\ref{eq:trilemma_explicit} is a flat-channel restatement of the capacity estimate rather than an independent inequality; the main text therefore presents it as a compact diagnostic of how information, resolution and SNR co-vary for a fixed instrument and measurement area, not as a new bound.
 
 
 \section{Non-Gaussian Ensemble Validation}
