@@ -399,7 +399,7 @@ def fig_three_way_transfer(three_way: ThreeWayResult, output_dir: str):
     ax = axes[2]
     modalities = ['Stylus', 'WLI', 'Scatterometry']
     f_mins = [0.1, 1.0, three_way.scat_meta['f_min_usable_mm']]
-    f_maxs = [500., 1000., three_way.scat_meta['f_max_usable_mm']]
+    f_maxs = [1049., 2000., three_way.scat_meta['f_max_usable_mm']]
     colors = ['#2166ac', '#b2182b', '#4dac26']
 
     for i, (mod, fmin, fmax, c) in enumerate(zip(modalities, f_mins, f_maxs, colors)):
