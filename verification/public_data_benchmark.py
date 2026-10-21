@@ -159,8 +159,9 @@ def main():
         pred = A * f ** beta * model_itf(f, na, lam / c, latres, pixel=True)
         ax.loglog(f_w[band] * 1000, p_w[band], '.', ms=4, label='measured WLI PSD')
         ax.loglog(f * 1000, pred, '-', lw=1.5, label=rf'fit: $\beta={beta:.1f}$, $c={c:.2f}$')
-        ax.axvline(2 * na / lam * 1000, color='k', lw=0.6, alpha=0.4)
-        ax.set_xlim(right=(2 * na / lam * 1000) * 1.06)
+        ax.axvline(2 * na / lam * 1000, color='k', lw=1.2, alpha=1.0,
+                   linestyle='--', label=r'$2\mathrm{NA}/\lambda$')
+        ax.set_xlim(right=(2 * na / lam * 1000) * 1.08)
         ax.set_title(f'{feat} nm BPRA (50x)')
         ax.set_xlabel(r'$f$ [mm$^{-1}$]')
         ax.grid(alpha=0.3)
