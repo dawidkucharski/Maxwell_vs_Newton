@@ -134,13 +134,13 @@ ax_b.axhspan(1.0, 20.0, alpha=0.10, color='red', zorder=0)
 
 # Zone labels placed inside the plot area at fixed x position
 # Use clip_on=False so text isn't cropped at axis edges
-ax_b.text(0.50, 0.025, 'Achievable\n(cooled sCMOS\n+ brighter source)',
-          transform=ax_b.transAxes, fontsize=7.5, ha='center', va='bottom',
+ax_b.text(0.72, 0.17, 'Achievable\n(cooled sCMOS\n+ brighter source)',
+          transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
           color='#27ae60', fontstyle='italic', clip_on=False)
-ax_b.text(0.50, 0.18, 'Challenging\n(long integration)',
+ax_b.text(0.72, 0.50, 'Challenging\n(long integration)',
           transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
           color='#e67e22', fontstyle='italic', clip_on=False)
-ax_b.text(0.50, 0.50, 'Current\nbaseline',
+ax_b.text(0.72, 0.82, 'Current\nbaseline',
           transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
           color=red_baseline, fontstyle='italic', clip_on=False)
 
