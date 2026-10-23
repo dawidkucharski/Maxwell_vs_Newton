@@ -1,0 +1,118 @@
+{
+  "grid": {
+    "tips_um": [
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "na": [
+      0.2,
+      0.3,
+      0.4,
+      0.55
+    ],
+    "H": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "sigma_nm": [
+      10.0,
+      25.0,
+      50.0
+    ]
+  },
+  "per_seed": {
+    "42": {
+      "n_points": 180,
+      "slope": 1.9042880384596126,
+      "slope_se": 0.1342719738886554,
+      "intercept_log10": -2.9856837991818908,
+      "intercept_se": 0.10720340262789303,
+      "r2_in": 0.5305141874348902,
+      "r2_out_8020": 0.5113418437915339,
+      "r2_blocked": 0.5182781459572723,
+      "median_rel_error_ratio": 0.9349158512571261,
+      "p90_rel_error_ratio": 12.827183738852566,
+      "beta_tip": 0.06879744268283396,
+      "beta_tip_se": 0.06754763191244353,
+      "r2_beta_tip": 0.25693790861082033,
+      "alpha_stylus_mean": 0.011189786807207724,
+      "alpha_stylus_std": 0.011155714203093449,
+      "alpha_optical_mean": 0.009446239756015523,
+      "alpha_optical_std": 0.0071251720722177074,
+      "eq_frac_3dB_mean": 0.11811794704861112,
+      "eq_frac_3dB_std": 0.09448667811489068,
+      "f_cross_mean_mm": 188.20982627422202,
+      "f_cross_std_mm": 159.44828532733476
+    },
+    "43": {
+      "n_points": 180,
+      "slope": 1.8953417642180521,
+      "slope_se": 0.1341881058820667,
+      "intercept_log10": -3.0025606106602,
+      "intercept_se": 0.1071364420000156,
+      "r2_in": 0.5284791848904643,
+      "r2_out_8020": 0.5121581659499517,
+      "r2_blocked": 0.5161695051164983,
+      "median_rel_error_ratio": 0.9383119056841996,
+      "p90_rel_error_ratio": 12.43773331811394,
+      "beta_tip": 0.19775692882121784,
+      "beta_tip_se": 0.19416675877107495,
+      "r2_beta_tip": 0.25693321436631283,
+      "alpha_stylus_mean": 0.004981994395215688,
+      "alpha_stylus_std": 0.0077413891358703605,
+      "alpha_optical_mean": 0.0027360386177544866,
+      "alpha_optical_std": 0.002796569481165345,
+      "eq_frac_3dB_mean": 0.11405470106336806,
+      "eq_frac_3dB_std": 0.09290631251729549,
+      "f_cross_mean_mm": 159.7395073758879,
+      "f_cross_std_mm": 140.4582515632226
+    },
+    "44": {
+      "n_points": 180,
+      "slope": 1.890746493584694,
+      "slope_se": 0.13398696592986334,
+      "intercept_log10": -3.0078850046084185,
+      "intercept_se": 0.1069758508754784,
+      "r2_in": 0.5280169715662241,
+      "r2_out_8020": 0.5125572890259694,
+      "r2_blocked": 0.51537129615124,
+      "median_rel_error_ratio": 0.9360454491256311,
+      "p90_rel_error_ratio": 12.310501401753875,
+      "beta_tip": -0.1576121385075252,
+      "beta_tip_se": 0.040636745094958925,
+      "r2_beta_tip": 0.8337327791968732,
+      "alpha_stylus_mean": 0.00965469825970648,
+      "alpha_stylus_std": 0.010455430124962927,
+      "alpha_optical_mean": 0.0018791055737750677,
+      "alpha_optical_std": 0.0017188765957640215,
+      "eq_frac_3dB_mean": 0.11302337646484376,
+      "eq_frac_3dB_std": 0.09228612546479102,
+      "f_cross_mean_mm": 178.17833807178883,
+      "f_cross_std_mm": 160.66509272319573
+    }
+  },
+  "across_seeds": {
+    "slope_mean": 1.8967920987541198,
+    "slope_std": 0.005622630588359905,
+    "slope_min": 1.890746493584694,
+    "slope_max": 1.9042880384596126,
+    "r2_in_range": [
+      0.5280169715662241,
+      0.5305141874348902
+    ],
+    "r2_out_range": [
+      0.5113418437915339,
+      0.5125572890259694
+    ],
+    "r2_blocked_range": [
+      0.51537129615124,
+      0.5182781459572723
+    ],
+    "conclusion": "slope std across independent realisations vs the within-fit SE decides whether the law generalises across surfaces, not only across parameters"
+  },
+  "design_note": "same 180-combination grid, N=256, per-combination one realisation; seeds 43/44 are new independent surfaces"
+}

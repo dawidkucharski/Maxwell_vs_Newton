@@ -1,0 +1,61 @@
+{
+  "tuning": {
+    "seed": 42,
+    "common": {
+      "n_bins": 55,
+      "stylus": 0.3181593285443993,
+      "wli": 0.35654612334033164,
+      "scatterometry": 3.4302602376421514e-05,
+      "fused": 0.1903389182140965
+    },
+    "extended": {
+      "n_bins": 45,
+      "stylus": 1.0258720179927254,
+      "wli": 1.5083655861433576,
+      "scatterometry": 3.34230024505665e-06,
+      "fused": 1.2763472531563378
+    }
+  },
+  "held_out": [
+    {
+      "seed": 777,
+      "common": {
+        "n_bins": 55,
+        "stylus": 0.31969672807811156,
+        "wli": 0.34936356682299047,
+        "scatterometry": 0.00012372323429569364,
+        "fused": 0.18418764627640766
+      },
+      "extended": {
+        "n_bins": 45,
+        "stylus": 1.0275659235023462,
+        "wli": 1.4935983131199373,
+        "scatterometry": 3.64956783450599e-06,
+        "fused": 1.2512412928679826
+      }
+    },
+    {
+      "seed": 999,
+      "common": {
+        "n_bins": 55,
+        "stylus": 0.30761201341338584,
+        "wli": 0.36513711146586453,
+        "scatterometry": 0.00031332644188121684,
+        "fused": 0.18785478213896156
+      },
+      "extended": {
+        "n_bins": 45,
+        "stylus": 1.0145163580011343,
+        "wli": 1.5317878984892523,
+        "scatterometry": 4.8203864400502184e-06,
+        "fused": 1.2854803932391132
+      }
+    }
+  ],
+  "notes": {
+    "geometry": "scatterometry lambda=532 nm, theta_i = [0.0, 85.0]; coverage per angle f <= (1+sin(theta_i))/lambda; two-angle coverage to ~3753 mm-1 (geometric max 2/lambda = 3760 mm-1)",
+    "weights": "w_i = |H_i|^2 / N_i, N_i = 5th percentile of positive PSD values",
+    "error_metric": "mean |log10(PSD_est/PSD_true)| over radial bins in band",
+    "caveat": "the simulated scatterometry channel uses the same Rayleigh-Rice linear forward model for measurement and inversion, so its sub-0.05-decade errors are model-internal bounds on calibration-limited accuracy, not real instrument performance"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "tuning": {
+    "seed": 42,
+    "rmse_stylus_nm": 16.286575342521417,
+    "rmse_optical_nm": 29.29151964295254,
+    "rmse_confocal_nm": 6.449182775791876,
+    "rho_stylus": 0.9777170040713473,
+    "rho_optical": 0.9475729117775001,
+    "rho_confocal": 0.9826805195286039,
+    "eq_frac_3dB_vs_stylus_optical": 0.25,
+    "eq_frac_3dB_vs_stylus_confocal": 0.43,
+    "f_cross_confocal_vs_stylus_mm": 17196.836918456833,
+    "H_confocal_at_1000mm": 0.41205035977312404,
+    "H_confocal_at_2000mm": 0.0249638583550051,
+    "H_confocal_at_3000mm": 0.00022514795803136198,
+    "cutoff_confocal_mm": 4000.0
+  },
+  "held_out": [
+    {
+      "seed": 777,
+      "rmse_stylus_nm": 17.014769270194865,
+      "rmse_optical_nm": 29.388771456913503,
+      "rmse_confocal_nm": 6.5955469188721745,
+      "rho_stylus": 0.9782894920365872,
+      "rho_optical": 0.9503646821629922,
+      "rho_confocal": 0.983101751416246,
+      "eq_frac_3dB_vs_stylus_optical": 0.25,
+      "eq_frac_3dB_vs_stylus_confocal": 0.44,
+      "f_cross_confocal_vs_stylus_mm": 17196.836918456833,
+      "H_confocal_at_1000mm": 0.41174289234005307,
+      "H_confocal_at_2000mm": 0.02500144706046345,
+      "H_confocal_at_3000mm": 0.00024273648392728297,
+      "cutoff_confocal_mm": 4000.0
+    },
+    {
+      "seed": 999,
+      "rmse_stylus_nm": 15.609853589687532,
+      "rmse_optical_nm": 29.191214116070917,
+      "rmse_confocal_nm": 6.284820338164753,
+      "rho_stylus": 0.982753479221276,
+      "rho_optical": 0.958077682538744,
+      "rho_confocal": 0.9863833067291647,
+      "eq_frac_3dB_vs_stylus_optical": 0.26,
+      "eq_frac_3dB_vs_stylus_confocal": 0.43,
+      "f_cross_confocal_vs_stylus_mm": 1496124.8119057445,
+      "H_confocal_at_1000mm": 0.4117085595916429,
+      "H_confocal_at_2000mm": 0.025118766368756967,
+      "H_confocal_at_3000mm": 0.00024857721408543454,
+      "cutoff_confocal_mm": 4000.0
+    }
+  ],
+  "notes": {
+    "model": "H_confocal = OTF_incoh (*) OTF_incoh (2D autocorrelation), cutoff 4NA/lambda = 4000 mm-1; linear filter + camera noise at the WLI level; NO phase-unwrapping error channel",
+    "caveats": "lateral transfer only (axial sectioning response not modelled); grid Nyquist 2560 mm-1 truncates the channel there; confocal noise assumed equal to the WLI camera noise"
+  }
+}
