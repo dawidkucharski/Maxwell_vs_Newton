@@ -56,7 +56,7 @@ From the pair of transfer functions, the analysis computes the spectral informat
 \begin{equation}
 \Delta x_\mathrm{eff}\cdot\Delta f_\mathrm{eff} \geq \frac{1}{4\pi}\left(1 + \frac{1}{\overline{\mathrm{SNR}}}\right),
 \end{equation}
-where $\Delta x_\mathrm{eff}$ and $\Delta f_\mathrm{eff}$ are the second-moment widths of the point-spread function and of the noise-truncated transfer function, and $\overline{\mathrm{SNR}}$ is the area-averaged signal-to-noise ratio; the expression is anchored to the classical limit $1/(4\pi)$ as $\overline{\mathrm{SNR}}\to\infty$ and is explicitly presented as an adopted benchmark rather than a proved theorem. Every headline result is checked by an automated verification suite of eighteen tests, including an independent Monte Carlo check of the minimum mean-square error expression.
+where $\Delta x_\mathrm{eff}$ and $\Delta f_\mathrm{eff}$ are the window-regularised second-moment widths of the point-spread function and of the noise-truncated transfer function (for the ideal circular aperture the unregularised PSF second moment diverges, so the widths are operational on the measurement window), and $\overline{\mathrm{SNR}}$ is the area-averaged signal-to-noise ratio; the expression is anchored to the classical limit $1/(4\pi)$ as $\overline{\mathrm{SNR}}\to\infty$ and is explicitly presented as an adopted benchmark rather than a proved theorem. Every headline result is checked by an automated verification suite of eighteen tests, including an independent Monte Carlo check of the minimum mean-square error expression.
 
 \section{Preliminary Results}
 
