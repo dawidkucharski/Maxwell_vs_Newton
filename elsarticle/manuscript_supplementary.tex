@@ -195,6 +195,64 @@ A corrected, quantitative audit (verification/run\_fusion\_quantitative.py) repl
 
 The confocal microscope (point detection, equal circular pupils) has the lateral transfer equal to the 2D autocorrelation of the incoherent OTF, $H_\mathrm{confocal}(f) = \mathrm{OTF}_\mathrm{inc} \ast \mathrm{OTF}_\mathrm{inc}$, normalised to unity at DC, with support to $4\mathrm{NA}/\lambda = \SI{4000}{mm^{-1}}$ at baseline parameters. The channel was implemented (verification/run\_confocal\_audit.py) as a linear filter on the gridded surface plus camera noise at the WLI level, with no phase-unwrapping channel (confocal height readout does not unwrap phase). On the baseline surface (seed 42) and two held-out realisations (seeds 777 and 999): RMSE \SI{6.3}{-}\SI{6.6}{nm} (stylus \SI{15.6}{-}\SI{17.0}{nm}, WLI \SI{29.2}{-}\SI{29.4}{nm}) and reconstructability $\rho_\mathrm{confocal} = 0.983$--$0.986$ (stylus $0.978$--$0.983$, WLI $0.948$--$0.958$); the \SI{3}{dB} equivalence fraction with the stylus is $0.43$--$0.44$, versus $0.25$--$0.26$ for the WLI. The computed $H_\mathrm{confocal}$ equals $0.65$ at \SI{1000}{mm^{-1}} and $0.16$ at \SI{2000}{mm^{-1}} (empirical power transfer $0.41$ and $0.025$). Caveats: only the lateral transfer is modelled (the axial sectioning response is omitted); the $N=512$ grid Nyquist (\SI{2560}{mm^{-1}}) truncates the $4\mathrm{NA}/\lambda$ support; and the confocal noise is assumed equal to the WLI camera noise, so the reported RMSE advantage is the best case of the model, not a claim about real confocal instruments. These results quantify the modality-catalogue expectation of the main text (Limitations).
 
+\section{Scaling-Law Worked Examples and Realisation Stability}
+\label{S7}
+
+The fitted empirical relation $\mathrm{RMSE}_s/\mathrm{RMSE}_o \approx 10^{-3}\,(f_{c,\mathrm{opt}}/f_{c,\mathrm{stylus}})^{1.90}$ (sweep cutoff convention $f_{c,\mathrm{opt}}=\mathrm{NA}/\lambda$; the prefactor is convention-dependent, the exponent is not) gives an order-of-magnitude ranking, not a point prediction. For example, a stylus with $r_\mathrm{tip}=\SI{5}{\micro m}$ ($f_{c,s}=1/(\pi r_\mathrm{tip})\approx\SI{64}{mm^{-1}}$) compared to an optical system with $\mathrm{NA}=0.3$ ($f_{c,o}=2\mathrm{NA}/\lambda\approx\SI{1091}{mm^{-1}}$) yields a cutoff factor $f_{c,o}/f_{c,s}\approx17$: the exponent contributes $17^{1.90}\approx2.2\times10^{2}$ to the ranking, while the fitted relation with its prefactor predicts a ratio near $0.06$ for that pair---within the sweep data at that configuration ($0.003$--$1.0$ across the swept $\sigma$ range) but not a reliable point estimate. Repeating with $r_\mathrm{tip}=\SI{0.5}{\micro m}$ ($f_{c,s}\approx\SI{637}{mm^{-1}}$), the cutoff factor drops to $\approx1.7$ and its exponent contribution to $\approx2.8$. The $\sigma>\SI{50}{nm}$ rough-surface regime lies beyond the sweep and is not covered by the stated prediction errors. Both examples use the conventional reference frequency $f_{c,s}=1/(\pi r_\mathrm{tip})$, a definitional scale for the scaling law rather than a measured attenuation point of the dilation transfer function.
+
+\textbf{Realisation stability} (verification/run\_sweep\_multiseed.py). The full 180-combination sweep repeated on independent surface realisations (seeds 43 and 44) gives exponents $1.895$ and $1.891$ with the same standard error ($\pm0.13$); across the three realisations the exponent spread is $\pm0.006$, and the in-sample/out-of-sample/blocked $R^2$ ranges are $0.528$--$0.531$/$0.511$--$0.513$/$0.515$--$0.518$.
+
+\section{Validity-Boundary Sweeps}
+\label{S8}
+
+Four assumptions underlying the framework were computationally tested to map their domains of validity:
+
+\begin{enumerate}
+    \item \textbf{Linearity of $\mathcal{M}$.} Morphological dilation is nonlinear at large amplitudes. Sweeping $\sigma$ from \SI{5}{nm} to \SI{200}{nm} at $r_\mathrm{tip}=\SI{2}{\micro m}$, the measured stylus RMSE grows strongly sub-linearly at small amplitudes relative to the baseline-anchored linear extrapolation (ratio 0.003 at 5--20 nm, 0.34 at \SI{50}{nm}), crosses the extrapolation at $\approx\SI{100}{nm}$ (ratio 0.96), and is super-linear above (1.34 at \SI{150}{nm}, 1.60 at \SI{200}{nm}). The sub-linear branch is consistent with the quadratic curvature bias $(r_\mathrm{tip}/2)\langle|\nabla h|^2\rangle \propto \sigma^2$ of the main text; the super-linear branch marks the onset of nonlinear dilation. Because the extrapolation is anchored at the baseline ($\SI{16.3}{nm}$ at $\sigma=\SI{50}{nm}$), this tests local linearity around the baseline rather than global linearity. The baseline parameters ($\sigma/r_\mathrm{tip}=0.025$) therefore lie at the upper edge of the small-slope regime; nonlinear corrections become important for rougher surfaces. The extension sweep quantifies this: the stylus RMSE grows as $\sigma^{1.55}$ over $\sigma=\SI{75}{-}\SI{200}{nm}$ ($R^2=0.998$, tip \SI{2}{\micro m}, $H=0.3$), consistent with sub-quadratic curvature bias. The phase-wrapped optical channel, by contrast, is wrap-limited beyond $\sigma\approx\SI{100}{nm}$ (RMSE $\approx\SI{0.6}{\micro m}$ at $\sigma=\SI{200}{nm}$); the rough-surface guidance of the decision matrix therefore concerns sub-\SI{0.5}{\micro m} feature resolution, and the wrap limit motivates the 2D-unwrapping roadmap item.
+
+    \item \textbf{Gaussian vs.\ Poisson noise.} Camera noise was modelled as additive Gaussian. Comparing against Poisson (shot) noise at illumination levels from $10^3$ to $10^7$ photons per pixel, the height RMSE differs by only \SI{3.6}{\percent} across all levels. The Gaussian approximation is justified for WLI operating at typical illumination (the $\sim\SI{1}{\percent}$ unwrapping error rate dominates the noise budget).
+
+    \item \textbf{Statistical stationarity.} A wear-scar surface with \num{5}$\times$ roughness variation across the field of view (left half: $\sigma=\SI{5}{nm}$; right half: $\sigma=\SI{100}{nm}$) produces a global PSD that blurs the two regions into a single, non-representative spectrum. At $f=\SI{10}{mm^{-1}}$, the local PSD differs by a factor of 5 between halves. Extension to position-dependent roughness requires local spectral methods (S-transform, wavelet PSD) applied to sub-regions where stationarity approximately holds.
+
+    \item \textbf{Grid convergence.} A four-grid study ($N=128,256,512,1024$) shows the stylus RMSE at $N=512$ reaching 88\% of the 1024-grid value. In the same study the stylus--optical equivalence fraction decreases monotonically from 0.25 ($N=128$) through 0.20 ($N=256$) and 0.098 ($N=512$) to 0.042 ($N=1024$), reflecting the finer $k$-space sampling at higher resolution; the $N=512$ value is consistent with the $\SI{9.6}{\percent}$ of the $n=30$ ensemble. The absolute equivalence fraction therefore depends on grid resolution (finer grids resolve more independent $k$-space modes, tightening the \SI{3}{dB} criterion), but the trends reported---increasing NA and decreasing noise expand the equivalence regime---are grid-independent. All ensemble and baseline results use $N=512$; the 432-point gap-closure sweep used $N=256$ as a practical compromise.
+\end{enumerate}
+
+\section{Literature Anchors for the Reported Quantities}
+\label{S9}
+
+Table~\ref{tab:anchors} maps the framework's quantitative claims to the prior work that anchors them; all entries are cited in the main text and their DOIs were verified against Crossref records.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Literature anchors. The ``reported'' column summarises the cited works as characterised in the main text; the right column gives the corresponding quantitative result of this work. All DOIs verified via Crossref.}
+    \label{tab:anchors}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{p{3.6cm}p{5.0cm}p{5.2cm}}
+        \toprule
+        Prior work (DOI) & Reported / established & This work's corresponding quantity \\
+        \midrule
+        Wu 1999; 2000 (10.1016/S0043-1648(99)00109-X; 10.1088/0957-0233/11/9/317) & stylus-tip curvature has spectral consequences for measured profiles & empirical dilation transfer $H_\mathrm{stylus}\approx1$ with curvature bias; \SI{3}{dB} at $\approx$\SI{1049}{mm^{-1}} \\
+        \addlinespace
+        McCool 1984 (10.1115/1.3260884) & tip radius and flight affect topography measurements & curvature-bias excess $+\SI{3.4}{dB}$ at \SI{17}{mm^{-1}}; super-linear bias beyond $\sigma\approx$\SI{100}{nm} \\
+        \addlinespace
+        de Groot 2021 (10.1088/2515-7647/abe3da) & analytic ITF of optical profilers & incoherent-OTF channel with cutoff $2\mathrm{NA}/\lambda$ \\
+        \addlinespace
+        Dai et al.\ 2020 (10.1088/2051-672X/abc9d2) & 2D material measure for areal ITFs & the same 2D ITF quantity computed from first principles \\
+        \addlinespace
+        Hirose et al.\ 2025 (10.1364/AO.562002) & BPRA-measured WLI ITFs (public dataset) & fitted cutoff scale $c=1.15\pm0.01$ of the nominal $2\mathrm{NA}/\lambda$ \\
+        \addlinespace
+        Yashchuk et al.\ 2015 (10.1063/1.4936752) & BPRA methodology for MTF calibration & adopted as the roadmap experiment for $H(f)$ validation \\
+        \addlinespace
+        Leach 2010 (10.1088/0957-0233/21/3/032001) & instrument bandwidth compared qualitatively & quantitative cutoffs ($\SI{2000}{mm^{-1}}$, $f_\mathrm{cross}=\SI{454}{mm^{-1}}$) \\
+        \addlinespace
+        Greco \& Boyer 2019 (10.1016/j.sigpro.2019.05.029) & noise-generalised angular resolution limits & the resolution--bandwidth benchmark of the main text, anchored to this literature \\
+        \addlinespace
+        Jiang et al.\ 2007 (10.1098/rspa.2007.1873) & information-rich metrology (programmatic) & quantitative Shannon-theoretic metrics $I$, $\rho$, $\Xi$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
 \section{Surface-Class Universality Stress-Test}
 \subsection{Universality of Framework Metrics Across Surface Classes}
 \label{sec:universality}
