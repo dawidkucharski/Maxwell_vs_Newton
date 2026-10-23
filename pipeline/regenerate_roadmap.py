@@ -20,7 +20,7 @@ with open(data_path) as f:
     sweep = json.load(f)
 
 results = sweep['results']
-baseline_noise = sweep['baseline_noise']
+baseline_noise = sweep.get('baseline_noise')
 
 # Group by noise_mult
 from collections import defaultdict
@@ -93,7 +93,7 @@ ax_a.set_xticks([0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 # ═════════════════════════════════════════════════════════════════════════════
 # PANEL (b): Max tolerable noise multiplier for 50/70/90% equivalence
 # ═════════════════════════════════════════════════════════════════════════════
-targets = [50, 70, 90]
+targets = [50, 60, 70]
 all_nas = sorted(set(r['NA'] for r in results))
 
 for target in targets:
@@ -151,25 +151,25 @@ ax_c.axis('off')
 summary_text = (
     r"$\bf{(c)\;Four\;improvements\;to\;close\;the\;gap}$" "\n"
     "\n"
-    r"$\bf{1.}$ Reduce optical noise floor $\bf{100\times}$" "\n"
+    r"$\bf{1.}$ Reduce optical noise floor ($\bf{10\times}$ sweep optimum)" "\n"
     r"    Cooled sCMOS, brighter LED/laser, multi-frame" "\n"
     r"    averaging ($\sqrt{N}$ gain)" "\n"
     r"    $\rightarrow$ Single most impactful change" "\n"
     "\n"
     r"$\bf{2.}$ Increase NA to $\bf{0.7{-}0.9}$" "\n"
     r"    High-NA Mirau objectives (NA 0.8)" "\n"
-    r"    $\rightarrow f_c$ from 1000 to 1450 mm$^{-1}$" "\n"
+    r"    $\rightarrow f_c$ from 2000 to 2909 mm$^{-1}$ (2NA/$\lambda$)" "\n"
     "\n"
     r"$\bf{3.}$ Shorter $\bf{\lambda = 400{-}450}$ nm" "\n"
     r"    Blue LED / diode laser" "\n"
-    r"    $\rightarrow f_c$ reaches 2000 mm$^{-1}$" "\n"
+    r"    $\rightarrow f_c$ reaches 4000 mm$^{-1}$ (NA 0.8, $\lambda$=400 nm)" "\n"
     "\n"
     r"$\bf{4.}$ 2D phase unwrapping" "\n"
     r"    Quality-guided or temporal PSI" "\n"
     r"    $\rightarrow$ 1% $\rightarrow$ 0.1% error rate" "\n"
     "\n"
-    r"$\bf{18\% \rightarrow 87\%}$ equivalence"
-    r"  --  $\bf{13\%}$ residual: physics-limited"
+    r"$\bf{9.6\% \rightarrow 82.8\%}$ equivalence (sweep)"
+    r"  --  $\bf{17\%}$ residual: bias-limited"
 )
 
 ax_c.text(0.0, 1.0, summary_text, transform=ax_c.transAxes,

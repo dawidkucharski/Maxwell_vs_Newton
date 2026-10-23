@@ -4,4755 +4,3025 @@
       "NA": 0.3,
       "noise_mult": 0.01,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.44,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.117950439453125
     },
     {
       "NA": 0.3,
-      "noise_mult": 0.01,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.32,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.29,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
+      "noise_mult": 0.03,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.44,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.32,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.29,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.2318115234375
     },
     {
       "NA": 0.3,
       "noise_mult": 0.1,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.4554901123046875
     },
     {
       "NA": 0.3,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.32,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.29,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
+      "noise_mult": 0.3,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.42,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.38,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.29,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.57196044921875
     },
     {
       "NA": 0.3,
       "noise_mult": 1.0,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.307891845703125
     },
     {
       "NA": 0.3,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.25,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
+      "noise_mult": 3.0,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.25,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.19,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.141571044921875
     },
     {
       "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 750.0,
-      "eq_fraction": 0.36,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.017706923507763
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.059906005859375
     },
     {
       "NA": 0.3,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 666.6666666666666,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.20436747972716
+      "noise_mult": 30.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.0288238525390625
     },
     {
       "NA": 0.3,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 600.0,
-      "eq_fraction": 0.28,
-      "rho_optical": 0.17,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 12.445980769393435
+      "noise_mult": 100.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 1499.9999999999998,
+      "eq_fraction": 0.0133819580078125
     },
     {
       "NA": 0.3,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 545.4545454545454,
-      "eq_fraction": 0.27,
-      "rho_optical": 0.16,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 10.384438623529814
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 500.0,
-      "eq_fraction": 0.24,
-      "rho_optical": 0.16,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 8.802068785477871
-    },
-    {
-      "NA": 0.3,
-      "noise_mult": 10.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 461.5384615384615,
-      "eq_fraction": 0.22,
-      "rho_optical": 0.16,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 7.560260433956539
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.52,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.36,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.46,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.42,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.36,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.46,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.42,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.36,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.38,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.32,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.25,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1000.0000000000001,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.85048228250869
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 888.888888888889,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 26.26346102179823
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 800.0000000000001,
-      "eq_fraction": 0.39,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 21.49872602400955
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 727.2727272727274,
-      "eq_fraction": 0.35,
-      "rho_optical": 0.17,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 17.937694506922387
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 666.6666666666667,
-      "eq_fraction": 0.31,
-      "rho_optical": 0.17,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 15.204367479727166
-    },
-    {
-      "NA": 0.4,
-      "noise_mult": 10.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 615.3846153846154,
-      "eq_fraction": 0.3,
-      "rho_optical": 0.16,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 13.059313745646456
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.73,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.65,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.59,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.54,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.5,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.44,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.4,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.25,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1250.0,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 50.19619232266272
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1111.1111111111113,
-      "eq_fraction": 0.54,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 40.13109241963505
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 909.0909090909091,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.40915507879982
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 833.3333333333334,
-      "eq_fraction": 0.4,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.232576849052585
-    },
-    {
-      "NA": 0.5,
-      "noise_mult": 10.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 769.2307692307693,
-      "eq_fraction": 0.37,
-      "rho_optical": 0.17,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 19.954891947735568
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.8,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.64,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.68,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.61,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.52,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.5,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.5,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.36,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1375.0000000000002,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.16125348644765
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1222.2222222222224,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.09800727964161
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1100.0000000000002,
-      "eq_fraction": 0.53,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 39.37203401895856
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 916.6666666666667,
-      "eq_fraction": 0.44,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 27.844760335101945
-    },
-    {
-      "NA": 0.55,
-      "noise_mult": 10.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 846.1538461538463,
-      "eq_fraction": 0.41,
-      "rho_optical": 0.17,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 23.9163820443883
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.01,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.87,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
       "noise_mult": 0.01,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.77,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.1125030517578125
     },
     {
-      "NA": 0.6,
-      "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.7,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.63,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.54,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.05,
+      "NA": 0.3,
+      "noise_mult": 0.03,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.67,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.244537353515625
     },
     {
-      "NA": 0.6,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.65,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.58,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.53,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
+      "NA": 0.3,
       "noise_mult": 0.1,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.6,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.47076416015625
     },
     {
-      "NA": 0.6,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.2,
+      "NA": 0.3,
+      "noise_mult": 0.3,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.5226287841796875
     },
     {
-      "NA": 0.6,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.44,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
+      "NA": 0.3,
       "noise_mult": 1.0,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.26287841796875
     },
     {
-      "NA": 0.6,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 2.0,
+      "NA": 0.3,
+      "noise_mult": 3.0,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.1197967529296875
     },
     {
-      "NA": 0.6,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.27,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.26,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.21,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
-    },
-    {
-      "NA": 0.6,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.6,
+      "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 450.0,
       "f_c_opt_mm": 1333.3333333333333,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.74470589613912
+      "eq_fraction": 0.051849365234375
     },
     {
-      "NA": 0.6,
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 1333.3333333333333,
+      "eq_fraction": 0.024871826171875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 1333.3333333333333,
+      "eq_fraction": 0.0111541748046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.1260528564453125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.2739715576171875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.4839630126953125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.475616455078125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.2257537841796875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.1042022705078125
+    },
+    {
+      "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1200.0,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 46.45004267950693
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.0460357666015625
     },
     {
-      "NA": 0.6,
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.0213775634765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 1199.9999999999998,
+      "eq_fraction": 0.0090484619140625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.146697998046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.304901123046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.4941864013671875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.4300079345703125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.1972198486328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.0918121337890625
+    },
+    {
+      "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 550.0,
       "f_c_opt_mm": 1090.9090909090908,
-      "eq_fraction": 0.51,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 38.75609533736955
+      "eq_fraction": 0.0411376953125
     },
     {
-      "NA": 0.6,
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.01885986328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 1090.9090909090908,
+      "eq_fraction": 0.00738525390625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.17120361328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.3338165283203125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.50213623046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.3907318115234375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.1747589111328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.08160400390625
+    },
+    {
+      "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1000.0,
-      "eq_fraction": 0.48,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 32.850482282508686
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.037017822265625
     },
     {
-      "NA": 0.6,
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.0168609619140625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 999.9999999999999,
+      "eq_fraction": 0.0064239501953125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.2007904052734375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.35870361328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.502838134765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.3534698486328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.1571502685546875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.0729827880859375
+    },
+    {
+      "NA": 0.3,
       "noise_mult": 10.0,
       "wavelength_nm": 650.0,
       "f_c_opt_mm": 923.076923076923,
-      "eq_fraction": 0.45,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 28.215889637967322
+      "eq_fraction": 0.0341339111328125
     },
     {
-      "NA": 0.7,
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.0155029296875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 923.076923076923,
+      "eq_fraction": 0.0053863525390625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.2317352294921875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.38232421875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.5010833740234375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.3221282958984375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.1424560546875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.0661468505859375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.03192138671875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.0138092041015625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 857.1428571428571,
+      "eq_fraction": 0.00506591796875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.26300048828125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.4007568359375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.4935760498046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.2935943603515625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.1299591064453125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.060699462890625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.029449462890625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.012359619140625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 800.0,
+      "eq_fraction": 0.0047760009765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.2947998046875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.4169464111328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.4843597412109375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.2695770263671875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.1183929443359375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.05633544921875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.0272979736328125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.011322021484375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 749.9999999999999,
+      "eq_fraction": 0.00439453125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.3270111083984375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.4289703369140625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.4683837890625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.247711181640625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.1089630126953125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.052734375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.0248870849609375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.010345458984375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 705.8823529411764,
+      "eq_fraction": 0.0041961669921875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.3586578369140625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.4396820068359375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.45318603515625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.2274322509765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.0998077392578125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.0499420166015625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.022613525390625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.009765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 666.6666666666666,
+      "eq_fraction": 0.0039825439453125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.01,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.385009765625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.03,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.4453887939453125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.1,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.436370849609375
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 0.3,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.210357666015625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 1.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.092498779296875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 3.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.0465087890625
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 10.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.0206298828125
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 30.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.009002685546875
+    },
+    {
+      "NA": 0.3,
+      "noise_mult": 100.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 631.578947368421,
+      "eq_fraction": 0.0035858154296875
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.98,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.3962860107421875
     },
     {
-      "NA": 0.7,
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.5399322509765625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.727508544921875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.6298065185546875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.294219970703125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.1289825439453125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.05499267578125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.0273284912109375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 2750.0,
+      "eq_fraction": 0.0123291015625
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.9,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.3564300537109375
     },
     {
-      "NA": 0.7,
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.520263671875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.7139739990234375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.5779571533203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.2537384033203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.11004638671875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.0476531982421875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.0237884521484375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 2444.4444444444443,
+      "eq_fraction": 0.0105438232421875
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.81,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.3235626220703125
     },
     {
-      "NA": 0.7,
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.5049285888671875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.696533203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.5301971435546875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.2223052978515625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.09613037109375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.0423431396484375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.02032470703125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 2200.0,
+      "eq_fraction": 0.008270263671875
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.74,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.30902099609375
     },
     {
-      "NA": 0.7,
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.496795654296875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.68115234375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.4830169677734375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.1981048583984375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0858154296875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0376434326171875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0178680419921875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.006988525390625
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.68,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.3047943115234375
     },
     {
-      "NA": 0.7,
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.4950714111328125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.663543701171875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.4405364990234375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.178009033203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.0759429931640625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.0339813232421875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.0157928466796875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 1833.3333333333333,
+      "eq_fraction": 0.006103515625
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.63,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.31060791015625
     },
     {
-      "NA": 0.7,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.74,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.68,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.05,
+      "NA": 0.55,
+      "noise_mult": 0.03,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.6,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.4963836669921875
     },
     {
-      "NA": 0.7,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.6,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
+      "NA": 0.55,
       "noise_mult": 0.1,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.54,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.6436614990234375
     },
     {
-      "NA": 0.7,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.2,
+      "NA": 0.55,
+      "noise_mult": 0.3,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.401123046875
     },
     {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.46,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
+      "NA": 0.55,
       "noise_mult": 1.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.31,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.1609039306640625
     },
     {
-      "NA": 0.7,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 2.0,
+      "NA": 0.55,
+      "noise_mult": 3.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.0688629150390625
     },
     {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 1750.0,
-      "eq_fraction": 0.75,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 95.12924334247988
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1555.5555555555554,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 76.05438340516143
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1400.0,
-      "eq_fraction": 0.63,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 62.256545334807996
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1272.7272727272725,
-      "eq_fraction": 0.58,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 51.94442173108246
-    },
-    {
-      "NA": 0.7,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1166.6666666666667,
-      "eq_fraction": 0.55,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 44.02918536808153
-    },
-    {
-      "NA": 0.7,
+      "NA": 0.55,
       "noise_mult": 10.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1076.9230769230767,
-      "eq_fraction": 0.5,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 37.81748543329214
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.0314788818359375
     },
     {
-      "NA": 0.8,
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.01446533203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 1692.3076923076926,
+      "eq_fraction": 0.005157470703125
+    },
+    {
+      "NA": 0.55,
       "noise_mult": 0.01,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 1.0,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.321075439453125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.4968414306640625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.6232452392578125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.3668365478515625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.1453704833984375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.063323974609375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.029693603515625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.012908935546875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 1571.4285714285713,
+      "eq_fraction": 0.0047149658203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.01,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.3380279541015625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.498809814453125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.6015472412109375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.3344573974609375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.132293701171875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.057891845703125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.0269775390625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.0117034912109375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 1466.6666666666667,
+      "eq_fraction": 0.00439453125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.01,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.3579254150390625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.4998931884765625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.5758514404296875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.30755615234375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.1215972900390625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.053680419921875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.0248565673828125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.0106964111328125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 1375.0,
+      "eq_fraction": 0.0041656494140625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.01,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.3810577392578125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.50250244140625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.54864501953125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.2840118408203125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.11236572265625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.0504608154296875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.0227508544921875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.009735107421875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1294.1176470588236,
+      "eq_fraction": 0.0037689208984375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.01,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.4058074951171875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.503570556640625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.52392578125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.262847900390625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.1044158935546875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.0474700927734375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.020904541015625
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.0090179443359375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1222.2222222222222,
+      "eq_fraction": 0.00360107421875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.01,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.4259796142578125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.03,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.5017547607421875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.1,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.5005340576171875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 0.3,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.2444610595703125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 1.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.09747314453125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 3.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.04461669921875
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 10.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.018829345703125
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 30.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.008392333984375
+    },
+    {
+      "NA": 0.55,
+      "noise_mult": 100.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1157.8947368421054,
+      "eq_fraction": 0.0032501220703125
     },
     {
       "NA": 0.8,
       "noise_mult": 0.01,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.6149444580078125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.7149658203125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.8144073486328125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.6125030517578125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.27667236328125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.12115478515625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.05279541015625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.0268402099609375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.0123138427734375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
       "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.98,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.595245361328125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.7068328857421875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.80523681640625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.5671844482421875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.2415618896484375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.104705810546875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.045806884765625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.02294921875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 3555.5555555555557,
+      "eq_fraction": 0.0104217529296875
     },
     {
       "NA": 0.8,
       "noise_mult": 0.01,
       "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.93,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.5718841552734375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.6949310302734375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.78948974609375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.5197296142578125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.2130279541015625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.0921630859375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.040985107421875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.0195770263671875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3199.9999999999995,
+      "eq_fraction": 0.0081329345703125
     },
     {
       "NA": 0.8,
       "noise_mult": 0.01,
       "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.84,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.5562286376953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.6852264404296875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.7702178955078125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.4747161865234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.190521240234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.0812530517578125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.0365753173828125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.0175018310546875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 2909.0909090909095,
+      "eq_fraction": 0.0067596435546875
     },
     {
       "NA": 0.8,
       "noise_mult": 0.01,
       "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.77,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.544586181640625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.6762237548828125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.7497406005859375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.4327239990234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.16998291015625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.0725860595703125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.0329742431640625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.015655517578125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2666.6666666666665,
+      "eq_fraction": 0.0059814453125
     },
     {
       "NA": 0.8,
       "noise_mult": 0.01,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.53631591796875
     },
     {
       "NA": 0.8,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.79,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.74,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.68,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.05,
+      "noise_mult": 0.03,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.63,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.67,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.65,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.6,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.6680450439453125
     },
     {
       "NA": 0.8,
       "noise_mult": 0.1,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.7259521484375
     },
     {
       "NA": 0.8,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.2,
+      "noise_mult": 0.3,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.36,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.3955230712890625
     },
     {
       "NA": 0.8,
       "noise_mult": 1.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.154022216796875
     },
     {
       "NA": 0.8,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 2.0,
+      "noise_mult": 3.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 1777.777777777778,
-      "eq_fraction": 0.76,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 98.01870242111495
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1600.0000000000002,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 80.23608262564737
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1454.5454545454547,
-      "eq_fraction": 0.67,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 66.9458430682686
-    },
-    {
-      "NA": 0.8,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1333.3333333333335,
-      "eq_fraction": 0.6,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 56.744705896139145
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.0655517578125
     },
     {
       "NA": 0.8,
       "noise_mult": 10.0,
       "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1230.7692307692307,
-      "eq_fraction": 0.57,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 48.73908228607305
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.0307159423828125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.013885498046875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2461.5384615384614,
+      "eq_fraction": 0.0049285888671875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.532867431640625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.6585693359375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.70098876953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.3639068603515625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.1380615234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.06011962890625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.028778076171875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.012481689453125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2285.7142857142853,
+      "eq_fraction": 0.004638671875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.5324249267578125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.6479949951171875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.67498779296875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.335052490234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.1267547607421875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.0551605224609375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.0259552001953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.011199951171875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2133.3333333333335,
+      "eq_fraction": 0.0042724609375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.5365447998046875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.6370391845703125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.6476287841796875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.3097381591796875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.116455078125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.052001953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0238037109375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.010406494140625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0040130615234375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.540374755859375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.6266326904296875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.6187286376953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.286895751953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.108734130859375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.0483856201171875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.0218963623046875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.009490966796875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 1882.3529411764707,
+      "eq_fraction": 0.0036468505859375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.5471649169921875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.61492919921875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.592132568359375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.266754150390625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.100799560546875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.04522705078125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.0196533203125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.0088043212890625
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 1777.7777777777778,
+      "eq_fraction": 0.0035247802734375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.01,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.5506591796875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.03,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.6032257080078125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.1,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.5654296875
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 0.3,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.2483978271484375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 1.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.0947113037109375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 3.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.042572021484375
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 10.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.0181427001953125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 30.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.008087158203125
+    },
+    {
+      "NA": 0.8,
+      "noise_mult": 100.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1684.2105263157894,
+      "eq_fraction": 0.0032196044921875
     },
     {
       "NA": 0.9,
       "noise_mult": 0.01,
       "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.6676483154296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.750701904296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.8275146484375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.6067962646484375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.272430419921875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.1193084716796875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.0522003173828125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.0264739990234375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 400.0,
+      "f_c_opt_mm": 4500.0,
+      "eq_fraction": 0.0121002197265625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.65557861328125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.746917724609375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.8188018798828125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.5597076416015625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.2377777099609375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.1031036376953125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.0455322265625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.022796630859375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 450.0,
+      "f_c_opt_mm": 4000.0,
+      "eq_fraction": 0.0101776123046875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.6403045654296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.737030029296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.7998199462890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.510040283203125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.2088775634765625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.090301513671875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.040496826171875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.0195465087890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 500.0,
+      "f_c_opt_mm": 3599.9999999999995,
+      "eq_fraction": 0.0079803466796875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.626373291015625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.7291107177734375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.7821044921875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.468841552734375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.1875457763671875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.080108642578125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.03607177734375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.017333984375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 550.0,
+      "f_c_opt_mm": 3272.7272727272725,
+      "eq_fraction": 0.006805419921875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.61553955078125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.7208404541015625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.762420654296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.4280548095703125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.167755126953125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.0716552734375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.0325775146484375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.015289306640625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 600.0,
+      "f_c_opt_mm": 2999.9999999999995,
+      "eq_fraction": 0.005828857421875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.6082916259765625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.71142578125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.7368927001953125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.3913726806640625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.15130615234375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.0645294189453125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.0302886962890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.0138702392578125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 650.0,
+      "f_c_opt_mm": 2769.230769230769,
+      "eq_fraction": 0.0049285888671875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.6043548583984375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.7013092041015625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.712158203125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.3597869873046875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.1354522705078125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.0590362548828125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.0284423828125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.012451171875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 700.0,
+      "f_c_opt_mm": 2571.4285714285716,
+      "eq_fraction": 0.0046234130859375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.603912353515625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.691314697265625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.6875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.3319091796875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.1250152587890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.0547332763671875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.0256805419921875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.01123046875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 750.0,
+      "f_c_opt_mm": 2400.0,
+      "eq_fraction": 0.0042572021484375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.01,
+      "wavelength_nm": 800.0,
       "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 1.0,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
+      "eq_fraction": 0.6054840087890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.67938232421875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.6591644287109375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.3068084716796875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.1152191162109375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.0510101318359375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.0236663818359375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.0101776123046875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 800.0,
+      "f_c_opt_mm": 2250.0,
+      "eq_fraction": 0.003936767578125
     },
     {
       "NA": 0.9,
       "noise_mult": 0.01,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 1.0,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.6069183349609375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.666412353515625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.6301422119140625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.28448486328125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.1064453125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.0477752685546875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.0216064453125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.00927734375
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 850.0,
+      "f_c_opt_mm": 2117.6470588235297,
+      "eq_fraction": 0.0036163330078125
     },
     {
       "NA": 0.9,
       "noise_mult": 0.01,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.98,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.6082763671875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.03,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.652587890625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.1,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.6020965576171875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 0.3,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.2650299072265625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 1.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0992889404296875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 3.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0446929931640625
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 10.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0194549560546875
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 30.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0087432861328125
+    },
+    {
+      "NA": 0.9,
+      "noise_mult": 100.0,
+      "wavelength_nm": 900.0,
+      "f_c_opt_mm": 2000.0,
+      "eq_fraction": 0.0034027099609375
     },
     {
       "NA": 0.9,
       "noise_mult": 0.01,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.94,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.6107635498046875
     },
     {
       "NA": 0.9,
-      "noise_mult": 0.01,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.87,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.01,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.8,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.8,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.75,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.74,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.71,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.68,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.05,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
+      "noise_mult": 0.03,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.6390380859375
     },
     {
       "NA": 0.9,
       "noise_mult": 0.1,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.69,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.5753326416015625
     },
     {
       "NA": 0.9,
-      "noise_mult": 0.1,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.66,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.1,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.65,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.1,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.62,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.1,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.6,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.1,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.59,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.57,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.55,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.51,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.2,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.49,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.48,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.47,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.45,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.43,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 0.5,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.41,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
+      "noise_mult": 0.3,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.2464447021484375
     },
     {
       "NA": 0.9,
       "noise_mult": 1.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.39,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.093231201171875
     },
     {
       "NA": 0.9,
-      "noise_mult": 1.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 1.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.37,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 1.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.35,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 1.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 1.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.34,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.3,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 2.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.28,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.24,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.23,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 5.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.22,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
+      "noise_mult": 3.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.0421142578125
     },
     {
       "NA": 0.9,
       "noise_mult": 10.0,
-      "wavelength_nm": 400.0,
-      "f_c_opt_mm": 2250.0,
-      "eq_fraction": 0.87,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 153.35167864400114
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.01788330078125
     },
     {
       "NA": 0.9,
-      "noise_mult": 10.0,
-      "wavelength_nm": 450.0,
-      "f_c_opt_mm": 2000.0000000000002,
-      "eq_fraction": 0.81,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 122.6023350299039
+      "noise_mult": 30.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.007965087890625
     },
     {
       "NA": 0.9,
-      "noise_mult": 10.0,
-      "wavelength_nm": 500.0,
-      "f_c_opt_mm": 1800.0000000000002,
-      "eq_fraction": 0.77,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 100.3597358521814
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 10.0,
-      "wavelength_nm": 550.0,
-      "f_c_opt_mm": 1636.3636363636363,
-      "eq_fraction": 0.71,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 83.73623071903826
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 10.0,
-      "wavelength_nm": 600.0,
-      "f_c_opt_mm": 1500.0,
-      "eq_fraction": 0.68,
-      "rho_optical": 0.2,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 70.97659193204281
-    },
-    {
-      "NA": 0.9,
-      "noise_mult": 10.0,
-      "wavelength_nm": 650.0,
-      "f_c_opt_mm": 1384.6153846153845,
-      "eq_fraction": 0.62,
-      "rho_optical": 0.18,
-      "rho_stylus": 1.0,
-      "optical_better_fraction": 0.01,
-      "rmse_ratio_pred": 60.96311364962478
+      "noise_mult": 100.0,
+      "wavelength_nm": 950.0,
+      "f_c_opt_mm": 1894.7368421052631,
+      "eq_fraction": 0.003204345703125
     }
-  ],
-  "baseline_noise": 6.861284166590154e-29,
-  "N_grid": 256
+  ]
 }

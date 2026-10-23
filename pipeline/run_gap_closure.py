@@ -30,6 +30,12 @@ N = 256
 
 
 def params_for(na, wavelength_nm, noise_mult):
+    # The noise multiplier scales the whole optical noise budget: the camera
+    # noise standard deviation (1e-3 x rms_roughness x nm) and, through the
+    # higher phase noise, the 1D unwrapping error probability (small-p linear
+    # regime: p_unwrap = 0.01 x nm, clipped at 1). Without scaling the
+    # unwrapping channel the equivalence fraction is insensitive to the noise
+    # multiplier (the unwrapping errors dominate the camera noise).
     return SimulationParams(
         grid_size=N, physical_size=100e-6,
         hurst_exponent=0.7, rms_roughness=50e-9,
@@ -37,7 +43,7 @@ def params_for(na, wavelength_nm, noise_mult):
         tip_radius=2e-6, sampling_interval=0.2e-6,
         cone_angle=45.0, wavelength=wavelength_nm * 1e-9, na=na,
         magnification=50.0, camera_noise_std=1e-3 * noise_mult,
-        unwrapping_error_prob=0.01,
+        unwrapping_error_prob=min(0.01 * noise_mult, 1.0),
     )
 
 
