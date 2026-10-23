@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "NA": 0.55,
+      "wavelength_nm": 550.0,
+      "noise_mult": 0.01,
+      "eq_all_bins_3dB": 0.3091583251953125,
+      "eq_noise_truncated_3dB": 0.28968123845848504,
+      "eq_intersection_3dB": 0.607646999086016,
+      "n_bins_union": 57943,
+      "n_bins_intersection": 19694,
+      "n_total": 65536
+    },
+    {
+      "NA": 0.55,
+      "wavelength_nm": 550.0,
+      "noise_mult": 0.1,
+      "eq_all_bins_3dB": 0.6815338134765625,
+      "eq_noise_truncated_3dB": 0.6775079624542896,
+      "eq_intersection_3dB": 0.7861342147327355,
+      "n_bins_union": 59341,
+      "n_bins_intersection": 36911,
+      "n_total": 65536
+    },
+    {
+      "NA": 0.55,
+      "wavelength_nm": 550.0,
+      "noise_mult": 1.0,
+      "eq_all_bins_3dB": 0.1984100341796875,
+      "eq_noise_truncated_3dB": 0.20872223486942665,
+      "eq_intersection_3dB": 0.19903981175756197,
+      "n_bins_union": 61498,
+      "n_bins_intersection": 52698,
+      "n_total": 65536
+    },
+    {
+      "NA": 0.9,
+      "wavelength_nm": 550.0,
+      "noise_mult": 0.01,
+      "eq_all_bins_3dB": 0.6264801025390625,
+      "eq_noise_truncated_3dB": 0.6119021478075893,
+      "eq_intersection_3dB": 0.7569989356172182,
+      "n_bins_union": 58292,
+      "n_bins_intersection": 40399,
+      "n_total": 65536
+    },
+    {
+      "NA": 0.9,
+      "wavelength_nm": 550.0,
+      "noise_mult": 0.1,
+      "eq_all_bins_3dB": 0.78216552734375,
+      "eq_noise_truncated_3dB": 0.7821330601183197,
+      "eq_intersection_3dB": 0.8390358492493106,
+      "n_bins_union": 60514,
+      "n_bins_intersection": 48955,
+      "n_total": 65536
+    },
+    {
+      "NA": 0.9,
+      "wavelength_nm": 550.0,
+      "noise_mult": 1.0,
+      "eq_all_bins_3dB": 0.18768310546875,
+      "eq_noise_truncated_3dB": 0.19697215288358674,
+      "eq_intersection_3dB": 0.1923706431573857,
+      "n_bins_union": 61694,
+      "n_bins_intersection": 53766,
+      "n_total": 65536
+    }
+  ],
+  "notes": {
+    "criteria": "eq_all_bins_3dB = fraction of ALL grid bins with |10log10(H_s/H_o)| < 3 dB (headline metric); eq_noise_truncated_3dB = same condition restricted to bins where AT LEAST ONE modality exceeds its estimated noise floor (difference-field median); eq_intersection_3dB = restricted to bins where BOTH modalities exceed their estimated noise floors",
+    "finding": "neither truncation removes the non-monotone noise dependence, because the difference-field noise-floor estimate itself is transfer-dependent at low noise (the difference field is dominated by signal attenuation, not noise) and because very low optical noise leaves stylus-dominated high-frequency bins unmatched; the equivalence fraction is therefore an operational, estimator-dependent diagnostic, and noise optimisation should use the monotone RMSE ranking instead"
+  }
+}

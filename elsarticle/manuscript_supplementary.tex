@@ -268,6 +268,32 @@ Full stability tests against model variants, summarised in the main text (Robust
 
 \textbf{Implication.} The framework is not an artefact of a particular optical model, tip geometry, or surface class. Its core findings---the instrument transfer function $H(f)$ is computable from first principles, the reconstructability index $\rho$ is instrument-dominated for random surfaces, and the stylus--optical disagreement arises from the low-pass character of $H(f)$ combined with differential noise floors---survive model perturbations. The quantitative values of derived metrics ($\rho$, $f_\mathrm{cross}$, $\eta$) depend on the specific model, but the qualitative conclusions and the modality ranking are robust.
 
+\section{Equivalence-Criterion Sensitivity}
+\label{S11}
+
+The headline \SI{3}{dB} equivalence fraction counts all grid bins where the two empirical transfers agree within \SI{3}{dB}, including bins where both measured PSDs lie below the noise floor; there the two ratios tend to unity and the bins count as equivalent. A focused sensitivity audit (verification/run\_equivalence\_criterion\_audit.py; $\lambda=\SI{550}{nm}$, NA $0.55$/$0.9$, noise multipliers $0.01\times$/$0.1\times$/$1\times$, $N=256$, seed 42) compares three criteria: all bins (headline), the union of the two noise-truncated passbands (at least one modality above its difference-field noise floor), and their intersection (both above).
+
+\begin{table}[htbp]
+    \centering
+    \caption{Equivalence fraction (\%) under three criteria. All bins: the headline criterion. Union/intersection: the count restricted to bins where at least one / both modalities exceed their estimated noise floors.}
+    \label{tab:criteria}
+    \small
+    \begin{tabular}{ccccc}
+        \toprule
+        NA & noise & all bins & union & intersection \\
+        \midrule
+        0.55 & $0.01\times$ & 30.9 & 29.0 & 60.8 \\
+        0.55 & $0.1\times$  & 68.2 & 67.8 & 78.6 \\
+        0.55 & $1\times$    & 19.8 & 20.9 & 19.9 \\
+        0.9  & $0.01\times$ & 62.6 & 61.2 & 75.7 \\
+        0.9  & $0.1\times$  & 78.2 & 78.2 & 83.9 \\
+        0.9  & $1\times$    & 18.8 & 19.7 & 19.2 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Neither truncation removes the non-monotone noise dependence, for two reasons: (i) at very low noise the difference-field noise-floor estimate is dominated by transfer attenuation rather than by noise, so the truncation mask itself depends on the instrument; and (ii) a very low optical noise floor leaves the stylus-dominated high-frequency bins (where the optical transfer has collapsed) unmatched, and those bins are not equivalent under any of the three criteria. The equivalence fraction is therefore an operational, estimator-dependent diagnostic. For noise optimisation the monotone RMSE ranking should be used instead (optical RMSE \SI{9.3}{}, \SI{14.9}{} and \SI{42.2}{nm} at $0.01\times$, $0.1\times$ and $1\times$, NA 0.9, $\lambda=\SI{850}{nm}$, from the gap-closure sweep).
+
 \section{Surface-Class Universality Stress-Test}
 \subsection{Universality of Framework Metrics Across Surface Classes}
 \label{sec:universality}
@@ -399,7 +425,7 @@ where $p_i \in \{r_\mathrm{tip}, \Delta x, \mathrm{NA}, \lambda, \sigma_\eta\}$ 
 \end{figure}
 
 \section*{Code Availability}
-The simulation code, configuration files, verification suite and audit scripts behind every computation in this supplement are available in a public GitHub repository~\cite{kucharski2026repository} (release v1.0.2) and are archived on Zenodo (DOI 10.5281/zenodo.23493875).
+The simulation code, configuration files, verification suite and audit scripts behind every computation in this supplement are available in a public GitHub repository~\cite{kucharski2026repository} (release v1.1.0) and are archived on Zenodo (DOI 10.5281/zenodo.23493875).
 
 \bibliographystyle{elsarticle-num}
 \bibliography{references}
