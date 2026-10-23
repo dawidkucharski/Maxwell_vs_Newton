@@ -106,11 +106,30 @@ def test_uncertainty_bound_limits():
     classical = 1 / (4 * np.pi)
     record("T4a bound -> classical as SNR->inf", np.isclose(bound[0], classical, rtol=1e-6))
     record("T4b bound increases as 1/SNR increases", np.all(np.diff(bound) > 0))
-    # manuscript numbers
-    b_s = (1 / (4 * np.pi)) * (1 + 1 / 56)
-    b_o = (1 / (4 * np.pi)) * (1 + 1 / 32)
-    record("T4c stylus product 0.081", abs(b_s - 0.081) < 0.002, f"{b_s:.4f}")
-    record("T4d optical product 0.083", abs(b_o - 0.083) < 0.002, f"{b_o:.4f}")
+    # manuscript benchmark values: SNR_bar recomputed from the baseline data with
+    # the pipeline difference-field noise-floor estimator (median PSD of h_m - h_t)
+    h_true = np.load(os.path.join(PIPE, 'outputs', 'iter01', 'h_true.npy'))
+    N = h_true.shape[0]
+    dx = 100e-6 / N
+
+    def psd2d(h):
+        w = np.hanning(N)[:, None] * np.hanning(N)[None, :]
+        return np.abs(np.fft.fft2(h * w)) ** 2 * dx ** 2 / np.sum(w ** 2)
+
+    P_t = psd2d(h_true)
+    snr_bar = {}
+    for name in ('stylus', 'optical'):
+        hm = np.load(os.path.join(PIPE, 'outputs', 'iter01', f'h_{name}.npy'))
+        P_diff = psd2d(hm - h_true)
+        eta = np.median(P_diff[P_diff > 0])
+        H2 = np.clip(psd2d(hm) / np.maximum(P_t, 1e-35), 0, 10)
+        snr_bar[name] = np.sum(H2 * P_t) / (eta * N * N)
+    b_s = (1 / (4 * np.pi)) * (1 + 1 / snr_bar['stylus'])
+    b_o = (1 / (4 * np.pi)) * (1 + 1 / snr_bar['optical'])
+    record("T4c stylus benchmark 0.081 (SNR~53)", abs(b_s - 0.081) < 0.002,
+           f"SNR={snr_bar['stylus']:.1f}, bound={b_s:.4f}")
+    record("T4d optical benchmark 0.101 (SNR~4)", abs(b_o - 0.101) < 0.002,
+           f"SNR={snr_bar['optical']:.2f}, bound={b_o:.4f}")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # T5. Isotropy of the analytic H_stylus model
