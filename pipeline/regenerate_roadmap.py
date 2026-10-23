@@ -96,22 +96,34 @@ ax_a.set_xticks([0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 targets = [50, 60, 70]
 all_nas = sorted(set(r['NA'] for r in results))
 
+# The noise response of the 3 dB equivalence fraction is non-monotone: it peaks
+# at ~0.1x of the baseline floor and falls again at very low noise because the
+# criterion also counts bins where both measured PSDs lie below the noise floor
+# as equivalent. Panel (b) therefore reports the full TOLERABLE WINDOW per
+# target: the ceiling (largest qualifying multiplier, solid) and the floor
+# (smallest qualifying multiplier, dashed), both at lambda = 550 nm.
+target_colors = {50: '#1f77b4', 60: '#ff7f0e', 70: '#2ca02c'}
+
 for target in targets:
-    max_noise_by_na = []
+    ceil_by_na, floor_by_na = [], []
     for na in all_nas:
-        # Find max noise_mult where eq_fraction > target/100
-        candidates = [r for r in results 
-                      if abs(r['NA'] - na) < 0.001 
-                      and abs(r['wavelength_nm'] - wavelength_nm_target) < 1.0
-                      and r['eq_fraction'] * 100 > target]
-        if candidates:
-            max_nm = max(r['noise_mult'] for r in candidates)
-            max_noise_by_na.append((na, max_nm))
-    
-    if max_noise_by_na:
-        nas_plot, nms_plot = zip(*max_noise_by_na)
-        ax_b.plot(nas_plot, nms_plot, 's-', lw=2.0, ms=5,
-                  label=f'{target}% equivalence')
+        quals = sorted(r['noise_mult'] for r in results
+                       if abs(r['NA'] - na) < 0.001
+                       and abs(r['wavelength_nm'] - wavelength_nm_target) < 1.0
+                       and r['eq_fraction'] * 100 > target)
+        if quals:
+            floor_by_na.append((na, quals[0]))
+            ceil_by_na.append((na, quals[-1]))
+    if ceil_by_na:
+        nas_p, nms_p = zip(*ceil_by_na)
+        ax_b.plot(nas_p, nms_p, 's-', lw=2.0, ms=5,
+                  color=target_colors[target],
+                  label=f'{target}% ceiling')
+        if len(floor_by_na) > 1:
+            nas_f, nms_f = zip(*floor_by_na)
+            ax_b.plot(nas_f, nms_f, 'o--', lw=1.4, ms=4,
+                      color=target_colors[target], alpha=0.8,
+                      label=f'{target}% floor')
 
 # Zone shading (in data coordinates, log scale)
 # Lower noise_mult = less noise = better = "achievable"
@@ -133,8 +145,8 @@ ax_b.text(0.50, 0.50, 'Current\nbaseline',
           color=red_baseline, fontstyle='italic', clip_on=False)
 
 ax_b.set_xlabel('Numerical aperture, NA', fontsize=11)
-ax_b.set_ylabel('Max. tolerable noise multiplier', fontsize=11)
-ax_b.set_title('(b) Noise budget for equivalence targets', fontsize=12, fontweight='bold')
+ax_b.set_ylabel('Tolerable noise multiplier', fontsize=11)
+ax_b.set_title('(b) Noise budget for equivalence targets ($\lambda$ = 550 nm)', fontsize=12, fontweight='bold')
 ax_b.legend(fontsize=8, loc='upper left', framealpha=0.75,
            bbox_to_anchor=(-0.02, 1.02))
 ax_b.set_xlim(0.28, 0.92)
