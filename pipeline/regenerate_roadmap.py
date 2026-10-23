@@ -140,8 +140,13 @@ ax_b.text(0.72, 0.17, 'Achievable\n(cooled sCMOS\n+ brighter source)',
 ax_b.text(0.72, 0.50, 'Challenging\n(long integration)',
           transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
           color='#e67e22', fontstyle='italic', clip_on=False)
-ax_b.text(0.72, 0.82, 'Current\nbaseline',
+ax_b.text(0.72, 0.82, 'Above baseline\n(noisier than 1×)',
           transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
+          color=red_baseline, fontstyle='italic', clip_on=False)
+# the baseline itself is the 1x boundary of the red band
+ax_b.axhline(1.0, color=red_baseline, ls='--', lw=1.4, alpha=0.85)
+ax_b.text(0.03, 0.665, 'Current baseline (1×)',
+          transform=ax_b.transAxes, fontsize=7, ha='left', va='bottom',
           color=red_baseline, fontstyle='italic', clip_on=False)
 
 ax_b.set_xlabel('Numerical aperture, NA', fontsize=11)
