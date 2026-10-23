@@ -134,8 +134,9 @@ ax_b.axhspan(1.0, 20.0, alpha=0.10, color='red', zorder=0)
 
 # Zone labels placed inside the plot area at fixed x position
 # Use clip_on=False so text isn't cropped at axis edges
-ax_b.text(0.15, 0.17, 'Achievable\n(cooled sCMOS\n+ brighter source)',
-          transform=ax_b.transAxes, fontsize=7.5, ha='left', va='center',
+# placed in data coordinates at NA < 0.55, where no tolerance curve exists
+ax_b.text(0.42, 0.015, 'Achievable\n(cooled sCMOS\n+ brighter source)',
+          fontsize=7.5, ha='left', va='bottom',
           color='#27ae60', fontstyle='italic', clip_on=False)
 ax_b.text(0.72, 0.50, 'Challenging\n(long integration)',
           transform=ax_b.transAxes, fontsize=7.5, ha='center', va='center',
