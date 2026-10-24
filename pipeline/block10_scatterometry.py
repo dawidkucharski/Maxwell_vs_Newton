@@ -382,18 +382,22 @@ def fig_three_way_transfer(three_way: ThreeWayResult, output_dir: str):
     ax.legend(loc='lower left', framealpha=0.85)
     ax.grid(True, alpha=0.3, which='both')
 
-    # (b) Transfer functions
+    # (b) Transfer functions (logarithmic y-axis for full visibility)
     ax = axes[1]
+    H_sc_vis = np.where(np.asarray(three_way.H_scat_1d) > 1e-3,
+                        three_way.H_scat_1d, np.nan)
     ax.semilogx(f_r[pos], three_way.H_stylus_1d[pos], 'b-', lw=1.5, label='Stylus')
     ax.semilogx(f_r[pos], three_way.H_optical_1d[pos], 'r-', lw=1.5, label='WLI')
-    ax.semilogx(f_r[pos], three_way.H_scat_1d[pos], 'g-', lw=1.5, label='Scatterometry')
+    ax.semilogx(f_r[pos], H_sc_vis[pos], 'g-', lw=1.5, label='Scatterometry')
+    ax.set_yscale('log')
     ax.axhline(1.0, color='gray', ls=':', lw=0.6)
+    ax.axhline(0.5, color='gray', ls=(0, (1, 3)), lw=0.6)
     ax.set_xlabel(r'$f$ [mm$^{-1}$]')
     ax.set_ylabel(r'$H(f)$')
     ax.set_title('(b) Transfer Functions', loc='left', fontsize=10.5, fontweight='bold')
     ax.legend(loc='lower left', framealpha=0.85)
     ax.grid(True, alpha=0.3, which='both')
-    ax.set_ylim([0, 1.05])
+    ax.set_ylim([0.03, 300.0])
 
     # (c) Frequency coverage comparison
     ax = axes[2]

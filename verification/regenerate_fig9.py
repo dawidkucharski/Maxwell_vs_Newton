@@ -52,5 +52,17 @@ _, three_way.H_stylus_1d = azimuthal_average(H_stylus_2d, fx, fy)
 _, three_way.H_optical_1d = azimuthal_average(H_optical_2d, fx, fy)
 _, three_way.H_scat_1d = azimuthal_average(H_scat_2d, fx, fy)
 
+# Manuscript-consistent estimator (ratio of azimuthal means of Hann periodograms,
+# as in fig4(b)/fig10(a) and T10) for the two imaging channels.
+from variant_simulations import psd2d as vpsd2d  # noqa: E402
+Pt = vpsd2d(h_true, dx)
+Ps = vpsd2d(h_stylus, dx)
+Po = vpsd2d(h_optical, dx)
+_, Pta = azimuthal_average(Pt, fx, fy)
+_, Psa = azimuthal_average(Ps, fx, fy)
+_, Poa = azimuthal_average(Po, fx, fy)
+three_way.H_stylus_1d = Psa / np.maximum(Pta, 1e-30)
+three_way.H_optical_1d = Poa / np.maximum(Pta, 1e-30)
+
 b10.fig_three_way_transfer(three_way, OUT)
 print('Figure 9 regenerated with corrected coverage bars')
