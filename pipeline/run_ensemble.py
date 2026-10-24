@@ -19,7 +19,8 @@ PIPE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, PIPE)
 
 from block4_physics_simulator import SimulationParams, run_simulation   # noqa: E402
-from block5_discovery_engine import run_discovery                      # noqa: E402
+from block5_discovery_engine import run_discovery, azimuthal_average     # noqa: E402
+from variant_simulations import psd2d                                    # noqa: E402
 
 N = 30
 SEED0 = 100
@@ -60,8 +61,16 @@ def main():
         tf = disc.transfer_functions
         if f_radial is None:
             f_radial = np.array(tf.f_radial)
-        H_s.append(np.array(tf.H_stylus_1d))
-        H_o.append(np.array(tf.H_optical_1d))
+        # Manuscript-consistent estimator (T10): ratio of azimuthal means of
+        # Hanning-windowed periodograms, on the same radial grid as block5.
+        Pt = psd2d(result.h_true, result.params.dx)
+        Ps = psd2d(result.h_stylus, result.params.dx)
+        Po = psd2d(result.h_optical, result.params.dx)
+        _, Pta = azimuthal_average(Pt, result.fx, result.fy)
+        _, Psa = azimuthal_average(Ps, result.fx, result.fy)
+        _, Poa = azimuthal_average(Po, result.fx, result.fy)
+        H_s.append(Psa / np.maximum(Pta, 1e-30))
+        H_o.append(Poa / np.maximum(Pta, 1e-30))
         I_1d.append(np.array(disc.information_loss.I_radial))
 
         h_t = result.h_true
