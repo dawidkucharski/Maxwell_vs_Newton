@@ -8,10 +8,10 @@ Figure audit repairs (graphics only, no changes to science):
    headline values H_stylus = 2.2 / 0.91 / 0.74 / 0.57 at 17 / 292 / 567 /
    843 mm^-1 and the 3 dB point at 1049 mm^-1 (verified by T10). The previous
    committed PDF used the average-of-ratios estimator, whose azimuthal profile
-   disagrees with the manuscript. The optical curve is shown with a y-limit of
-   3 so the passband structure stays visible; the noise-dominated rise above
-   the unwrapping-error floor exits the frame and is annotated (off-scale).
-   Panel (a) is unchanged.
+   disagree with the manuscript. Panel (b) uses a logarithmic y-axis so both
+   the passband structure and the noise-dominated optical rise above the
+   unwrapping-error floor are fully visible (no clipping). Panel (a) is
+   unchanged.
 
 2. fig8_cramer_rao.pdf — the committed PDF saturated both curves against an
    arbitrary display clip (F clipped at 1e20, CRB flat at 1e-20). The clip is
@@ -21,7 +21,8 @@ Figure audit repairs (graphics only, no changes to science):
 
 3. fig10_ensemble_validation.pdf — panel (a) redrawn from the updated
    ensemble_stats.json whose H curves now use the same ratio-of-azimuthal-means
-   estimator (see run_ensemble.py), so it is consistent with fig4(b). Panels
+   estimator (see run_ensemble.py), so it is consistent with fig4(b); a
+   logarithmic y-axis is used for the same full-visibility treatment. Panels
    (b)/(c) are unchanged.
 
 All outputs are vector PDFs written to pipeline/outputs/iter01/figures/.
@@ -94,15 +95,16 @@ def fig4():
     fmm = fr * 1e-3
     axes[1].semilogx(fmm, H_s, 'b-', linewidth=1.5, label='Stylus')
     axes[1].semilogx(fmm, H_o, 'r-', linewidth=1.5, label='Optical')
+    axes[1].set_yscale('log')
     axes[1].axhline(1.0, color='gray', linestyle=':', linewidth=0.6)
     axes[1].axhline(0.5, color='gray', linestyle=(0, (1, 3)), linewidth=0.6)
     axes[1].set_xlabel(r'$f$ [mm$^{-1}$]')
     axes[1].set_ylabel(r'$H(f)$')
     axes[1].set_title('(b)  Transfer Functions', loc='left', fontsize=10.5,
                       fontweight='bold', pad=12)
-    axes[1].legend(loc='upper right', framealpha=0.85)
+    axes[1].legend(loc='lower left', framealpha=0.85)
     axes[1].grid(True, alpha=0.3, which='both')
-    axes[1].set_ylim([0, 3.0])
+    axes[1].set_ylim([0.03, 300.0])
     axes[1].set_xlim([fmm[2], fmm[-1] * 1.05])
 
     # markers: optical cutoff (2000 mm^-1) and stylus tip-radius scale
@@ -110,12 +112,6 @@ def fig4():
     for fc, lbl, clr in [(2000.0, 'Opt.', 'red'), (159.0, 'Sty.', 'blue')]:
         axes[1].axvline(fc, color=clr, linestyle=':', alpha=0.6, linewidth=1)
         axes[1].text(fc * 1.05, 0.42, lbl, color=clr, fontsize=7, rotation=90)
-
-    # off-scale annotation for the noise-dominated optical rise
-    axes[1].annotate('', xy=(1230, 2.95), xytext=(1420, 1.55),
-                     arrowprops=dict(arrowstyle='->', color='red', lw=1.0))
-    axes[1].text(1440, 1.25, 'noise-dominated rise\n(unwrapping-error floor)',
-                 color='red', fontsize=7.5, va='bottom', ha='left')
 
     fig.savefig(os.path.join(OUT, 'fig4_azimuthal_profiles.pdf'))
     plt.close(fig)
@@ -190,6 +186,7 @@ def fig10():
     axes[0].fill_between(f_e, H_sm - H_sd, H_sm + H_sd, alpha=0.25)
     axes[0].semilogx(f_e, H_om, label='optical')
     axes[0].fill_between(f_e, H_om - H_od, H_om + H_od, alpha=0.25)
+    axes[0].set_yscale('log')
     axes[0].axhline(1.0, color='gray', linestyle=':', linewidth=0.6)
     axes[0].axhline(0.5, color='gray', linestyle=(0, (1, 3)), linewidth=0.6)
     axes[0].set_xlabel(r'$f$ [mm$^{-1}$]')
@@ -197,12 +194,8 @@ def fig10():
     axes[0].set_title('(a) Ensemble transfer functions')
     axes[0].legend(fontsize=7)
     axes[0].grid(alpha=0.3)
-    axes[0].set_ylim([0, 3.0])
+    axes[0].set_ylim([0.03, 300.0])
     axes[0].set_xlim([f_e[2], f_e[-1] * 1.05])
-    axes[0].text(0.52, 0.95, 'optical: noise-dominated rise\nabove the '
-                 'unwrapping-error floor (off-scale)',
-                 transform=axes[0].transAxes, fontsize=7.5, color='red',
-                 va='top')
 
     axes[1].bar(['stylus', 'optical'],
                 [ens['rmse_stylus_mean'] * 1e9, ens['rmse_optical_mean'] * 1e9],
