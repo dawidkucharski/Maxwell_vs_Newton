@@ -1,19 +1,19 @@
 {
   "partA_committed": {
     "17_mm-1": {
-      "H": 0.23467917090484156,
+      "H": 0.2232767979751472,
       "bin_f_mm-1": 17.19683691845683
     },
     "292_mm-1": {
-      "H": 0.3607247963828313,
+      "H": 0.3710113054830141,
       "bin_f_mm-1": 292.34622761376613
     },
     "567_mm-1": {
-      "H": 0.27238854859170236,
+      "H": 0.27045158092840205,
       "bin_f_mm-1": 567.4956183090754
     },
     "843_mm-1": {
-      "H": 0.2836067981919351,
+      "H": 0.28408660418987963,
       "bin_f_mm-1": 842.6450090043849
     }
   },
@@ -23,13 +23,13 @@
   },
   "partB_ensemble": {
     "n_seeds": 20,
-    "H_psd_ratio_lowest_bin": 1.9213973873526378,
-    "H_cross_lowest_bin": 1.059409920183421,
+    "H_psd_ratio_lowest_bin": 1.9214234772279233,
+    "H_cross_lowest_bin": 1.0594111392717869,
     "H_linearised_model_lowest_bin": 1.6958832488644198,
-    "mean_coherence_mid_band": 0.9688523898518261,
-    "mean_coherence_high_band": 0.5740224692300646,
-    "H_psd_mean_mid_band": 0.9229537665012746,
-    "H_cross_mean_mid_band": 0.9450845103827721,
+    "mean_coherence_mid_band": 0.9688519050995023,
+    "mean_coherence_high_band": 0.5740175877398641,
+    "H_psd_mean_mid_band": 0.922956710923761,
+    "H_cross_mean_mid_band": 0.9450857190812368,
     "H_linearised_mean_mid_band": 1.0174186907717127,
     "note": "H_psd_ratio = <S_yy>/S_tt (biased by noise + nonlinear distortion); H_cross = |<S_ty>|/S_tt (LTI-optimal amplitude estimate); H_linearised = S(h+(r/2)|grad h|^2)/S(h)."
   },

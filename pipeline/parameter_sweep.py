@@ -19,6 +19,8 @@ Outputs:
 import numpy as np
 import json
 import os
+
+SWEEP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'outputs', 'sweep')
 from dataclasses import dataclass, field, asdict
 from typing import List, Dict, Tuple, Optional
 from itertools import product
@@ -409,7 +411,7 @@ def generate_sweep_summary(results: List[SweepPoint], fits: Dict,
     return summary
 
 
-def run_sweep(output_dir: str = "./outputs/sweep",
+def run_sweep(output_dir: str = SWEEP_DIR,
               quick: bool = False) -> Tuple[List[SweepPoint], Dict]:
     """Run complete parameter sweep with scaling law fitting."""
 
@@ -421,10 +423,11 @@ def run_sweep(output_dir: str = "./outputs/sweep",
         rms_roughnesses = [25e-9, 50e-9]
         grid_size = 128
     else:
+        # Manuscript 180-point grid (matches verification/run_sweep_multiseed.py):
         tip_radii = [0.5e-6, 1e-6, 2e-6, 5e-6, 10e-6]
-        nas = [0.1, 0.2, 0.3, 0.4, 0.55, 0.7]
-        hurst_exponents = [0.3, 0.5, 0.7, 0.9]
-        rms_roughnesses = [10e-9, 25e-9, 50e-9, 100e-9]
+        nas = [0.2, 0.3, 0.4, 0.55]
+        hurst_exponents = [0.3, 0.5, 0.7]
+        rms_roughnesses = [10e-9, 25e-9, 50e-9]
         grid_size = 256
 
     results = run_parameter_sweep(

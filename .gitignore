@@ -22,3 +22,6 @@ elsarticle/cover_letter.pdf
 elsarticle/doc/*.pdf
 IMEKO_2027/class_iwc2027_v2/imeko-wc-extended-abstract.pdf
 literature_overview.pdf
+
+# stray local pipeline outputs
+outputs/

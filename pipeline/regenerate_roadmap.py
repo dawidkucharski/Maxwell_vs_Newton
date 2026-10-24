@@ -186,7 +186,7 @@ summary_text = (
     r"    Quality-guided or temporal PSI" "\n"
     r"    $\rightarrow$ 1% $\rightarrow$ 0.1% error rate" "\n"
     "\n"
-    r"$\bf{9.6\% \rightarrow 82.8\%}$ equivalence (sweep)"
+    r"$\bf{9.6\% \rightarrow 82.7\%}$ equivalence (sweep)"
     r"  --  $\bf{17\%}$ residual: bias-limited"
 )
 

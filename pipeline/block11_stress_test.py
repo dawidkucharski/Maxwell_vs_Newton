@@ -345,8 +345,13 @@ def compute_all_metrics(h_true: np.ndarray, h_stylus: np.ndarray,
 # MAIN STRESS-TEST
 # ============================================================
 
-def run_stress_test(output_dir: str = 'outputs/iter01/stress_test'):
+PIPE = os.path.dirname(os.path.abspath(__file__))
+
+
+def run_stress_test(output_dir: str = None):
     """Run full stress-test across 6 surface classes."""
+    if output_dir is None:
+        output_dir = os.path.join(PIPE, 'outputs', 'iter01', 'stress_test')
     os.makedirs(output_dir, exist_ok=True)
     
     base_params = SimulationParams(
@@ -568,7 +573,7 @@ def fig_stress_test(results: Dict, universality: Dict, output_dir: str):
 
 if __name__ == "__main__":
     np.random.seed(42)
-    out = 'outputs/iter01/stress_test'
+    out = os.path.join(PIPE, 'outputs', 'iter01', 'stress_test')
     
     results = run_stress_test(out)
     analysis = analyse_universality(results, out)

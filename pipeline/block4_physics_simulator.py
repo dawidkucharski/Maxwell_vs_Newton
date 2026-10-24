@@ -146,7 +146,8 @@ def generate_self_affine_surface(params: SimulationParams, seed: int = 42) -> np
 # Stylus Simulation
 # ============================================================
 
-def simulate_stylus(h_true: np.ndarray, params: SimulationParams) -> Tuple[np.ndarray, Dict]:
+def simulate_stylus(h_true: np.ndarray, params: SimulationParams,
+                    noise_seed: int = 7) -> Tuple[np.ndarray, Dict]:
     """
     Simulate stylus profilometry measurement with physically correct ordering.
 
@@ -247,7 +248,7 @@ def simulate_stylus(h_true: np.ndarray, params: SimulationParams) -> Tuple[np.nd
 
     # ---- Step 3: Small additive measurement noise ----
     noise_std = params.rms_roughness * 0.001  # 0.1% of roughness
-    noise = np.random.randn(N, N) * noise_std
+    noise = np.random.RandomState(noise_seed).randn(N, N) * noise_std
     h_stylus = h_sampled + noise
 
     # Compute metrics
@@ -270,7 +271,8 @@ def simulate_stylus(h_true: np.ndarray, params: SimulationParams) -> Tuple[np.nd
 # Optical Simulation
 # ============================================================
 
-def simulate_optical(h_true: np.ndarray, params: SimulationParams) -> Tuple[np.ndarray, Dict]:
+def simulate_optical(h_true: np.ndarray, params: SimulationParams,
+                     noise_seed: int = 8) -> Tuple[np.ndarray, Dict]:
     """
     Simulate optical (white-light interferometry / phase-shifting) measurement.
 
@@ -338,7 +340,7 @@ def simulate_optical(h_true: np.ndarray, params: SimulationParams) -> Tuple[np.n
     h_unwrapped += error_mask * error_heights
 
     # ---- Step 4: Camera noise ----
-    noise = np.random.randn(N, N) * params.camera_noise_std * params.rms_roughness
+    noise = np.random.RandomState(noise_seed).randn(N, N) * params.camera_noise_std * params.rms_roughness
     h_optical = h_unwrapped + noise
 
     # ---- Step 5: Detector pixel averaging (MTF of camera) ----

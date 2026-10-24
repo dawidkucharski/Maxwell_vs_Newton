@@ -1,0 +1,127 @@
+{
+  "linearity": {
+    "grid": 256,
+    "baseline_anchor_nm": 16.29,
+    "rows": [
+      {
+        "sigma_nm": 5,
+        "rmse_stylus_nm": 0.005,
+        "rmse_linear_extrap_nm": 1.629,
+        "ratio": 0.0031
+      },
+      {
+        "sigma_nm": 10,
+        "rmse_stylus_nm": 0.01,
+        "rmse_linear_extrap_nm": 3.257,
+        "ratio": 0.0031
+      },
+      {
+        "sigma_nm": 20,
+        "rmse_stylus_nm": 0.024,
+        "rmse_linear_extrap_nm": 6.515,
+        "ratio": 0.0037
+      },
+      {
+        "sigma_nm": 50,
+        "rmse_stylus_nm": 5.583,
+        "rmse_linear_extrap_nm": 16.287,
+        "ratio": 0.3428
+      },
+      {
+        "sigma_nm": 100,
+        "rmse_stylus_nm": 31.372,
+        "rmse_linear_extrap_nm": 32.573,
+        "ratio": 0.9631
+      },
+      {
+        "sigma_nm": 150,
+        "rmse_stylus_nm": 65.675,
+        "rmse_linear_extrap_nm": 48.86,
+        "ratio": 1.3442
+      },
+      {
+        "sigma_nm": 200,
+        "rmse_stylus_nm": 104.53,
+        "rmse_linear_extrap_nm": 65.146,
+        "ratio": 1.6046
+      }
+    ]
+  },
+  "poisson": {
+    "method": "two-frame phase-shift shot noise; unwrapping errors shared",
+    "rows": [
+      {
+        "photons_per_pixel": 1000,
+        "sigma_h_nm": 0.979,
+        "rmse_gaussian_nm": 28.266,
+        "rmse_poisson_nm": 28.435,
+        "rel_diff_pct": 0.595
+      },
+      {
+        "photons_per_pixel": 10000,
+        "sigma_h_nm": 0.309,
+        "rmse_gaussian_nm": 28.252,
+        "rmse_poisson_nm": 28.274,
+        "rel_diff_pct": 0.078
+      },
+      {
+        "photons_per_pixel": 100000,
+        "sigma_h_nm": 0.098,
+        "rmse_gaussian_nm": 28.251,
+        "rmse_poisson_nm": 28.268,
+        "rel_diff_pct": 0.061
+      },
+      {
+        "photons_per_pixel": 1000000,
+        "sigma_h_nm": 0.031,
+        "rmse_gaussian_nm": 28.251,
+        "rmse_poisson_nm": 28.251,
+        "rel_diff_pct": 0.0
+      },
+      {
+        "photons_per_pixel": 10000000,
+        "sigma_h_nm": 0.01,
+        "rmse_gaussian_nm": 28.251,
+        "rmse_poisson_nm": 28.251,
+        "rel_diff_pct": 0.0
+      }
+    ],
+    "max_rel_diff_pct": 0.595
+  },
+  "wear_scar": {
+    "sigma_left_nm": 5,
+    "sigma_right_nm": 100,
+    "sigma_ratio": 20.0,
+    "f_eval_mm": 10.0,
+    "local_psd_ratio_at_f": 400.0,
+    "sigma_squared_ratio": 400.0,
+    "note": "half-window local PSD, zero-padded to N=1024 (df=10 mm-1)"
+  },
+  "otf_variants": {
+    "rms_wavefront_waves": 0.151,
+    "gaussian_3dB_point_nu": 0.404,
+    "rows": [
+      {
+        "variant": "ideal",
+        "rho_stylus": 0.82,
+        "rho_optical": 0.81,
+        "rmse_optical_nm": 29.291,
+        "frac_passband_within_3dB_of_ideal": 1.0
+      },
+      {
+        "variant": "marechal",
+        "rho_stylus": 0.82,
+        "rho_optical": 0.81,
+        "rmse_optical_nm": 29.632,
+        "frac_passband_within_3dB_of_ideal": 0.766768
+      },
+      {
+        "variant": "gaussian",
+        "rho_stylus": 0.82,
+        "rho_optical": 0.81,
+        "rmse_optical_nm": 28.917,
+        "frac_passband_within_3dB_of_ideal": 0.919114
+      }
+    ]
+  }
+}

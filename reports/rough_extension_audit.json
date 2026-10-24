@@ -6,43 +6,43 @@
     "optical_wins": 9,
     "stylus_wins": 63,
     "optical_wins_fraction": 0.125,
-    "ratio_s_o_median": 0.4401575113577067,
-    "ratio_s_o_p10": 0.0005791974605568306,
-    "ratio_s_o_p90": 1.0731068356406568
+    "ratio_s_o_median": 0.4401534186915671,
+    "ratio_s_o_p10": 0.0005768754382858254,
+    "ratio_s_o_p90": 1.0731017511832486
   },
   "by_sigma": {
     "75nm": {
       "n": 24,
       "optical_wins_fraction": 0.3333333333333333,
-      "ratio_s_o_median": 0.6804646306500896,
-      "ratio_s_o_min": 0.0015070326811813194,
-      "ratio_s_o_max": 1.5325764611555395
+      "ratio_s_o_median": 0.6804689584402887,
+      "ratio_s_o_min": 0.0014962876195325154,
+      "ratio_s_o_max": 1.5325691951452391
     },
     "100nm": {
       "n": 24,
       "optical_wins_fraction": 0.20833333333333334,
-      "ratio_s_o_median": 0.6470057770996445,
-      "ratio_s_o_min": 0.0009604378659537033,
-      "ratio_s_o_max": 1.548437126613043
+      "ratio_s_o_median": 0.6469995929526546,
+      "ratio_s_o_min": 0.0009531958728399208,
+      "ratio_s_o_max": 1.5484413749841552
     },
     "150nm": {
       "n": 24,
       "optical_wins_fraction": 0.16666666666666666,
-      "ratio_s_o_median": 0.4076634225007293,
-      "ratio_s_o_min": 0.0004098543985371024,
-      "ratio_s_o_max": 1.4805560248362006
+      "ratio_s_o_median": 0.407658840869072,
+      "ratio_s_o_min": 0.0004068122511925924,
+      "ratio_s_o_max": 1.4805484346720936
     },
     "200nm": {
       "n": 24,
       "optical_wins_fraction": 0.0,
-      "ratio_s_o_median": 0.3191757004499879,
-      "ratio_s_o_min": 0.0002914447939130637,
-      "ratio_s_o_max": 0.9782422405911894
+      "ratio_s_o_median": 0.3191735286123547,
+      "ratio_s_o_min": 0.000290202852163689,
+      "ratio_s_o_max": 0.9782359367586992
     }
   },
   "stylus_growth": {
-    "stylus_rmse_sigma_exponent": 1.5534276125751558,
-    "r2": 0.9984259109061306
+    "stylus_rmse_sigma_exponent": 1.5534259766883904,
+    "r2": 0.998425764373567
   },
   "interpretation": "\"optical wins\" = RMSE_s/RMSE_o > 1 (stylus RMSE larger). If optical_wins_fraction is high for sigma >= 100 nm, the decision-matrix rough row is grounded in data over 100-200 nm, not extrapolated."
 }

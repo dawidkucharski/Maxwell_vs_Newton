@@ -135,6 +135,10 @@ def run(seed):
         i = np.argmin(np.abs(f_r - freq_mm * 1e3))
         return float(H_c[i])
 
+    # analytic H_confocal (2D autocorrelation of the incoherent OTF) at the
+    # reference frequencies, independent of any simulated realisation
+    Hc_ref = confocal_otf(np.array([1000e3, 2000e3]), np.array([0.0]), cutoff_inc)
+
     return {
         'seed': seed,
         'rmse_stylus_nm': float(meta_s['rmse'] * 1e9),
@@ -149,6 +153,8 @@ def run(seed):
         'H_confocal_at_1000mm': h_at(1000),
         'H_confocal_at_2000mm': h_at(2000),
         'H_confocal_at_3000mm': h_at(3000),
+        'H_confocal_analytic_1000mm': float(Hc_ref[0, 0]),
+        'H_confocal_analytic_2000mm': float(Hc_ref[0, 1]),
         'cutoff_confocal_mm': float(cutoff_inc * 1e-3 * 2),  # 4NA/lambda
     }
 

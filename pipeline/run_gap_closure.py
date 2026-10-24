@@ -70,6 +70,8 @@ def main():
             NA=na, noise_mult=nm, wavelength_nm=w,
             f_c_opt_mm=float(2 * na / (w * 1e-9) * 1e-3),
             eq_fraction=float(disc.crossover_analysis['equivalence_fraction_vs_threshold']['3dB']),
+            rmse_stylus_nm=float(result.rmse_stylus * 1e9),
+            rmse_optical_nm=float(result.rmse_optical * 1e9),
         ))
 
     out_dir = os.path.join(PIPE, 'outputs', 'iter01', 'gap_closure')

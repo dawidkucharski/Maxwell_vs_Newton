@@ -319,6 +319,52 @@ def test_mmse_formula():
     record("T11 MMSE formula == Monte Carlo Wiener (complex-mode channel)",
            rel < 0.02, f"formula={mmse_formula:.4f}, MC={mmse_mc:.4f}, rel={rel:.3f}")
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T12. Non-Gaussian ensemble values vs SI S5 table (run_ng_ensemble.py)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_ng_ensemble_values():
+    import json
+    path = os.path.join(PIPE, 'outputs', 'iter01', 'ensemble_non_gaussian',
+                        'ng_ensemble.json')
+    d = json.load(open(path))
+    refs = {'ground': (0.813, 0.006, 0.295, 0.002),
+            'turned': (0.806, 0.009, 0.320, 0.002),
+            'laser_textured': (0.816, 0.009, 0.287, 0.002)}
+    ok = True
+    det = []
+    for cls, (rho, rho_s, eta, eta_s) in refs.items():
+        m = d[cls]
+        ok &= (abs(m['rho_mean'] - rho) <= 0.002) and (abs(m['eta_mean'] - eta) <= 0.002)
+        det.append(f"{cls}:rho={m['rho_mean']:.3f},eta={m['eta_mean']:.3f}")
+    record("T12 non-Gaussian ensemble matches SI S5 table", ok, "; ".join(det))
+
+# ─────────────────────────────────────────────────────────────────────────────
+# T13. Robustness audit values vs SI S8/S10 (run_robustness_audit.py)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_robustness_audit_values():
+    import json
+    path = os.path.join(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__))), 'reports', 'robustness_audit.json')
+    d = json.load(open(path))
+    rows = {r['sigma_nm']: r for r in d['linearity']['rows']}
+    ok = (abs(rows[50]['ratio'] - 0.34) < 0.02
+          and abs(rows[100]['ratio'] - 0.96) < 0.03
+          and abs(rows[200]['ratio'] - 1.60) < 0.04
+          and d['poisson']['max_rel_diff_pct'] < 1.0
+          and abs(d['wear_scar']['local_psd_ratio_at_f'] - 400.0) < 5.0)
+    rho = {r['variant']: r['rho_optical'] for r in d['otf_variants']['rows']}
+    agree = {r['variant']: r['frac_passband_within_3dB_of_ideal']
+             for r in d['otf_variants']['rows']}
+    ok &= (abs(rho['ideal'] - rho['marechal']) < 1e-6
+           and abs(rho['ideal'] - rho['gaussian']) < 1e-6
+           and abs(agree['marechal'] - 0.77) < 0.02
+           and abs(agree['gaussian'] - 0.92) < 0.02)
+    record("T13 robustness audit matches SI S8/S10", ok,
+           f"ratios 50/100/200nm={rows[50]['ratio']:.2f}/{rows[100]['ratio']:.2f}/"
+           f"{rows[200]['ratio']:.2f}, Poisson<{d['poisson']['max_rel_diff_pct']:.2f}%, "
+           f"wear-scar x{d['wear_scar']['local_psd_ratio_at_f']:.0f}, "
+           f"agree 3dB={agree['marechal']:.2f}/{agree['gaussian']:.2f}")
+
 if __name__ == "__main__":
     test_otf_autocorrelation()
     test_small_slope_dilation()
@@ -331,6 +377,8 @@ if __name__ == "__main__":
     test_ball_parallel_curve()
     test_stylus_H_reproducible()
     test_mmse_formula()
+    test_ng_ensemble_values()
+    test_robustness_audit_values()
     n_pass = sum(1 for _, ok, _ in RESULTS if ok)
     print(f"\n{n_pass}/{len(RESULTS)} passed")
     sys.exit(0 if n_pass == len(RESULTS) else 1)

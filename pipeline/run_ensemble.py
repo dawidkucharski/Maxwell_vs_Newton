@@ -20,6 +20,7 @@ sys.path.insert(0, PIPE)
 
 from block4_physics_simulator import SimulationParams, run_simulation   # noqa: E402
 from block5_discovery_engine import run_discovery, azimuthal_average     # noqa: E402
+from block11_stress_test import compute_all_metrics                      # noqa: E402
 from variant_simulations import psd2d                                    # noqa: E402
 
 N = 30
@@ -50,6 +51,7 @@ def main():
     f_cross, eq_frac = [], []
     mi_s, mi_o = [], []
     I_s, I_o = [], []
+    rho_s, rho_o, eta_s, eta_o = [], [], [], []
     I_band = {}
 
     for i in range(N):
@@ -87,6 +89,14 @@ def main():
         mi_o.append(il.mi_optical)
         I_s.append(il.I_stylus)
         I_o.append(il.I_optical)
+        # stress-test metric conventions (rho = fraction of azimuthal bins with
+        # SNR > 1; eta = I/I_perfect)
+        m = compute_all_metrics(result.h_true, result.h_stylus,
+                                result.h_optical, params)
+        rho_s.append(m['rho_stylus'])
+        rho_o.append(m['rho_optical'])
+        eta_s.append(m['eta_stylus'])
+        eta_o.append(m['eta_optical'])
         for band, val in il.I_per_band.items():
             I_band.setdefault(band, []).append(val)
 
@@ -125,6 +135,14 @@ def main():
         'I_stylus_std': float(arr(I_s).std()),
         'I_optical_mean': float(arr(I_o).mean()),
         'I_optical_std': float(arr(I_o).std()),
+        'rho_stylus_mean': float(arr(rho_s).mean()),
+        'rho_stylus_std': float(arr(rho_s).std()),
+        'rho_optical_mean': float(arr(rho_o).mean()),
+        'rho_optical_std': float(arr(rho_o).std()),
+        'eta_stylus_mean': float(arr(eta_s).mean()),
+        'eta_stylus_std': float(arr(eta_s).std()),
+        'eta_optical_mean': float(arr(eta_o).mean()),
+        'eta_optical_std': float(arr(eta_o).std()),
         'I_per_band': {b: [float(np.mean(v)), float(np.std(v))] for b, v in I_band.items()},
         'N_ensemble': N,
         'seeds': list(range(SEED0, SEED0 + N)),

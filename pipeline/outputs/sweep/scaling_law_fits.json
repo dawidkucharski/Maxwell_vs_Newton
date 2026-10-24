@@ -1,34 +1,34 @@
 {
   "info_loss_vs_H": {
     "law": "I_integrated = I_0 * exp(-gamma * H)",
-    "gamma": -0.023787284245129846,
-    "gamma_std": 0.19207232948481717,
+    "gamma": -0.02380368856784973,
+    "gamma_std": 0.1920252846232134,
     "n_points": 3,
     "note": "HONEST REFIT (replaces hardcoded gamma=5.0): no significant H-dependence at n=3; reported as null result in manuscript."
   },
   "rmse_ratio_vs_cutoff_ratio": {
     "law": "RMSE_s/RMSE_o proportional to (f_c_opt/f_c_stylus)^delta",
-    "delta": 1.9042880384596126,
-    "delta_std": 0.1342719738886554,
-    "r_squared": 0.5305141874348902,
-    "r_squared_out_of_sample": 0.5113418437915339,
+    "delta": 1.9060936182378692,
+    "delta_std": 0.13436811355338482,
+    "r_squared": 0.530629736482499,
+    "r_squared_out_of_sample": 0.511374342833407,
     "n_points": 180,
     "note": "delta_std is the standard error of the log-log fit (not 95% CI)."
   },
   "stylus_anisotropy_sweep": {
-    "mean_alpha_stylus": 0.011189786807207724,
-    "std_alpha_stylus": 0.011155714203093449,
-    "mean_alpha_optical": 0.009446239756015523,
-    "std_alpha_optical": 0.0071251720722177074,
+    "mean_alpha_stylus": 0.011137556505178847,
+    "std_alpha_stylus": 0.01117673728071695,
+    "mean_alpha_optical": 0.00945026988333055,
+    "std_alpha_optical": 0.007131371964602249,
     "n_points": 180,
     "note": "Definition-dependent: ensemble alpha_s = 0.0049 +/- 0.0026 (n=30); band-limited 2D second-moment alpha = 0.142. Values differ by definition."
   },
   "crossover_vs_tip_radius": {
     "law": "f_cross = A * r_tip^(-beta)",
-    "A": 388156.5385851386,
-    "beta": -0.055690009490862766,
-    "beta_std": 0.008979829242824543,
-    "r_squared": 0.927642513600696,
+    "A": 394868.2379292518,
+    "beta": -0.05708970117548259,
+    "beta_std": 0.008747332990234242,
+    "r_squared": 0.9342041040967778,
     "n_points": 5,
     "note": "beta computed on f_cross averaged over the other sweep parameters per tip radius."
   },
