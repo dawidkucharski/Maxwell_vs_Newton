@@ -154,7 +154,7 @@ The addition of scatterometry generalises the $k$-space operator framework from 
 \begin{equation}
     \mathcal{M}_i[h] = \mathcal{F}^{-1}[H_i \cdot \mathcal{F}[h]] + \eta_i, \quad i \in \{\text{stylus}, \text{optical}\},
 \end{equation}
-whereas scatterometry observes the surface \emph{power} spectrum directly (Eq.~\eqref{eq:rayleigh_rice}): $\mathcal{M}_\mathrm{scat}[h] = \mathcal{K}(\mathbf{f})\,\mathrm{PSD}[h](\mathbf{f}) + \eta_\mathrm{scat}$. The two families are therefore brought to a common domain through their PSD estimates---for the imaging channels $\mathrm{PSD}_i(\mathbf{f}) \approx |H_i(\mathbf{f})|^2\,\mathrm{PSD}_\mathrm{true}(\mathbf{f}) + N_i(\mathbf{f})$ (the power-transfer convention of Eq.~\eqref{eq:transfer_est} in the main text), for scatterometry through the Rayleigh--Rice inversion---and all cross-modality comparisons and fusions of this work are performed on those PSD-domain quantities. In a multi-instrument metrology system, the combined information capacity is not additive---the overlap regions in $k$-space must be accounted for through the joint transfer matrix $\mathbf{H}(\mathbf{f}) = [H_1(\mathbf{f}), H_2(\mathbf{f}), \dots, H_N(\mathbf{f})]^T$, and the per-mode Fisher information of the imaging channels is $\sum_i |H_i(\mathbf{f})|^2 / N_i(\mathbf{f})$; the scatterometry channel contributes through its PSD-domain noise $N_\mathrm{scat}(\mathbf{f})$, determined by the BSDF noise floor ($\sim\SI{e-8}{sr^{-1}}$ for a well-designed instrument) propagated through the calibration kernel $\mathcal{K}^{-1}$.
+whereas scatterometry observes the surface \emph{power} spectrum directly (Eq.~\eqref{eq:rayleigh_rice}): $\mathcal{M}_\mathrm{scat}[h] = \mathcal{K}(\mathbf{f})\,\mathrm{PSD}[h](\mathbf{f}) + \eta_\mathrm{scat}$. The two families are therefore brought to a common domain through their PSD estimates---for the imaging channels $\mathrm{PSD}_i(\mathbf{f}) \approx |H_i(\mathbf{f})|^2\,\mathrm{PSD}_\mathrm{true}(\mathbf{f}) + N_i(\mathbf{f})$ (the power-transfer convention of Eq.~(7) in the main text), for scatterometry through the Rayleigh--Rice inversion---and all cross-modality comparisons and fusions of this work are performed on those PSD-domain quantities. In a multi-instrument metrology system, the combined information capacity is not additive---the overlap regions in $k$-space must be accounted for through the joint transfer matrix $\mathbf{H}(\mathbf{f}) = [H_1(\mathbf{f}), H_2(\mathbf{f}), \dots, H_N(\mathbf{f})]^T$, and the per-mode Fisher information of the imaging channels is $\sum_i |H_i(\mathbf{f})|^2 / N_i(\mathbf{f})$; the scatterometry channel contributes through its PSD-domain noise $N_\mathrm{scat}(\mathbf{f})$, determined by the BSDF noise floor ($\sim\SI{e-8}{sr^{-1}}$ for a well-designed instrument) propagated through the calibration kernel $\mathcal{K}^{-1}$.
 
 The three-way comparison underscores a methodological principle: \textbf{no single measurement modality can fully characterise a rough surface across all spatial frequencies}. The spectral bandwidth of each instrument is limited by first-principles physics---contact geometry for the stylus, diffraction for WLI, and the scattering hemisphere ($|f| \leq 2/\lambda$) for scatterometry. Multi-instrument fusion of the PSD-domain channel estimates, weighted by the inverse local estimation variance at each $k$-space point, is the minimum-variance linear fusion strategy under the stated independent-noise model, and a practical trust-region strategy more generally.
 
@@ -321,11 +321,11 @@ Four assumptions underlying the framework were computationally tested to map the
 \section{Literature Anchors for the Reported Quantities}
 \label{S9}
 
-Table~\ref{tab:anchors} maps the framework's quantitative claims to the prior work that anchors them; all entries are cited in the main text and their DOIs were verified against Crossref records.
+Table~\ref{tab:anchors} maps the framework's quantitative claims to the prior work that anchors them; all entries are cited in the main text.
 
 \begin{table}[htbp]
     \centering
-    \caption{Literature anchors. The ``reported'' column summarises the cited works as characterised in the main text; the right column gives the corresponding quantitative result of this work. All DOIs verified via Crossref.}
+    \caption{Literature anchors. The ``reported'' column summarises the cited works as characterised in the main text; the right column gives the corresponding quantitative result of this work.}
     \label{tab:anchors}
     \small
     \setlength{\tabcolsep}{4pt}
@@ -333,23 +333,23 @@ Table~\ref{tab:anchors} maps the framework's quantitative claims to the prior wo
         \toprule
         Prior work (DOI) & Reported / established & This work's corresponding quantity \\
         \midrule
-        Wu 1999; 2000 (\url{10.1016/S0043-1648(99)00109-X}; \url{10.1088/0957-0233/11/9/317}) & stylus-tip curvature has spectral consequences for measured profiles & empirical dilation transfer $H_\mathrm{stylus}\approx1$ with curvature bias; \SI{3}{dB} at $\approx$\SI{1049}{mm^{-1}} \\
+        Wu 1999; 2000 (\url{https://doi.org/10.1016/S0043-1648(99)00109-X}; \url{https://doi.org/10.1088/0957-0233/11/9/317}) & stylus-tip curvature has spectral consequences for measured profiles & empirical dilation transfer $H_\mathrm{stylus}\approx1$ with curvature bias; \SI{3}{dB} at $\approx$\SI{1049}{mm^{-1}} \\
         \addlinespace
-        McCool 1984 (\url{10.1115/1.3260884}) & tip radius and flight affect topography measurements & curvature-bias excess $+\SI{3.4}{dB}$ at \SI{17}{mm^{-1}}; super-linear bias beyond $\sigma\approx$\SI{100}{nm} \\
+        McCool 1984 (\url{https://doi.org/10.1115/1.3260884}) & tip radius and flight affect topography measurements & curvature-bias excess $+\SI{3.4}{dB}$ at \SI{17}{mm^{-1}}; super-linear bias beyond $\sigma\approx$\SI{100}{nm} \\
         \addlinespace
-        de Groot 2021 (\url{10.1088/2515-7647/abe3da}) & analytic ITF of optical profilers & incoherent-OTF channel with cutoff $2\mathrm{NA}/\lambda$ \\
+        de Groot 2021 (\url{https://doi.org/10.1088/2515-7647/abe3da}) & analytic ITF of optical profilers & incoherent-OTF channel with cutoff $2\mathrm{NA}/\lambda$ \\
         \addlinespace
-        Dai et al.\ 2020 (\url{10.1088/2051-672X/abc9d2}) & 2D material measure for areal ITFs & the same 2D ITF quantity computed from first principles \\
+        Dai et al.\ 2020 (\url{https://doi.org/10.1088/2051-672X/abc9d2}) & 2D material measure for areal ITFs & the same 2D ITF quantity computed from first principles \\
         \addlinespace
-        Hirose et al.\ 2025 (\url{10.1364/AO.562002}) & BPRA-measured WLI ITFs (public dataset) & fitted cutoff scale $c=1.15\pm0.01$ of the nominal $2\mathrm{NA}/\lambda$ \\
+        Hirose et al.\ 2025 (\url{https://doi.org/10.1364/AO.562002}) & BPRA-measured WLI ITFs (public dataset) & fitted cutoff scale $c=1.15\pm0.01$ of the nominal $2\mathrm{NA}/\lambda$ \\
         \addlinespace
-        Yashchuk et al.\ 2015 (\url{10.1063/1.4936752}) & BPRA methodology for MTF calibration & adopted as the roadmap experiment for $H(f)$ validation \\
+        Yashchuk et al.\ 2015 (\url{https://doi.org/10.1063/1.4936752}) & BPRA methodology for MTF calibration & adopted as the roadmap experiment for $H(f)$ validation \\
         \addlinespace
-        Leach 2010 (\url{10.1088/0957-0233/21/3/032001}) & instrument bandwidth compared qualitatively & quantitative cutoffs ($\SI{2000}{mm^{-1}}$, $f_\mathrm{cross}=\SI{454}{mm^{-1}}$) \\
+        Leach 2010 (\url{https://doi.org/10.1088/0957-0233/21/3/032001}) & instrument bandwidth compared qualitatively & quantitative cutoffs ($\SI{2000}{mm^{-1}}$, $f_\mathrm{cross}=\SI{454}{mm^{-1}}$) \\
         \addlinespace
-        Greco \& Boyer 2019 (\url{10.1016/j.sigpro.2019.05.029}) & noise-generalised angular resolution limits & the resolution--bandwidth benchmark of the main text, anchored to this literature \\
+        Greco \& Boyer 2019 (\url{https://doi.org/10.1016/j.sigpro.2019.05.029}) & noise-generalised angular resolution limits & the resolution--bandwidth benchmark of the main text, anchored to this literature \\
         \addlinespace
-        Jiang et al.\ 2007 (\url{10.1098/rspa.2007.1873}) & information-rich metrology (programmatic) & quantitative Shannon-theoretic metrics $I$, $\rho$, $\Xi$ \\
+        Jiang et al.\ 2007 (\url{https://doi.org/10.1098/rspa.2007.1873}) & information-rich metrology (programmatic) & quantitative Shannon-theoretic metrics $I$, $\rho$, $\Xi$ \\
         \bottomrule
     \end{tabular}
 \end{table}
