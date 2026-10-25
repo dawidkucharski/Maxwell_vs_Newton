@@ -187,7 +187,7 @@ summary_text = (
     r"    $\rightarrow$ 1% $\rightarrow$ 0.1% error rate" "\n"
     "\n"
     r"$\bf{11.5\% \rightarrow 82.4\%}$ equivalence (sweep)"
-    r"  --  $\bf{17\%}$ residual: bias-limited"
+    r"  --  $\bf{17.6\%}$ residual: bias-limited"
 )
 
 ax_c.text(0.0, 1.0, summary_text, transform=ax_c.transAxes,
