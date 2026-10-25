@@ -24,9 +24,30 @@ PIPE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, PIPE)
 
 from block4_physics_simulator import SimulationParams, run_simulation   # noqa: E402
-from block5_discovery_engine import run_discovery                      # noqa: E402
+from block5_discovery_engine import run_discovery, compute_psd_2d      # noqa: E402
 
 N = 256
+
+
+def noise_truncated_eq(result, tf):
+    """3 dB equivalence fraction on the noise-supported domain (headline)."""
+    dx = result.params.dx
+    P_t = compute_psd_2d(result.h_true, dx)
+    H_s = np.clip(np.asarray(tf.H_stylus), 0, None)
+    H_o = np.clip(np.asarray(tf.H_optical), 0, None)
+    diff_db = np.abs(10 * np.log10(np.maximum(H_s, 1e-12) /
+                                   np.maximum(H_o, 1e-12)))
+
+    def nf(h_meas):
+        d = compute_psd_2d(h_meas - result.h_true, dx)
+        v = d[d > 0]
+        return float(np.median(v)) if v.size else 1e-35
+
+    eta_s, eta_o = nf(result.h_stylus), nf(result.h_optical)
+    mask = (H_s ** 2 * P_t >= eta_s) | (H_o ** 2 * P_t >= eta_o)
+    if mask.sum() == 0:
+        return float('nan')
+    return float(np.mean(diff_db[mask] < 3.0))
 
 
 def params_for(na, wavelength_nm, noise_mult):
@@ -70,6 +91,7 @@ def main():
             NA=na, noise_mult=nm, wavelength_nm=w,
             f_c_opt_mm=float(2 * na / (w * 1e-9) * 1e-3),
             eq_fraction=float(disc.crossover_analysis['equivalence_fraction_vs_threshold']['3dB']),
+            eq_union=noise_truncated_eq(result, disc.transfer_functions),
             rmse_stylus_nm=float(result.rmse_stylus * 1e9),
             rmse_optical_nm=float(result.rmse_optical * 1e9),
         ))

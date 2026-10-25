@@ -87,10 +87,11 @@ def main():
         'rows': rows,
         'notes': {
             'criteria': ('eq_all_bins_3dB = fraction of ALL grid bins with '
-                         '|10log10(H_s/H_o)| < 3 dB (headline metric); '
-                         'eq_noise_truncated_3dB = same condition restricted to '
-                         'bins where AT LEAST ONE modality exceeds its estimated '
-                         'noise floor (difference-field median); '
+                         '|10log10(H_s/H_o)| < 3 dB (former headline metric); '
+                         'eq_noise_truncated_3dB = the headline metric: same '
+                         'condition restricted to the noise-supported domain '
+                         '(bins where AT LEAST ONE modality exceeds its '
+                         'difference-field noise floor); '
                          'eq_intersection_3dB = restricted to bins where BOTH '
                          'modalities exceed their estimated noise floors'),
             'finding': ('neither truncation removes the non-monotone noise '

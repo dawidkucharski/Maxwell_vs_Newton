@@ -19,7 +19,8 @@ PIPE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, PIPE)
 
 from block4_physics_simulator import SimulationParams, run_simulation   # noqa: E402
-from block5_discovery_engine import run_discovery, azimuthal_average     # noqa: E402
+from block5_discovery_engine import (run_discovery, azimuthal_average,   # noqa: E402
+                                     compute_psd_2d)
 from block11_stress_test import compute_all_metrics                      # noqa: E402
 from variant_simulations import psd2d                                    # noqa: E402
 
@@ -40,6 +41,32 @@ def baseline_params():
     )
 
 
+def noise_truncated_eq(result, tf):
+    """3 dB equivalence fraction on the noise-supported domain (headline).
+
+    Counts bins where the two empirical power transfers agree within 3 dB
+    AND at least one modality has signal above its difference-field noise
+    floor (union mask); mirrors verification/run_equivalence_criterion_audit.py.
+    """
+    dx = result.params.dx
+    P_t = compute_psd_2d(result.h_true, dx)
+    H_s = np.clip(np.asarray(tf.H_stylus), 0, None)
+    H_o = np.clip(np.asarray(tf.H_optical), 0, None)
+    diff_db = np.abs(10 * np.log10(np.maximum(H_s, 1e-12) /
+                                   np.maximum(H_o, 1e-12)))
+
+    def nf(h_meas):
+        d = compute_psd_2d(h_meas - result.h_true, dx)
+        v = d[d > 0]
+        return float(np.median(v)) if v.size else 1e-35
+
+    eta_s, eta_o = nf(result.h_stylus), nf(result.h_optical)
+    mask = (H_s ** 2 * P_t >= eta_s) | (H_o ** 2 * P_t >= eta_o)
+    if mask.sum() == 0:
+        return float('nan')
+    return float(np.mean(diff_db[mask] < 3.0))
+
+
 def main():
     params = baseline_params()
     f_radial = None
@@ -52,6 +79,7 @@ def main():
     mi_s, mi_o = [], []
     I_s, I_o = [], []
     rho_s, rho_o, eta_s, eta_o = [], [], [], []
+    eq_union = []
     I_band = {}
 
     for i in range(N):
@@ -84,6 +112,7 @@ def main():
         alpha_o.append(disc.anisotropy.optical['anisotropy_degree'])
         f_cross.append(disc.crossover_analysis['crossover_frequency_m'])
         eq_frac.append(disc.crossover_analysis['equivalence_fraction_vs_threshold']['3dB'])
+        eq_union.append(noise_truncated_eq(result, tf))
         il = disc.information_loss
         mi_s.append(il.mi_stylus)
         mi_o.append(il.mi_optical)
@@ -127,6 +156,8 @@ def main():
         'f_cross_std': float(arr(f_cross).std()),
         'eq_frac_mean': float(arr(eq_frac).mean()),
         'eq_frac_std': float(arr(eq_frac).std()),
+        'eq_frac_union_mean': float(arr(eq_union).mean()),
+        'eq_frac_union_std': float(arr(eq_union).std()),
         'mi_stylus_mean': float(arr(mi_s).mean()),
         'mi_stylus_std': float(arr(mi_s).std()),
         'mi_optical_mean': float(arr(mi_o).mean()),

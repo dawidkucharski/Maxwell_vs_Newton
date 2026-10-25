@@ -63,7 +63,7 @@ for nm in noise_mults:
     subset = [r for r in by_noise[nm] if abs(r['wavelength_nm'] - wavelength_nm_target) < 1.0]
     subset.sort(key=lambda x: x['NA'])
     nas = [r['NA'] for r in subset]
-    eqs = [r['eq_fraction'] * 100 for r in subset]
+    eqs = [r['eq_union'] * 100 for r in subset]
     
     label = f'{nm:.2f}×' if nm < 1 else f'{nm:.0f}×'
     if nm == 1.0:
@@ -74,9 +74,9 @@ for nm in noise_mults:
     ax_a.plot(nas, eqs, 'o-', color=noise_colors[nm], lw=lw, ms=4,
               alpha=alpha, label=label)
 
-# Baseline horizontal line at 9.6% (n=30 ensemble, N=512)
-ax_a.axhline(9.6, color=red_baseline, ls='--', lw=1.5, alpha=0.7,
-             label='Baseline (9.6%, n=30)')
+# Baseline horizontal line at 11.5% (n=30 ensemble, N=512)
+ax_a.axhline(11.5, color=red_baseline, ls='--', lw=1.5, alpha=0.7,
+             label='Baseline (11.5%, n=30)')
 ax_a.axhline(50.0, color='grey', ls=':', lw=1.2, alpha=0.7,
              label='50% equivalence')
 
@@ -110,7 +110,7 @@ for target in targets:
         quals = sorted(r['noise_mult'] for r in results
                        if abs(r['NA'] - na) < 0.001
                        and abs(r['wavelength_nm'] - wavelength_nm_target) < 1.0
-                       and r['eq_fraction'] * 100 > target)
+                       and r['eq_union'] * 100 > target)
         if quals:
             floor_by_na.append((na, quals[0]))
             ceil_by_na.append((na, quals[-1]))
@@ -186,7 +186,7 @@ summary_text = (
     r"    Quality-guided or temporal PSI" "\n"
     r"    $\rightarrow$ 1% $\rightarrow$ 0.1% error rate" "\n"
     "\n"
-    r"$\bf{9.6\% \rightarrow 82.7\%}$ equivalence (sweep)"
+    r"$\bf{11.5\% \rightarrow 82.4\%}$ equivalence (sweep)"
     r"  --  $\bf{17\%}$ residual: bias-limited"
 )
 
