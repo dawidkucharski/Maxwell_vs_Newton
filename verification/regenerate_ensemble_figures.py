@@ -7,6 +7,12 @@ figure content from the saved arrays and replaces every annotation with the
 ensemble mean +- std values (fig3, fig6) or the ensemble anisotropy values
 (fig5), so the figures match the numbers in the text. Values are formatted
 directly from ensemble_stats.json -- nothing is hardcoded.
+
+fig6 panel (c) uses the noise-supported equivalence criterion (union of bins
+where at least one measured PSD exceeds its difference-field noise floor),
+mirroring noise_truncated_eq in pipeline/run_ensemble.py: the 3 dB bar is the
+n = 30 ensemble value (eq_frac_union), the 1/2/6 dB bars are recomputed for
+the baseline run (seed 42, N = 512) under the same criterion.
 """
 import json
 import os
@@ -25,7 +31,8 @@ ENS = json.load(open(os.path.join(ITER, 'ensemble', 'ensemble_stats.json')))
 DM = json.load(open(os.path.join(ITER, 'discovery_metrics.json')))
 
 sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
-from block5_discovery_engine import azimuthal_average  # noqa: E402
+from block5_discovery_engine import (azimuthal_average,  # noqa: E402
+                                     compute_psd_2d)
 
 fx = np.load(os.path.join(ITER, 'fx.npy'))
 fy = np.load(os.path.join(ITER, 'fy.npy'))
@@ -198,10 +205,31 @@ def fig6():
                            boxstyle='round,pad=0.2'))
 
     thresholds = [1, 2, 3, 6]
-    frac = DM['crossover_analysis']['equivalence_fraction_vs_threshold']
+    # Noise-supported threshold sweep for the baseline run (seed 42, N=512),
+    # mirroring noise_truncated_eq in pipeline/run_ensemble.py: union mask of
+    # bins where at least one measured PSD exceeds its difference-field noise
+    # floor (median of positive difference-field PSD, pipeline convention).
+    h_t = np.load(os.path.join(ITER, 'h_true.npy'))
+    h_s = np.load(os.path.join(ITER, 'h_stylus.npy'))
+    h_o = np.load(os.path.join(ITER, 'h_optical.npy'))
+    dx = 100e-6 / h_t.shape[0]
+    P_t = compute_psd_2d(h_t, dx)
+
+    def nf(h_meas):
+        d = compute_psd_2d(h_meas - h_t, dx)
+        v = d[d > 0]
+        return float(np.median(v)) if v.size else 1e-35
+
+    eta_s, eta_o = nf(h_s), nf(h_o)
+    H_s = np.clip(H_stylus, 0, None)
+    H_o = np.clip(H_optical, 0, None)
+    diff_db = np.abs(10 * np.log10(np.maximum(H_s, 1e-12) /
+                                   np.maximum(H_o, 1e-12)))
+    mask = (H_s ** 2 * P_t >= eta_s) | (H_o ** 2 * P_t >= eta_o)
+    frac = {f'{t}dB': float(np.mean(diff_db[mask] < t)) for t in thresholds}
     fractions = [frac[f'{t}dB'] * 100 for t in thresholds]
-    fractions[2] = ENS['eq_frac_mean'] * 100          # ensemble at 3 dB
-    errs = [0.0, 0.0, ENS['eq_frac_std'] * 100, 0.0]
+    fractions[2] = ENS['eq_frac_union_mean'] * 100    # ensemble at 3 dB
+    errs = [0.0, 0.0, ENS['eq_frac_union_std'] * 100, 0.0]
     colors_bar = ['#2ca02c', '#bcbd22', '#d62728', '#7f7f7f']
     bars = axes[2].bar(thresholds, fractions, width=0.8, color=colors_bar,
                        edgecolor='white', linewidth=0.5,
@@ -218,12 +246,13 @@ def fig6():
     fc_mean = ENS['f_cross_mean'] * 1e-3
     fc_std = ENS['f_cross_std'] * 1e-3
     lam_cross = 1e3 / fc_mean
-    eqm, eqs = ENS['eq_frac_mean'] * 100, ENS['eq_frac_std'] * 100
+    eqm, eqs = ENS['eq_frac_union_mean'] * 100, ENS['eq_frac_union_std'] * 100
     axes[2].text(0.5, 0.30,
                  f"$3$ dB: ${eqm:.1f} \\pm {eqs:.1f}$\\% ($n=30$)\n"
                  f"$f_{{\\rm cross}}={fc_mean:.0f}\\pm{fc_std:.0f}$ mm$^{{-1}}$\n"
                  f"$\\lambda_{{\\rm cross}}={lam_cross:.1f}$ \u00b5m\n"
-                 f"(1, 2, 6 dB bars: baseline run)",
+                 f"(all bars: noise-supported domain;\n"
+                 f"1, 2, 6 dB bars: baseline run)",
                  transform=axes[2].transAxes, fontsize=8, ha='center',
                  bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.85))
     fig.savefig(os.path.join(OUT, 'fig6_crossover_analysis.pdf'))
